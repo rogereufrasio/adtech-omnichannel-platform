@@ -1,0 +1,174 @@
+```yaml
+openapi: 3.0.3
+
+info:
+  title: ShopSphere Tracking API
+  description: API responsável pela coleta de eventos comportamentais e transacionais da plataforma AdTech.
+  version: 1.0.0
+
+servers:
+  - url: https://api.shopsphere.com/tracking/v1
+
+tags:
+  - name: Events
+  - name: Health
+  - name: Schemas
+
+paths:
+
+  /events:
+    post:
+      tags:
+        - Events
+      summary: Receber evento individual
+      operationId: publishEvent
+
+      parameters:
+        - $ref: '#/components/parameters/CorrelationId'
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Event'
+
+      responses:
+        '202':
+          description: Evento aceito para processamento
+
+        '400':
+          description: Payload inválido
+
+        '401':
+          description: Não autorizado
+
+  /events/batch:
+    post:
+      tags:
+        - Events
+      summary: Receber lote de eventos
+
+      parameters:
+        - $ref: '#/components/parameters/CorrelationId'
+
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EventBatch'
+
+      responses:
+        '202':
+          description: Lote aceito para processamento
+
+  /schemas/{eventName}:
+    get:
+      tags:
+        - Schemas
+
+      summary: Consultar schema de evento
+
+      parameters:
+        - name: eventName
+          in: path
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: Schema encontrado
+
+        '404':
+          description: Schema não encontrado
+
+  /health:
+    get:
+      tags:
+        - Health
+
+      summary: Health Check
+
+      responses:
+        '200':
+          description: Serviço operacional
+
+components:
+
+  parameters:
+
+    CorrelationId:
+      name: X-Correlation-Id
+      in: header
+      required: true
+      schema:
+        type: string
+
+  schemas:
+
+    Event:
+
+      type: object
+
+      required:
+        - eventId
+        - eventName
+        - eventTimestamp
+        - sourceSystem
+
+      properties:
+
+        eventId:
+          type: string
+          format: uuid
+
+        eventName:
+          type: string
+          example: purchase
+
+        eventVersion:
+          type: string
+          example: "1.0"
+
+        eventTimestamp:
+          type: string
+          format: date-time
+
+        sourceSystem:
+          type: string
+          example: ecommerce
+
+        customerId:
+          type: string
+
+        anonymousId:
+          type: string
+
+        sessionId:
+          type: string
+
+        consentStatus:
+          type: string
+          enum:
+            - granted
+            - denied
+            - unknown
+
+        attributes:
+          type: object
+          additionalProperties: true
+
+    EventBatch:
+
+      type: object
+
+      properties:
+
+        events:
+          type: array
+
+          items:
+            $ref: '#/components/schemas/Event'
+```

@@ -1,44 +1,69 @@
-# Event Taxonomy
+# Taxonomia de Eventos
 
-## Navigation Domain
+## Objetivo
 
-| Event         |
-| ------------- |
-| page_view     |
-| session_start |
-| search        |
+Definir a classificação padronizada dos eventos utilizados pela plataforma AdTech da ShopSphere.
+
+A taxonomia estabelece uma linguagem comum para produtores e consumidores de eventos, facilitando governança, rastreabilidade e reutilização.
 
 ---
 
-## Commerce Domain
+# Domínio de Navegação
 
-| Event            |
-| ---------------- |
-| product_view     |
-| add_to_cart      |
-| remove_from_cart |
-| checkout_start   |
-| purchase         |
+Eventos relacionados à interação dos clientes nos canais digitais.
 
----
-
-## Marketing Domain
-
-| Event               |
-| ------------------- |
-| campaign_impression |
-| campaign_click      |
-| email_open          |
-| email_click         |
-| push_open           |
+| Evento | Descrição |
+|----------|-------------|
+| page_view | Visualização de página |
+| session_start | Início de sessão |
+| search | Realização de busca |
 
 ---
 
-## Customer Domain
+# Domínio Comercial
 
-| Event                |
-| -------------------- |
-| login                |
-| logout               |
-| profile_update       |
-| loyalty_registration |
+Eventos relacionados à jornada de compra.
+
+| Evento | Descrição |
+|----------|-------------|
+| product_view | Visualização de produto |
+| add_to_cart | Inclusão no carrinho |
+| remove_from_cart | Remoção do carrinho |
+| checkout_start | Início do checkout |
+| purchase | Compra concluída |
+
+---
+
+# Domínio de Marketing
+
+Eventos relacionados a campanhas e comunicação.
+
+| Evento | Descrição |
+|----------|-------------|
+| campaign_impression | Impressão de campanha |
+| campaign_click | Clique em campanha |
+| email_open | Abertura de e-mail |
+| email_click | Clique em e-mail |
+| push_open | Abertura de push notification |
+
+---
+
+# Domínio de Cliente
+
+Eventos relacionados ao perfil e relacionamento do cliente.
+
+| Evento | Descrição |
+|----------|-------------|
+| login | Autenticação |
+| logout | Encerramento de sessão |
+| profile_update | Atualização cadastral |
+| loyalty_registration | Adesão ao programa de fidelidade |
+
+---
+
+## Convenções
+
+- Eventos devem utilizar nomenclatura em inglês;
+- Eventos devem representar fatos de negócio;
+- Eventos devem possuir schema versionado;
+- Eventos não devem conter dados pessoais desnecessários.

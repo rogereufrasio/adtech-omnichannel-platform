@@ -1,59 +1,69 @@
-# C4 Level 1 - System Context
+# C4 - Nível 1 (Contexto)
 
-## Purpose
+## Objetivo
 
-The AdTech Platform acts as the central hub for customer data collection, audience management and activation.
-
----
-
-## Actors
-
-### Customer
-
-Interacts with digital channels.
-
-### Marketing Team
-
-Creates campaigns and activates audiences.
-
-### Product Team
-
-Consumes customer insights.
-
-### Data Team
-
-Consumes customer and campaign data.
+Apresentar a plataforma AdTech da ShopSphere em seu contexto organizacional, destacando os principais atores, sistemas externos e interações necessárias para suportar as capacidades de Customer 360, segmentação e ativação omnichannel.
 
 ---
 
-## External Systems
+## Atores
+
+### Cliente
+
+Interage com os canais digitais e físicos da empresa, gerando eventos comportamentais e transacionais utilizados pela plataforma.
+
+### Equipe de Marketing
+
+Responsável pela criação de campanhas, gestão de audiências e ativação de segmentos em diferentes canais.
+
+### Equipe de Produto
+
+Utiliza informações de comportamento e jornadas dos clientes para evolução da experiência digital.
+
+### Equipe de Dados e Analytics
+
+Consome dados e métricas para análises, modelagem de audiências e geração de insights para o negócio.
+
+---
+
+## Sistemas Externos
 
 ### Google Ads
 
-Audience activation and campaign execution.
+Recebe audiências para campanhas de aquisição, remarketing e ativação.
 
 ### Meta Ads
 
-Audience activation and campaign execution.
+Recebe segmentos de clientes para campanhas em redes sociais.
 
-### CRM Platform
+### Plataforma de CRM
 
-Customer communications.
+Responsável pelo envio de comunicações personalizadas e execução de jornadas de relacionamento.
 
-### Consent Management Platform
+### Plataforma de Consentimento
 
-Stores customer consent preferences.
+Gerencia consentimentos, preferências e permissões relacionadas ao uso de dados pessoais.
 
 ---
 
-## Core System
+## Sistema Principal
 
-### ShopSphere AdTech Platform
+### Plataforma AdTech ShopSphere
 
-Provides:
+A plataforma centraliza a captura, processamento e ativação de dados de clientes.
 
-* Event Collection
-* Identity Resolution
-* Customer 360
-* Audience Segmentation
-* Audience Activation
+Principais capacidades:
+
+- Coleta de Eventos;
+- Resolução de Identidade;
+- Customer 360;
+- Segmentação de Audiências;
+- Ativação Omnichannel;
+- Governança de Dados;
+- Observabilidade de Eventos.
+
+---
+
+## Valor para o Negócio
+
+A plataforma permite reduzir a fragmentação dos dados de clientes, acelerar a ativação de campanhas e fornecer uma visão unificada da jornada do consumidor em todos os canais da organização.
