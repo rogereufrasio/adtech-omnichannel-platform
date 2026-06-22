@@ -1,4 +1,3 @@
-````markdown
 # Arquitetura Executiva - Estado Futuro (TO-BE)
 
 ## Visão Geral
