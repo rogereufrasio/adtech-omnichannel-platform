@@ -1,158 +1,202 @@
-# Plataforma AdTech Omnichannel
+# Portfólio de Arquitetura Corporativa
 
-## Sobre o Projeto
+Este portfólio reúne estudos de arquitetura corporativa construídos a partir de cenários realistas de transformação digital, cobrindo disciplinas como Arquitetura de Soluções, Dados, Analytics, Inteligência Artificial, Integração e Governança.
 
-Este repositório apresenta um estudo de caso de arquitetura corporativa para modernização do ecossistema AdTech da ShopSphere, uma varejista omnichannel fictícia.
-
-O objetivo é demonstrar a atuação de um Arquiteto de Soluções Sênior na definição da arquitetura-alvo, governança tecnológica, integração de plataformas, gestão de fornecedores e evolução da capacidade analítica da organização.
+O objetivo é demonstrar a capacidade de traduzir estratégias de negócio em arquiteturas escaláveis, governáveis e orientadas à geração de valor, utilizando artefatos amplamente empregados em programas corporativos de transformação tecnológica.
 
 ---
 
-## Cenário
+# Perfil Arquitetural
 
-A ShopSphere possui operação em múltiplos canais:
+Atuação orientada à evolução de plataformas corporativas, definição de arquiteturas de referência, governança tecnológica e alinhamento entre estratégia, produto e engenharia.
 
-- E-commerce
-- Aplicativo Mobile
-- Programa de Fidelidade
-- CRM
-- Plataformas de Mídia Digital
-- Lojas Físicas
+Os cenários deste portfólio simulam responsabilidades típicas de posições como:
 
-Ao longo dos anos, a empresa acumulou integrações ponto a ponto, dados fragmentados e múltiplas plataformas de marketing, dificultando a construção de uma visão unificada do cliente e a execução de campanhas omnichannel.
+* Enterprise Architect
+* Solution Architect
+* Data Architect
+* AI Architect
+* Lead Architect
+* Principal Architect
 
----
+Principais responsabilidades representadas nos cases:
 
-## Objetivos de Negócio
-
-- Construir uma visão Customer 360
-- Habilitar segmentação em tempo quase real
-- Melhorar a ativação omnichannel
-- Evoluir a atribuição de campanhas
-- Reduzir dependências de processos batch
-- Garantir conformidade com a LGPD
-- Criar uma base escalável para futuras iniciativas de IA
+* Evolução de arquiteturas corporativas;
+* Definição de arquiteturas de referência;
+* Governança arquitetural;
+* Avaliação de fornecedores e plataformas;
+* Alinhamento entre negócio, produto e engenharia;
+* Estratégia de Dados, Analytics e Inteligência Artificial;
+* Modernização de plataformas digitais.
 
 ---
 
-## Visão Arquitetural
+# O Que Este Portfólio Demonstra
 
-A solução proposta é baseada em uma arquitetura orientada a eventos, utilizando streaming para integrar canais digitais, plataformas de marketing e serviços corporativos.
+## Capacidades Estratégicas
 
-Principais componentes:
+* Definição de arquiteturas alvo (Target Architecture)
+* Construção de roadmaps de transformação
+* Avaliação de fornecedores e tecnologias
+* Governança arquitetural
+* Modelagem de capacidades (Capability Mapping)
+* Arquiteturas de referência
+* Gestão de decisões arquiteturais (ADR)
+* Planejamento de evolução tecnológica
 
-- Coleta e padronização de eventos
-- Plataforma de Streaming
-- Customer Data Platform (CDP)
-- Plataforma Analítica
-- Serviços de Ativação
-- Gestão de Consentimento
-- Governança de Dados
+## Capacidades Técnicas
 
----
-
-## Capacidades Demonstradas
-
-### Arquitetura de Soluções
-
-- Arquitetura orientada a eventos
-- Arquitetura de integração
-- APIs corporativas
-- Arquiteturas de referência
-
-### Arquitetura de Dados
-
-- Customer 360
-- Governança de dados
-- Catálogo de eventos
-- Ownership de domínios
-
-### Governança Arquitetural
-
-- Architecture Review Board
-- Architecture Decision Records (ADR)
-- Avaliação de fornecedores
-- Princípios arquiteturais
-
-### Estratégia Tecnológica
-
-- Roadmap de transformação
-- Arquitetura alvo (Target State)
-- Gestão de riscos arquiteturais
-- Análise de trade-offs
+* Event-Driven Architecture
+* API Design & Integration
+* Cloud-Native Architecture
+* Data Architecture
+* Customer Data Platforms (CDP)
+* Data Governance
+* Analytics Platforms
+* GenAI Platforms
+* Retrieval-Augmented Generation (RAG)
+* Agentic AI
+* AI Governance
 
 ---
 
-## Principais Decisões Arquiteturais
+# Domínios de Atuação
 
-| Decisão | Motivação |
-|----------|------------|
-| Arquitetura orientada a eventos | Reduzir acoplamento entre plataformas |
-| Kafka como barramento corporativo | Escalabilidade e independência tecnológica |
-| Estratégia CDP | Unificação de perfis de clientes |
-| API First | Padronização das integrações |
-| Governança centralizada de eventos | Qualidade e rastreabilidade dos dados |
+### Marketing Technology (AdTech)
+
+Customer 360, CDP, Tracking, Segmentação e Ativação Omnichannel.
+
+### Dados & Analytics
+
+Lakehouse, Data Products, Governança, BI e Analytics.
+
+### Inteligência Artificial
+
+GenAI, RAG, AI Agents, MLOps e AI Governance.
+
+### Arquitetura Corporativa
+
+Arquiteturas de Referência, Governança, Capacidades e Transformação Digital.
 
 ---
 
-## Estrutura do Repositório
+# Jornada de Construção
 
-```text
-docs/
-├── Contexto de negócio
-├── Visão arquitetural
-├── Roadmap de transformação
-├── Avaliação de riscos
-├── Capability Map
-└── Avaliação de fornecedores
+| Case | Tema | Status |
+|--------|--------|--------|
+| [Case 01](./case-01-adtech-omnichannel) | Plataforma AdTech Omnichannel | ✅ Concluído |
+| [Case 02](./case-02-enterprise-data-ai-platform) | Plataforma Corporativa de Dados & IA | 🚧 Em Construção |
+| [Case 03](./case-03-genai-agent-platform) | Plataforma de IA Generativa e Agentes | 📋 Planejado |
+| [Case 04](./case-04-data-ai-governance) | Framework de Governança de Dados & IA | 📋 Planejado |
+| [Case 05](./case-05-retail-media-network) | Retail Media Network | 📋 Planejado |
 
-architecture/
-├── Arquitetura de referência
-├── Arquitetura de dados
-└── Diagramas C4
+---
 
-adrs/
-├── Registros de decisões arquiteturais
+# Destaque Atual
 
-events/
-├── Taxonomia de eventos
-└── Ownership de eventos
+## Case 01 — Plataforma AdTech Omnichannel
 
-governance/
-├── Princípios arquiteturais
-├── Architecture Review Board
-└── Processo de onboarding de fornecedores
+Transformação arquitetural de um ecossistema AdTech para uma varejista omnichannel fictícia chamada **ShopSphere**.
 
-api/
-└── Contratos OpenAPI
+### Objetivos Estratégicos
+
+* Construção de Customer 360;
+* Segmentação em tempo quase real;
+* Ativação omnichannel;
+* Governança de dados;
+* Conformidade com LGPD;
+* Modernização das integrações;
+* Arquitetura orientada a eventos.
+
+---
+
+# Arquitetura Executiva (Target State)
+
+```mermaid
+flowchart LR
+
+    WEB[Website]
+    APP[Mobile App]
+    TRACK[Tracking API]
+
+    KAFKA[Apache Kafka]
+
+    CDP[Customer 360]
+
+    DATA[Data Platform]
+
+    ACT[Audience Activation]
+
+    WEB --> TRACK
+    APP --> TRACK
+
+    TRACK --> KAFKA
+
+    KAFKA --> CDP
+    KAFKA --> DATA
+
+    CDP --> ACT
 ```
 
 ---
 
-## Artefatos Produzidos
+# Principais Entregáveis
 
-- Assessment arquitetural
-- Capability Map
-- Arquitetura de referência
-- Diagramas C4
-- Arquitetura alvo (Target State)
-- Roadmap de transformação
-- ADRs
-- Contratos OpenAPI
-- Catálogo de eventos
-- Framework de governança
+## Arquitetura
+
+* Arquitetura de Referência
+* Arquitetura de Dados
+* Arquitetura Alvo (Target State)
+* Diagramas C4
+
+## Governança
+
+* Princípios Arquiteturais
+* Architecture Review Board
+* Processo de Onboarding de Vendors
+
+## Decisões Arquiteturais
+
+* ADR-001 — Arquitetura Orientada a Eventos
+* ADR-002 — Kafka vs Kinesis
+* ADR-003 — Buy vs Build para Customer Data Platform
+
+## Integração e Dados
+
+* OpenAPI 3.0
+* Catálogo de Eventos
+* Ownership de Eventos
+* Modelo de Governança de Dados
 
 ---
 
-## Próximos Passos da Jornada Arquitetural
+# Estrutura do Repositório
 
-Este case faz parte de uma trilha maior de arquitetura corporativa:
+```text
+.
+├── docs
+├── architecture
+├── adrs
+├── api
+├── events
+├── governance
+├── diagrams
+```
 
-1. Plataforma AdTech Omnichannel
-2. Enterprise Data Platform
-3. Customer 360 & Identity Resolution
-4. Plataforma de IA e GenAI
-5. Governança de Dados e IA
-6. Estratégia de Arquitetura Corporativa
+---
 
-Cada etapa representa uma evolução da arquitetura empresarial da organização.
+# Próxima Evolução
+
+O próximo case do portfólio abordará a evolução de uma Plataforma Corporativa de Dados & Inteligência Artificial, cobrindo:
+
+* Data Lakehouse
+* Data Mesh
+* Data Governance
+* Analytics Platform
+* Data Products
+* GenAI Platform
+* Agentic AI
+* AI Governance
+* Roadmap de Transformação de Dados & IA
+
+O objetivo será demonstrar como uma organização pode evoluir de um ambiente fragmentado de dados para uma plataforma corporativa moderna, preparada para Analytics Avançado, Machine Learning e Inteligência Artificial Generativa.
