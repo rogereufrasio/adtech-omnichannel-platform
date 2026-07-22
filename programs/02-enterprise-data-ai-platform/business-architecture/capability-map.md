@@ -1,13 +1,13 @@
-# Capability Assessment
+# Business Capability Map
 
 ## Informações do Documento
 
 | Item | Valor |
 |---|---|
-| Documento | Capability Assessment |
+| Documento | Business Capability Map |
 | Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Business Architecture |
-| Tipo | Avaliação de Capacidades de Negócio |
+| Tipo | Modelo de Capacidades de Negócio |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
 | Status | Em evolução |
@@ -16,236 +16,312 @@
 
 # Resumo Executivo
 
-A transformação para uma organização orientada por dados e Inteligência Artificial exige mais do que a adoção de novas plataformas tecnológicas. Ela depende da evolução das capacidades de negócio responsáveis por gerar, consumir, governar e transformar informações em valor.
+O **Business Capability Map** representa as capacidades de negócio necessárias para suportar a estratégia de transformação orientada por dados e Inteligência Artificial da organização.
 
-Este documento identifica as principais capacidades corporativas relacionadas ao programa **Enterprise Data & Artificial Intelligence Platform**, avalia seu nível atual de maturidade e define as prioridades de evolução necessárias para suportar os objetivos estratégicos da organização.
+Diferentemente da estrutura organizacional, que pode variar ao longo do tempo, as capacidades representam aquilo que a organização precisa ser capaz de executar para atingir seus objetivos estratégicos.
 
-A avaliação apresentada servirá como base para os próximos artefatos de Business Architecture, orientando a construção do **Business Capability Map**, dos **Value Streams** e da futura **Information Architecture**.
-
----
-
-# Objetivos da Avaliação
-
-Esta avaliação possui os seguintes objetivos:
-
-- Identificar as capacidades críticas para a transformação orientada por dados;
-- Avaliar o nível atual de maturidade das capacidades organizacionais;
-- Identificar lacunas que dificultam a evolução estratégica;
-- Priorizar investimentos arquiteturais;
-- Estabelecer uma visão comum entre negócio e tecnologia.
+Este modelo estabelece uma visão corporativa das capacidades relacionadas ao programa **Enterprise Data & Artificial Intelligence Platform**, servindo como referência para a evolução da Arquitetura da Informação, Arquitetura de Aplicações e Arquitetura Tecnológica.
 
 ---
 
-# Escopo
+# Objetivos
 
-A avaliação contempla exclusivamente capacidades relacionadas ao programa Enterprise Data & Artificial Intelligence Platform.
+Este documento possui os seguintes objetivos:
 
-Não fazem parte deste documento capacidades específicas de aplicações, infraestrutura ou soluções tecnológicas, que serão detalhadas em fases posteriores da arquitetura.
+- Identificar as capacidades de negócio suportadas pelo programa;
+- Estabelecer uma visão comum entre negócio e arquitetura;
+- Orientar a evolução das capacidades organizacionais;
+- Servir como referência para os próximos domínios arquiteturais;
+- Demonstrar o alinhamento entre estratégia e arquitetura.
 
 ---
 
-# Modelo de Maturidade
+# Modelo de Organização
 
-Para esta avaliação foi adotado um modelo simplificado de cinco níveis de maturidade.
+As capacidades estão organizadas em três níveis hierárquicos.
 
-| Nível | Descrição |
+| Nível | Objetivo |
 |---|---|
-| 1 - Inicial | Processos predominantemente manuais, pouca padronização e alta dependência de conhecimento individual. |
-| 2 - Repetível | Existem práticas recorrentes, porém com baixa integração entre áreas. |
-| 3 - Definido | Processos padronizados, responsabilidades estabelecidas e governança inicial. |
-| 4 - Gerenciado | Capacidades monitoradas por indicadores e continuamente aprimoradas. |
-| 5 - Otimizado | Capacidade corporativa totalmente integrada, orientada por métricas e melhoria contínua. |
+| Nível 1 | Macrocapacidades de negócio. |
+| Nível 2 | Capacidades organizacionais. |
+| Nível 3 | Capacidades especializadas que suportam as capacidades do nível anterior. |
+
+Essa estrutura permite que diferentes públicos naveguem pelo modelo conforme o nível de detalhamento desejado.
 
 ---
 
-# Capacidades Avaliadas
+# Business Capability Map
 
-Foram identificadas seis capacidades estratégicas que sustentam a visão arquitetural do programa.
+```mermaid
+flowchart TB
 
-| Capacidade | Papel Estratégico |
-|---|---|
-| Gestão de Dados Corporativos | Garantir que informações sejam tratadas como ativos organizacionais. |
-| Governança de Dados | Definir políticas, responsabilidades e padrões corporativos. |
-| Analytics Corporativo | Transformar dados em conhecimento para suporte à decisão. |
-| Inteligência Artificial | Disponibilizar capacidades inteligentes reutilizáveis para toda a organização. |
-| Gestão de Produtos de Dados | Disponibilizar dados como produtos reutilizáveis e confiáveis. |
-| Gestão de Metadados | Promover entendimento comum sobre os ativos de informação. |
+subgraph L1["Nível 1 — Macrocapacidades"]
+
+CG["Gestão de Clientes"]
+
+CO["Gestão Comercial"]
+
+GD["Gestão de Dados Corporativos"]
+
+AI["Inteligência Artificial"]
+
+DS["Suporte à Decisão"]
+
+end
+
+CG --> CG1
+CO --> CO1
+GD --> GD1
+AI --> AI1
+DS --> DS1
+
+subgraph L2["Nível 2 — Capacidades"]
+
+CG1["Customer 360"]
+
+CG2["Segmentação"]
+
+CG3["Relacionamento"]
+
+CO1["Gestão de Vendas"]
+
+CO2["Marketing"]
+
+CO3["Pricing"]
+
+GD1["Governança"]
+
+GD2["Qualidade"]
+
+GD3["Metadados"]
+
+GD4["Produtos de Dados"]
+
+AI1["Machine Learning"]
+
+AI2["IA Generativa"]
+
+AI3["Agentes Inteligentes"]
+
+DS1["Analytics"]
+
+DS2["Business Intelligence"]
+
+DS3["Decision Intelligence"]
+
+end
+```
 
 ---
 
-# Avaliação das Capacidades
+# Descrição das Macrocapacidades
 
-| Capacidade | Atual | Alvo | Prioridade |
-|---|:---:|:---:|:---:|
-| Gestão de Dados Corporativos | 2 | 4 | Alta |
-| Governança de Dados | 2 | 4 | Alta |
-| Analytics Corporativo | 3 | 5 | Alta |
-| Inteligência Artificial | 1 | 4 | Muito Alta |
-| Gestão de Produtos de Dados | 1 | 4 | Muito Alta |
-| Gestão de Metadados | 2 | 4 | Média |
+## Gestão de Clientes
+
+Conjunto de capacidades responsáveis por compreender, acompanhar e fortalecer o relacionamento com clientes ao longo de toda sua jornada.
+
+Principais objetivos:
+
+- Construção de visão integrada do cliente;
+- Segmentação de públicos;
+- Personalização de experiências.
 
 ---
 
-# Análise Executiva
+## Gestão Comercial
+
+Capacidades responsáveis por apoiar decisões relacionadas a vendas, campanhas, produtos e estratégias comerciais.
+
+Principais objetivos:
+
+- Melhorar desempenho comercial;
+- Apoiar decisões de marketing;
+- Otimizar resultados financeiros.
+
+---
 
 ## Gestão de Dados Corporativos
 
-A organização já produz grandes volumes de dados provenientes de diferentes áreas de negócio. Entretanto, essas informações ainda são tratadas predominantemente sob a perspectiva das aplicações que as originam.
+Capacidade responsável por garantir que informações sejam tratadas como ativos organizacionais.
 
-Essa abordagem limita a reutilização dos dados entre domínios organizacionais, aumenta o esforço de integração e reduz a capacidade de gerar uma visão corporativa consistente.
+Inclui:
 
-A evolução dessa capacidade permitirá estabelecer uma fundação comum para todos os demais componentes da plataforma.
+- Governança;
+- Qualidade;
+- Metadados;
+- Gestão de Produtos de Dados.
 
----
-
-## Governança de Dados
-
-Embora existam iniciativas locais de controle e qualidade das informações, ainda não há um modelo corporativo suficientemente consolidado para garantir consistência entre diferentes áreas.
-
-Como consequência, definições de indicadores, regras de negócio e conceitos podem variar entre domínios, reduzindo a confiança na informação.
-
-A evolução dessa capacidade permitirá estabelecer uma governança transversal e escalável.
-
----
-
-## Analytics Corporativo
-
-A organização já possui experiência significativa na utilização de informações para suporte à decisão.
-
-Entretanto, a produção de análises ainda depende, em muitos casos, de iniciativas específicas de cada área, dificultando a padronização e a reutilização dos ativos analíticos.
-
-O fortalecimento dessa capacidade permitirá ampliar o acesso a informações estratégicas e acelerar a tomada de decisão.
+Esta é considerada uma das capacidades centrais do programa.
 
 ---
 
 ## Inteligência Artificial
 
-A adoção de Inteligência Artificial encontra-se em estágio inicial.
+Conjunto de capacidades voltadas para criação e disponibilização de recursos inteligentes reutilizáveis por diferentes áreas da organização.
 
-Existem oportunidades relevantes para utilização de modelos preditivos, IA Generativa e automação inteligente, porém essas iniciativas ainda não fazem parte de uma estratégia corporativa integrada.
+Inclui:
 
-A criação de uma capacidade compartilhada permitirá reduzir duplicidades, acelerar novos casos de uso e estabelecer padrões de governança.
-
----
-
-## Gestão de Produtos de Dados
-
-Atualmente, dados são disponibilizados principalmente por meio de integrações específicas ou consultas diretas às bases de informação.
-
-Esse modelo dificulta reutilização, ownership e evolução independente.
-
-A adoção de Data Products permitirá transformar informações em ativos reutilizáveis, documentados e orientados ao consumo corporativo.
+- Modelos analíticos;
+- IA Generativa;
+- Agentes Inteligentes.
 
 ---
 
-## Gestão de Metadados
+## Suporte à Decisão
 
-Grande parte do conhecimento sobre os dados encontra-se distribuída entre equipes e especialistas.
+Capacidade responsável por transformar informação em conhecimento para apoiar decisões estratégicas, táticas e operacionais.
 
-A ausência de um modelo corporativo de metadados aumenta o tempo necessário para localizar informações, compreender conceitos de negócio e avaliar impactos de mudanças.
+Inclui:
 
-O fortalecimento dessa capacidade contribuirá para ampliar transparência, rastreabilidade e confiança.
-
----
-
-# Lacunas Identificadas
-
-A avaliação evidencia algumas lacunas estruturais que limitam a evolução da organização.
-
-## Visão Fragmentada dos Dados
-
-Os ativos de informação ainda estão fortemente associados aos sistemas que os produzem, dificultando seu consumo corporativo.
+- Analytics;
+- Business Intelligence;
+- Decision Intelligence.
 
 ---
 
-## Baixa Padronização
+# Relação com os Objetivos Estratégicos
 
-Existem diferentes interpretações para conceitos de negócio semelhantes, reduzindo consistência analítica.
-
----
-
-## Ausência de Produtos Reutilizáveis
-
-A organização ainda compartilha dados por iniciativas específicas, em vez de disponibilizá-los como produtos corporativos.
-
----
-
-## Escalabilidade Limitada para IA
-
-A inexistência de uma capacidade corporativa de Inteligência Artificial dificulta expansão segura e sustentável dessa disciplina.
+| Objetivo Estratégico | Capacidades Relacionadas |
+|---|---|
+| Organização orientada por dados | Gestão de Dados Corporativos |
+| Melhorar experiência do cliente | Gestão de Clientes |
+| Aumentar eficiência operacional | Gestão Comercial |
+| Democratizar Inteligência Artificial | Inteligência Artificial |
+| Apoiar decisões corporativas | Suporte à Decisão |
 
 ---
 
-# Prioridades de Evolução
+# Relação entre as Capacidades
 
-Com base na avaliação realizada, recomenda-se a seguinte ordem de evolução.
+As macrocapacidades não operam de forma isolada.
 
-| Prioridade | Capacidade | Justificativa |
-|---|---|---|
-| 1 | Gestão de Dados Corporativos | Fundação para todas as demais capacidades. |
-| 2 | Governança de Dados | Garantir confiança e padronização. |
-| 3 | Gestão de Produtos de Dados | Promover reutilização e ownership. |
-| 4 | Inteligência Artificial | Escalar inovação baseada em dados. |
-| 5 | Analytics Corporativo | Ampliar geração de valor para o negócio. |
-| 6 | Gestão de Metadados | Sustentar governança e descoberta de informações. |
+A evolução do programa pressupõe uma relação contínua entre elas.
+
+```text
+Gestão de Clientes
+        │
+        ▼
+Gestão Comercial
+        │
+        ▼
+Gestão de Dados Corporativos
+        │
+        ├─────────────┐
+        ▼             ▼
+Inteligência Artificial
+        │             │
+        └──────┬──────┘
+               ▼
+      Suporte à Decisão
+```
+
+A Gestão de Dados Corporativos atua como elemento integrador do modelo, disponibilizando informações confiáveis para as capacidades analíticas e inteligentes.
 
 ---
 
-# Conclusão
+# Alinhamento com os Próximos Domínios Arquiteturais
 
-A avaliação demonstra que a organização possui bases importantes para sua transformação digital, porém ainda apresenta lacunas significativas relacionadas à gestão corporativa dos dados.
+Este modelo orientará diretamente os próximos blocos do programa.
 
-A evolução das capacidades identificadas permitirá estabelecer uma plataforma orientada ao negócio, preparada para suportar Analytics, Inteligência Artificial e novos produtos digitais de forma integrada e sustentável.
+## Information Architecture
 
-Mais do que uma iniciativa tecnológica, a Enterprise Data & Artificial Intelligence Platform representa a evolução das capacidades organizacionais necessárias para sustentar uma estratégia Data-Driven e AI-Driven.
+Cada macrocapacidade será desdobrada em:
+
+- Domínios de Dados;
+- Produtos de Dados;
+- Modelo Corporativo de Informação;
+- Estratégia de Metadados.
+
+---
+
+## Application Architecture
+
+As capacidades de negócio serão suportadas por aplicações e serviços corporativos.
+
+---
+
+## Technology Architecture
+
+A infraestrutura será definida para habilitar as capacidades identificadas neste documento.
+
+---
+
+# Benefícios Esperados
+
+A adoção deste modelo proporciona:
+
+- Alinhamento entre estratégia e arquitetura;
+- Redução de sobreposição de responsabilidades;
+- Maior clareza sobre capacidades organizacionais;
+- Evolução arquitetural orientada ao negócio;
+- Base consistente para transformação digital.
+
+---
+
+# Considerações Arquiteturais
+
+É importante destacar que o mapa de capacidades representa **o que a organização precisa ser capaz de fazer**, e não **como essas capacidades serão implementadas**.
+
+Essa separação reduz o acoplamento entre estratégia e tecnologia, permitindo que plataformas e soluções evoluam ao longo do tempo sem alterar o modelo de negócio.
 
 ---
 
 # Relação com os Próximos Artefatos
 
-Este documento fornece os insumos para:
+Este documento servirá como base para:
 
-- Business Capability Map;
 - Business Value Streams;
 - Business Domains;
-- Data Ownership Model.
-
-Esses artefatos detalharão como as capacidades avaliadas se relacionam entre si e como sustentam a estratégia apresentada no Foundation.
+- Data Ownership Model;
+- Enterprise Information Model;
+- Data Domain Model.
 
 ---
 
 # Decisões Arquiteturais
 
-## DA-01 — Capacidades como Unidade de Planejamento
+## DA-01 — Capacidades Independentes da Estrutura Organizacional
 
 **Decisão**
 
-A evolução do programa será organizada por capacidades de negócio, e não por projetos ou tecnologias específicas.
+O modelo de capacidades deve permanecer estável independentemente da estrutura hierárquica da organização.
 
 **Motivação**
 
-Garantir alinhamento permanente entre estratégia organizacional e arquitetura corporativa.
+Capacidades representam aquilo que o negócio precisa executar, enquanto estruturas organizacionais podem mudar ao longo do tempo.
 
 ---
 
-## DA-02 — Evolução Baseada em Maturidade
+## DA-02 — Organização por Macrocapacidades
 
 **Decisão**
 
-Os investimentos arquiteturais deverão priorizar capacidades com maior impacto estratégico e menor nível de maturidade.
+As capacidades serão organizadas em níveis hierárquicos para facilitar comunicação entre diferentes públicos.
 
 **Motivação**
 
-Maximizar geração de valor e reduzir riscos de transformação.
+Executivos necessitam de uma visão simplificada, enquanto arquitetos demandam maior detalhamento.
 
 ---
 
-## DA-03 — Avaliação Contínua
+## DA-03 — Arquitetura Orientada por Capacidades
 
 **Decisão**
 
-O Capability Assessment deverá ser revisado periodicamente durante a evolução do programa.
+Os próximos domínios arquiteturais deverão utilizar este modelo como referência para definição de informações, aplicações e tecnologias.
 
 **Motivação**
 
-As capacidades organizacionais evoluem continuamente e devem refletir as mudanças estratégicas da organização.
+Garantir rastreabilidade entre estratégia, negócio e implementação.
+
+---
+
+# Próximos Passos
+
+Os próximos artefatos da Business Architecture serão:
+
+- Business Value Streams;
+- Business Domains;
+- Data Ownership Model.
+
+Ao final da Business Architecture, o programa possuirá uma visão completa das capacidades organizacionais que sustentarão toda a evolução da plataforma corporativa de dados e Inteligência Artificial.

@@ -84,11 +84,11 @@ Arquiteturas de Referência, Governança, Capacidades e Transformação Digital.
 
 | Case | Tema | Status |
 |--------|--------|--------|
-| [Case 01](./case-01-adtech-omnichannel) | Plataforma AdTech Omnichannel | ✅ Concluído |
-| [Case 02](./case-02-enterprise-data-ai-platform) | Plataforma Corporativa de Dados & IA | 🚧 Em Construção |
-| [Case 03](./case-03-genai-agent-platform) | Plataforma de IA Generativa e Agentes | 📋 Planejado |
-| [Case 04](./case-04-data-ai-governance) | Framework de Governança de Dados & IA | 📋 Planejado |
-| [Case 05](./case-05-retail-media-network) | Retail Media Network | 📋 Planejado |
+| [Program 01](./programs/01-enterprise-adtech-platform) | Plataforma AdTech Omnichannel | ✅ Concluído |
+| [Program 02](./programs/02-enterprise-data-ai-platform/) | Plataforma Corporativa de Dados & IA | 🚧 Em Construção |
+| [Program 03](./programs/03-enterprise-integration-platform/) | Plataforma de IA Generativa e Agentes | 📋 Planejado |
+| [Program 04](./programs/04-enterprise-customer-platform/) | Framework de Governança de Dados & IA | 📋 Planejado |
+| [Program 05](./programs/05-enterprise-observability-platform/) | Retail Media Network | 📋 Planejado |
 
 ---
 
