@@ -1,30 +1,59 @@
 # Arquitetura Executiva
 
-```mermaid
-flowchart LR
+## Informações do Documento
 
-ERP[ERP]
-CRM[CRM]
-ECOM[E-commerce]
-APP[Mobile]
+| Item | Valor |
+| --- | --- |
+| Documento | Arquitetura Executiva |
+| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Categoria | Visão Executiva de Arquitetura |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.1 |
+| Status | Em evolução |
 
-ERP --> LAKEHOUSE
-CRM --> LAKEHOUSE
-ECOM --> LAKEHOUSE
-APP --> LAKEHOUSE
+---
 
-LAKEHOUSE[Lakehouse Corporativo]
+# Objetivo
 
-LAKEHOUSE --> BI[Analytics Platform]
+A **Arquitetura Executiva** apresenta a visão de alto nível da Enterprise Data & Artificial Intelligence Platform, demonstrando como dados, informação e Inteligência Artificial serão organizados como capacidades estratégicas da organização.
 
-LAKEHOUSE --> MLOPS[MLOps]
+Este documento é direcionado principalmente para:
 
-MLOPS --> GENAI[GenAI Platform]
+- CIO;
+- CTO;
+- Chief Data Officer;
+- Lideranças de negócio;
+- Executivos responsáveis por transformação digital.
 
-GENAI --> RAG[RAG Services]
+O objetivo é comunicar:
 
-RAG --> AGENTS[AI Agents]
+- por que a plataforma existe;
+- quais capacidades estratégicas serão estabelecidas;
+- como a organização evoluirá para um modelo orientado a dados e Inteligência Artificial.
 
-BI --> USERS[Business Users]
+---
 
-AGENTS --> USERS
+# Visão Estratégica
+
+A organização evolui de um cenário onde dados estão distribuídos entre diferentes sistemas e áreas para um modelo corporativo onde dados são tratados como ativos estratégicos.
+
+A transformação proposta conecta:
+
+```text
+Domínios de Negócio
+
+        ↓
+
+Plataforma Corporativa de Dados
+
+        ↓
+
+Produtos de Dados Confiáveis
+
+        ↓
+
+Capacidades de Analytics e IA
+
+        ↓
+
+Consumo Estratégico de Negócio

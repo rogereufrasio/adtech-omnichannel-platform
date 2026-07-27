@@ -2,15 +2,15 @@
 
 ## Informações do Documento
 
-| Item                 | Valor                                              |
-| -------------------- | -------------------------------------------------- |
-| Documento            | Company Profile                                    |
+| Item | Valor |
+| --- | --- |
+| Documento | Company Profile |
 | Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
-| Domínio Arquitetural | Foundation                                         |
-| Tipo                 | Contexto Organizacional                            |
-| Responsável          | Enterprise Architecture Practice                   |
-| Versão               | 1.0                                                |
-| Status               | Em evolução                                        |
+| Domínio Arquitetural | Foundation |
+| Tipo | Contexto Organizacional |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.1 |
+| Status | Em evolução |
 
 ---
 
@@ -18,11 +18,17 @@
 
 A organização representada neste programa é uma empresa de varejo digital com atuação omnicanal, combinando operações físicas, canais digitais, relacionamento com clientes e ecossistemas de parceiros.
 
-Ao longo de sua evolução, a empresa expandiu significativamente seus canais de interação, produtos digitais e modelos de negócio, resultando em um ambiente corporativo altamente dependente de informação.
+Ao longo de sua evolução, a empresa ampliou significativamente sua presença digital, seus canais de interação e seus modelos de negócio, tornando-se altamente dependente da capacidade de capturar, interpretar e utilizar informações estratégicas.
 
-Essa evolução trouxe novas oportunidades relacionadas ao uso estratégico de dados e Inteligência Artificial, mas também aumentou desafios relacionados à fragmentação de informações, escalabilidade analítica, governança e velocidade de inovação.
+Essa evolução trouxe novas oportunidades relacionadas ao uso de dados e Inteligência Artificial, mas também aumentou desafios relacionados a:
 
-A **Enterprise Data & Artificial Intelligence Platform** surge como uma iniciativa estratégica para estabelecer uma capacidade corporativa capaz de transformar dados em ativos reutilizáveis, confiáveis e orientados ao negócio.
+- fragmentação de informações;
+- ausência de visão corporativa integrada;
+- escalabilidade analítica;
+- governança de dados;
+- adoção segura de Inteligência Artificial.
+
+A **Enterprise Data & Artificial Intelligence Platform** surge como uma iniciativa estratégica para estabelecer uma capacidade corporativa capaz de transformar dados em ativos confiáveis, reutilizáveis e orientados ao negócio.
 
 ---
 
@@ -30,109 +36,119 @@ A **Enterprise Data & Artificial Intelligence Platform** surge como uma iniciati
 
 ## Perfil Corporativo
 
-A organização é uma empresa de varejo omnicanal que conecta consumidores, produtos, parceiros e operações por meio de uma experiência integrada.
+A organização representa uma empresa de varejo omnicanal que conecta consumidores, produtos, parceiros e operações através de uma experiência integrada.
 
 Sua operação combina:
 
-* Lojas físicas;
-* Plataforma de comércio eletrônico;
-* Aplicativos digitais;
-* Marketplace;
-* Programas de relacionamento;
-* Ecossistemas de parceiros;
-* Operações logísticas.
+- lojas físicas;
+- plataforma de comércio eletrônico;
+- aplicações móveis;
+- marketplace;
+- programas de relacionamento;
+- ecossistema de parceiros;
+- operações logísticas.
 
-A estratégia corporativa está baseada na criação de experiências personalizadas, eficiência operacional e expansão de novos modelos digitais.
+A estratégia corporativa está baseada em:
+
+- experiência personalizada do cliente;
+- eficiência operacional;
+- expansão de canais digitais;
+- criação de novos modelos de negócio;
+- utilização estratégica de informação.
 
 ---
 
 # Modelo de Negócio
 
-A organização opera em um ambiente onde dados possuem papel fundamental para:
+O modelo operacional depende da capacidade de conectar informações provenientes de diferentes áreas corporativas.
 
-* Entender comportamento dos clientes;
-* Melhorar experiências digitais;
-* Otimizar operações;
-* Criar novos serviços;
-* Aumentar eficiência comercial.
+Dados possuem papel fundamental para:
 
-O modelo de negócio depende da capacidade de conectar informações provenientes de diferentes áreas corporativas.
+- compreender comportamento dos clientes;
+- melhorar experiências digitais;
+- otimizar operações;
+- criar novos serviços;
+- aumentar eficiência comercial.
 
-Principais áreas envolvidas:
+Principais domínios envolvidos:
 
-| Domínio     | Papel Estratégico                                        |
-| ----------- | -------------------------------------------------------- |
-| Comercial   | Gestão de vendas, produtos e relacionamento com clientes |
-| Marketing   | Aquisição, campanhas e personalização                    |
-| Atendimento | Experiência e relacionamento pós-venda                   |
-| Logística   | Operação, estoque e distribuição                         |
-| Financeiro  | Controle financeiro e indicadores corporativos           |
-| Tecnologia  | Plataformas digitais e capacidades corporativas          |
+| Domínio | Papel Estratégico |
+| --- | --- |
+| Comercial | Gestão de vendas, produtos e relacionamento com clientes |
+| Marketing | Aquisição, campanhas e personalização |
+| Atendimento | Experiência e relacionamento pós-venda |
+| Logística | Operação, estoque e distribuição |
+| Financeiro | Controle financeiro e indicadores corporativos |
+| Tecnologia | Plataformas digitais e capacidades corporativas |
 
 ---
 
 # Jornada de Evolução Digital
 
-A organização passou por diferentes fases de evolução tecnológica.
+A organização passou por diferentes estágios de evolução tecnológica e operacional.
 
 ## Fase 1 — Digitalização de Processos
 
-Objetivo:
+### Objetivo
 
 Modernizar operações existentes através de sistemas corporativos.
 
-Características:
+### Características
 
-* Sistemas transacionais;
-* Automação de processos;
-* Digitalização de canais.
+- sistemas transacionais;
+- automação de processos;
+- digitalização de canais.
 
 ---
 
 ## Fase 2 — Expansão Omnicanal
 
-Objetivo:
+### Objetivo
 
 Criar experiências integradas entre canais físicos e digitais.
 
-Características:
+### Características
 
-* Comércio eletrônico;
-* Aplicações móveis;
-* Integração entre canais;
-* Crescimento do ecossistema digital.
+- comércio eletrônico;
+- aplicações móveis;
+- integração entre canais;
+- crescimento do ecossistema digital.
 
 ---
 
 ## Fase 3 — Organização Orientada a Dados
 
-Objetivo:
+### Objetivo
 
 Transformar dados em capacidade estratégica.
 
-Características:
+### Características
 
-* Uso intensivo de analytics;
-* Decisões orientadas por informação;
-* Inteligência Artificial aplicada ao negócio.
+- uso intensivo de analytics;
+- decisões orientadas por informação;
+- inteligência artificial aplicada ao negócio;
+- criação de produtos de dados.
 
-Esta fase representa o contexto atual da Enterprise Data & Artificial Intelligence Platform.
+Esta fase representa o contexto atual da **Enterprise Data & Artificial Intelligence Platform**.
 
 ---
 
 # Desafios Estratégicos Atuais
 
-A evolução do negócio criou desafios que precisam ser endereçados por uma abordagem corporativa de dados e IA.
+A evolução do negócio criou desafios que precisam ser tratados através de uma abordagem corporativa de dados e IA.
+
+---
 
 ## Fragmentação de Informações
 
-Dados distribuídos em diferentes sistemas e áreas dificultam uma visão integrada do negócio.
+Dados distribuídos entre diferentes sistemas e áreas dificultam uma visão integrada do negócio.
 
-Impactos:
+### Impactos
 
-* Informações inconsistentes;
-* Dificuldade de consolidação;
-* Baixa reutilização.
+- informações inconsistentes;
+- dificuldade de consolidação;
+- baixa reutilização de dados;
+- aumento de esforço operacional.
 
 ---
 
@@ -140,41 +156,51 @@ Impactos:
 
 A demanda por novos indicadores, análises e modelos inteligentes cresce mais rapidamente que a capacidade atual de atendimento.
 
-Impactos:
+### Impactos
 
-* Maior tempo para geração de insights;
-* Dependência de processos manuais;
-* Dificuldade de priorização.
+- maior tempo para geração de insights;
+- dependência de processos manuais;
+- dificuldade de priorização;
+- baixa velocidade de inovação.
 
 ---
 
 ## Ausência de Modelo Corporativo de Dados
 
-A organização precisa evoluir de uma visão orientada a aplicações para uma visão orientada a capacidades e domínios de negócio.
+A organização precisa evoluir de uma visão orientada a aplicações para uma visão orientada a:
 
-Impactos:
+- capacidades;
+- domínios de negócio;
+- produtos de dados;
+- ownership.
 
-* Falta de ownership claro;
-* Dificuldade de governança;
-* Redundância de informações.
+### Impactos
+
+- falta de responsabilidade clara sobre dados;
+- dificuldade de governança;
+- redundância de informações;
+- baixa confiança nos dados.
 
 ---
 
-## Necessidade de Acelerar Inteligência Artificial
+## Necessidade de Escalar Inteligência Artificial
 
-Novas oportunidades de negócio dependem da capacidade de aplicar IA de forma segura e escalável.
+Novas oportunidades de negócio dependem da capacidade de aplicar IA de forma segura, governada e escalável.
 
-Impactos:
+### Impactos
 
-* Necessidade de padrões corporativos;
-* Controle de riscos;
-* Escalabilidade de soluções inteligentes.
+- necessidade de padrões corporativos;
+- controle de riscos;
+- reutilização de capacidades;
+- governança de modelos.
 
 ---
 
 # Direcionadores Estratégicos
 
-A criação da plataforma corporativa de dados e IA está alinhada aos seguintes direcionadores organizacionais:
+A criação da plataforma corporativa de dados e IA está alinhada aos seguintes direcionadores:
+
+---
 
 ## Experiência Personalizada
 
@@ -190,33 +216,33 @@ Aplicar inteligência e automação para melhorar eficiência operacional.
 
 ## Inovação Digital
 
-Criar novos produtos e serviços baseados em informação.
+Criar novos produtos e serviços baseados em informação e inteligência.
 
 ---
 
 ## Decisão Orientada por Dados
 
-Aumentar capacidade analítica em todos os níveis organizacionais.
+Aumentar a capacidade analítica em todos os níveis organizacionais.
 
 ---
 
 ## Governança e Confiança
 
-Garantir que dados sejam utilizados de forma segura, ética e responsável.
+Garantir utilização segura, ética e responsável dos dados e modelos de IA.
 
 ---
 
 # Papel Estratégico da Arquitetura Corporativa
 
-A Enterprise Architecture Practice atua como elemento integrador entre estratégia de negócio, informação e tecnologia.
+A **Enterprise Architecture Practice** atua como elemento integrador entre estratégia de negócio, informação e tecnologia.
 
 Neste programa, Arquitetura Corporativa é responsável por:
 
-* Definir a visão futura;
-* Garantir alinhamento estratégico;
-* Estabelecer princípios arquiteturais;
-* Orientar decisões;
-* Promover evolução sustentável.
+- definir a visão futura;
+- garantir alinhamento estratégico;
+- estabelecer princípios arquiteturais;
+- orientar decisões;
+- promover evolução sustentável.
 
 A arquitetura evita que iniciativas de dados e IA sejam desenvolvidas como soluções isoladas, estabelecendo uma capacidade corporativa integrada.
 
@@ -224,29 +250,16 @@ A arquitetura evita que iniciativas de dados e IA sejam desenvolvidas como solu�
 
 # Relação com o Programa Enterprise Data & Artificial Intelligence Platform
 
-O contexto organizacional apresentado neste documento justifica a criação do programa estratégico.
+O contexto organizacional apresentado justifica a criação do programa estratégico.
 
-A iniciativa responde diretamente aos desafios corporativos através da criação de capacidades relacionadas a:
+A iniciativa responde diretamente aos desafios corporativos através do desenvolvimento de capacidades relacionadas a:
 
-* Dados corporativos;
-* Produtos de dados;
-* Inteligência Artificial;
-* Governança;
-* Consumo estratégico de informação.
-
----
-
-# Relação com os Próximos Artefatos
-
-Este documento serve como base para:
-
-## Business Context
-
-Detalhar os desafios estratégicos, stakeholders, capacidades atuais e oportunidades de transformação.
-
-## Architecture Vision
-
-Definir como a arquitetura futura responderá aos direcionadores organizacionais.
+- plataforma corporativa de dados;
+- produtos de dados;
+- analytics;
+- Inteligência Artificial;
+- governança;
+- consumo estratégico de informação.
 
 ---
 
@@ -254,23 +267,23 @@ Definir como a arquitetura futura responderá aos direcionadores organizacionais
 
 ## DA-01 — Dados como Capacidade Corporativa
 
-**Decisão**
+### Decisão
 
 Dados devem ser tratados como uma capacidade estratégica transversal à organização.
 
-**Motivação**
+### Motivação
 
-A dependência crescente de informação exige uma abordagem corporativa, evitando iniciativas isoladas.
+A crescente dependência de informação exige uma abordagem corporativa, evitando iniciativas isoladas.
 
 ---
 
 ## DA-02 — Arquitetura Orientada ao Negócio
 
-**Decisão**
+### Decisão
 
 A evolução da plataforma deve ser guiada por necessidades e capacidades de negócio.
 
-**Motivação**
+### Motivação
 
 Garantir que tecnologia suporte objetivos estratégicos e geração de valor.
 
@@ -278,37 +291,49 @@ Garantir que tecnologia suporte objetivos estratégicos e geração de valor.
 
 ## DA-03 — Evolução Progressiva da Arquitetura
 
-**Decisão**
+### Decisão
 
 A transformação deve evoluir do nível estratégico para o detalhamento arquitetural.
 
-**Motivação**
+### Motivação
 
 Garantir consistência entre visão, capacidades, soluções e implementação.
 
 ---
 
+# Relação com Próximos Artefatos
+
+Este documento serve como base para:
+
+## Business Context
+
+Detalhar:
+
+- desafios estratégicos;
+- stakeholders;
+- capacidades atuais;
+- oportunidades de transformação.
+
+## Architecture Vision
+
+Definir:
+
+- arquitetura futura;
+- princípios;
+- capacidades alvo;
+- modelo de evolução.
+
+---
+
 # Próximos Passos
 
-O próximo artefato do Foundation Block será:
+Após a conclusão do Foundation Block, o programa avançará para:
 
 ```text
-docs/business-context.md
-```
+Business Architecture
 
-Este documento irá aprofundar:
-
-* Contexto estratégico;
-* Stakeholders;
-* Problemas de negócio;
-* Capacidades atuais;
-* Oportunidades de transformação;
-* Motivadores para a arquitetura alvo.
-
-Após sua conclusão, será desenvolvido o:
-
-```text
-docs/architecture-vision.md
-```
-
-que consolidará a visão arquitetural futura do programa.
+├── Capability Assessment
+├── Business Capability Map
+├── Business Value Streams
+├── Business Domains
+└── Data Ownership Model

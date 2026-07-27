@@ -1,36 +1,48 @@
-# Enterprise Data & Artificial Intelligence Platform
+# Enterprise Data & Artificial Intelligence Platform (EDAIP)
 
 ## Informações do Documento
 
-| Item                 | Valor                                              |
-| -------------------- | -------------------------------------------------- |
-| Documento            | README Executivo do Programa                       |
-| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
-| Tipo                 | Landing Page Executiva                             |
-| Responsável          | Enterprise Architecture Practice                   |
-| Versão               | 1.0                                                |
-| Status               | Em evolução                                        |
+| Item | Valor |
+| --- | --- |
+| Documento | README Executivo do Programa |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform (EDAIP) |
+| Tipo | Landing Page Executiva |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.1 |
+| Status | Em evolução |
 
 ---
 
 # Resumo Executivo
 
-A **Enterprise Data & Artificial Intelligence Platform** representa um programa estratégico de Arquitetura Corporativa criado para estabelecer as capacidades necessárias para uma organização orientada a dados e preparada para adoção de Inteligência Artificial em escala corporativa.
+A **Enterprise Data & Artificial Intelligence Platform (EDAIP)** representa um programa estratégico de Arquitetura Corporativa criado para estabelecer as capacidades necessárias para uma organização orientada a dados e preparada para adoção de Inteligência Artificial em escala corporativa.
 
 O programa define a visão arquitetural, os princípios, as capacidades e o roadmap necessários para transformar dados corporativos em ativos estratégicos de negócio, permitindo maior eficiência operacional, melhores decisões e aceleração da inovação digital.
 
-Mais do que uma iniciativa tecnológica, este programa estabelece uma capacidade corporativa integrada entre negócio, dados, tecnologia e governança.
+Mais do que uma iniciativa tecnológica, este programa estabelece uma capacidade corporativa integrada entre:
+
+- Estratégia de negócio;
+- Domínios corporativos;
+- Dados;
+- Inteligência Artificial;
+- Tecnologia;
+- Governança.
 
 A arquitetura proposta conecta:
 
-* Domínios de negócio;
-* Plataforma corporativa de dados;
-* Produtos de dados confiáveis;
-* Capacidades de Inteligência Artificial;
-* Consumo estratégico de informações;
-* Governança transversal.
+- Domínios de negócio;
+- Plataforma corporativa de dados e integração;
+- Produtos de dados confiáveis;
+- Capacidades de Inteligência Artificial;
+- Consumo estratégico de informações;
+- Governança transversal.
 
-O objetivo final é criar uma fundação sustentável para uma organização **Data-Driven** e **AI-Enabled**.
+O objetivo final é criar uma fundação sustentável para uma organização:
+
+- **Data-Driven**;
+- **AI-Enabled**;
+- Orientada por capacidades;
+- Preparada para evolução contínua.
 
 ---
 
@@ -38,9 +50,24 @@ O objetivo final é criar uma fundação sustentável para uma organização **D
 
 A Enterprise Data & Artificial Intelligence Platform possui os seguintes objetivos estratégicos:
 
-## Estabelecer uma Fundação Corporativa de Dados
+---
 
-Criar uma arquitetura capaz de suportar a coleta, armazenamento, processamento, governança e disponibilização de informações corporativas.
+## Estabelecer uma Fundação Corporativa de Dados e Integração
+
+Criar uma arquitetura capaz de suportar:
+
+- Coleta;
+- Integração;
+- Armazenamento;
+- Processamento;
+- Governança;
+- Disponibilização de informações corporativas.
+
+A plataforma deve permitir evolução através de padrões modernos de integração:
+
+- API First;
+- Event Driven Architecture;
+- Produtos de dados.
 
 ---
 
@@ -48,40 +75,47 @@ Criar uma arquitetura capaz de suportar a coleta, armazenamento, processamento, 
 
 Evoluir de um modelo baseado em dados isolados por aplicações para uma abordagem orientada a:
 
-* Domínios de negócio;
-* Ownership;
-* Governança;
-* Reutilização;
-* Produtos de dados.
+- Domínios de negócio;
+- Ownership;
+- Governança;
+- Reutilização;
+- Produtos de dados.
 
 ---
 
 ## Habilitar Inteligência Artificial em Escala Corporativa
 
-Criar as capacidades necessárias para suportar:
+Criar capacidades necessárias para suportar:
 
-* Machine Learning;
-* Inteligência Artificial Generativa;
-* Automação inteligente;
-* Soluções baseadas em IA.
+- Machine Learning;
+- Inteligência Artificial Generativa;
+- Automação inteligente;
+- Soluções baseadas em IA;
+- Evolução contínua de modelos.
 
 ---
 
-## Aumentar Confiança e Governança sobre Dados
+## Aumentar Confiança e Governança sobre Dados e IA
 
 Estabelecer mecanismos corporativos para garantir:
 
-* Qualidade;
-* Segurança;
-* Rastreabilidade;
-* Privacidade;
-* Conformidade.
+- Qualidade;
+- Segurança;
+- Rastreabilidade;
+- Privacidade;
+- Conformidade;
+- Uso responsável de Inteligência Artificial.
 
 ---
 
 ## Acelerar Inovação Baseada em Dados
 
-Permitir que áreas de negócio desenvolvam novos produtos, serviços e decisões utilizando dados confiáveis e capacidades inteligentes.
+Permitir que áreas de negócio desenvolvam novos produtos, serviços e decisões utilizando:
+
+- Dados confiáveis;
+- Capacidades analíticas;
+- Inteligência Artificial;
+- Automação.
 
 ---
 
@@ -89,14 +123,14 @@ Permitir que áreas de negócio desenvolvam novos produtos, serviços e decisõe
 
 A evolução desta arquitetura deve gerar resultados estratégicos para a organização.
 
-| Resultado Esperado                        | Impacto no Negócio                    |
-| ----------------------------------------- | ------------------------------------- |
-| Dados confiáveis e governados             | Maior segurança na tomada de decisão  |
-| Redução do tempo para geração de insights | Maior velocidade operacional          |
-| Reutilização de ativos de dados           | Escalabilidade entre áreas de negócio |
-| Capacidade corporativa de IA              | Aceleração da inovação                |
-| Redução de silos de informação            | Maior integração organizacional       |
-| Governança estruturada                    | Maior controle e conformidade         |
+| Resultado Esperado | Impacto no Negócio |
+| --- | --- |
+| Dados confiáveis e governados | Maior segurança na tomada de decisão |
+| Redução do tempo para geração de insights | Maior velocidade operacional |
+| Reutilização de ativos de dados | Escalabilidade entre áreas de negócio |
+| Capacidade corporativa de IA | Aceleração da inovação |
+| Redução de silos de informação | Maior integração organizacional |
+| Governança estruturada | Maior controle e conformidade |
 
 ---
 
@@ -104,7 +138,13 @@ A evolução desta arquitetura deve gerar resultados estratégicos para a organi
 
 O programa contempla a evolução das capacidades arquiteturais necessárias para transformar dados corporativos em uma capacidade estratégica.
 
-A organização do programa segue os domínios de Arquitetura Corporativa.
+A organização do programa segue os domínios de Arquitetura Corporativa:
+
+- Business Architecture;
+- Information Architecture;
+- Application Architecture;
+- Technology Architecture;
+- Governance.
 
 ---
 
@@ -116,10 +156,23 @@ Capacidade responsável por estabelecer a fundação corporativa para gerenciame
 
 Principais objetivos:
 
-* Consolidar capacidades de dados corporativos;
-* Permitir integração entre diferentes domínios;
-* Suportar diferentes padrões de consumo;
-* Garantir escalabilidade futura.
+- Consolidar capacidades de dados corporativos;
+- Permitir integração entre diferentes domínios;
+- Suportar diferentes padrões de consumo;
+- Garantir escalabilidade futura.
+
+---
+
+## Data Integration Capability
+
+Capacidade responsável por conectar domínios, aplicações e produtos de dados através de padrões corporativos de integração.
+
+Principais objetivos:
+
+- Estabelecer padrões API First e Event Driven;
+- Garantir integração desacoplada;
+- Permitir movimentação segura de dados;
+- Suportar evolução dos domínios corporativos.
 
 ---
 
@@ -129,10 +182,10 @@ Capacidade responsável por transformar dados em ativos reutilizáveis orientado
 
 Principais objetivos:
 
-* Definir ownership dos dados;
-* Criar produtos de dados confiáveis;
-* Aumentar reutilização;
-* Aproximar dados das necessidades de negócio.
+- Definir ownership dos dados;
+- Criar produtos de dados confiáveis;
+- Aumentar reutilização;
+- Aproximar dados das necessidades de negócio.
 
 ---
 
@@ -142,10 +195,10 @@ Capacidade responsável por habilitar Inteligência Artificial como uma competê
 
 Principais objetivos:
 
-* Disponibilizar capacidades compartilhadas de IA;
-* Permitir evolução de modelos inteligentes;
-* Suportar novos casos de uso;
-* Garantir adoção responsável.
+- Disponibilizar capacidades compartilhadas de IA;
+- Permitir evolução de modelos inteligentes;
+- Suportar novos casos de uso;
+- Garantir adoção responsável.
 
 ---
 
@@ -155,23 +208,37 @@ Capacidade responsável pela utilização dos ativos de dados pelas áreas consu
 
 Principais objetivos:
 
-* Melhorar tomada de decisão;
-* Disponibilizar informações estratégicas;
-* Suportar produtos digitais;
-* Habilitar automações inteligentes.
+- Melhorar tomada de decisão;
+- Disponibilizar informações estratégicas;
+- Suportar produtos digitais;
+- Habilitar automações inteligentes.
 
 ---
 
-## Data & AI Governance
+## Data Governance Capability
 
-Capacidade responsável por garantir operação sustentável e controlada.
+Capacidade responsável por garantir qualidade, confiança e controle dos dados corporativos.
 
 Principais objetivos:
 
-* Definir responsabilidades;
-* Garantir qualidade;
-* Controlar riscos;
-* Estabelecer conformidade.
+- Definir responsabilidades;
+- Garantir qualidade;
+- Controlar acesso;
+- Estabelecer conformidade;
+- Gerenciar metadados.
+
+---
+
+## AI Governance Capability
+
+Capacidade responsável por garantir adoção responsável e sustentável de Inteligência Artificial.
+
+Principais objetivos:
+
+- Controlar riscos;
+- Garantir transparência;
+- Monitorar modelos;
+- Definir padrões de uso responsável.
 
 ---
 
@@ -188,310 +255,20 @@ Domínios de Negócio
 
         ↓
 
-Enterprise Data Platform
+Data & Integration Platform
 
         ↓
 
-Produtos de Dados Confiáveis
+Produtos de Dados Governados
 
         ↓
 
-Enterprise AI Platform
+Enterprise AI Capability
 
         ↓
 
-Consumo de Negócio
+Business Consumption
 
         ↓
 
-Governança Transversal
-```
-
-Esta visão representa a base arquitetural para todos os artefatos futuros do programa.
-
----
-
-# Estrutura da Documentação
-
-A documentação do programa segue o modelo de evolução progressiva da Arquitetura Corporativa.
-
-```text
-Enterprise Data & Artificial Intelligence Platform
-
-├── Foundation
-│
-├── Business Architecture
-│
-├── Information Architecture
-│
-├── Application Architecture
-│
-├── Technology Architecture
-│
-├── Governance
-│
-├── Roadmap
-│
-└── Architecture Decision Records
-```
-
----
-
-# Artefatos do Programa
-
-## Foundation
-
-Objetivo:
-
-Estabelecer contexto estratégico, visão e direcionamento arquitetural.
-
-Artefatos:
-
-* Executive Target State
-* README Executivo
-* Company Profile
-* Business Context
-* Architecture Vision
-
----
-
-## Business Architecture
-
-Objetivo:
-
-Definir como a iniciativa suporta capacidades e objetivos de negócio.
-
-Artefatos:
-
-* Capability Assessment
-* Business Capability Map
-* Value Streams
-* Business Domains
-* Data Ownership Model
-
----
-
-## Information Architecture
-
-Objetivo:
-
-Definir como informações corporativas serão estruturadas e governadas.
-
-Artefatos:
-
-* Enterprise Information Model
-* Data Domain Model
-* Data Product Model
-* Metadata Strategy
-* Data Lifecycle Model
-
----
-
-## Application Architecture
-
-Objetivo:
-
-Definir o ecossistema de aplicações e plataformas que suportam dados e IA.
-
-Artefatos:
-
-* Application Landscape
-* Data Platform Architecture
-* AI Platform Architecture
-* Integration Architecture
-* Consumption Architecture
-
----
-
-## Technology Architecture
-
-Objetivo:
-
-Definir as fundações tecnológicas necessárias para evolução sustentável.
-
-Artefatos:
-
-* Cloud Architecture
-* Platform Architecture
-* Security Architecture
-* Observability Architecture
-* Infrastructure Capabilities
-
----
-
-## Governance
-
-Objetivo:
-
-Definir o modelo operacional e mecanismos de controle.
-
-Artefatos:
-
-* Data Governance Framework
-* AI Governance Model
-* Data Quality Framework
-* Compliance Model
-* Operating Model
-
----
-
-## Roadmap
-
-Objetivo:
-
-Definir a evolução da arquitetura atual para a arquitetura alvo.
-
-Artefatos:
-
-* Current State Assessment
-* Capability Evolution Roadmap
-* Implementation Waves
-* Strategic Initiatives
-
----
-
-## Architecture Decision Records
-
-Objetivo:
-
-Registrar decisões arquiteturais relevantes.
-
-Exemplos:
-
-* Estratégia de plataforma de dados;
-* Padrões arquiteturais;
-* Decisões de governança;
-* Estratégia de Inteligência Artificial.
-
----
-
-# Como Navegar
-
-A recomendação de leitura segue o princípio de evolução progressiva da arquitetura.
-
-```text
-1. Executive Target State
-
-        ↓
-
-2. README Executivo
-
-        ↓
-
-3. Company Profile
-
-        ↓
-
-4. Business Context
-
-        ↓
-
-5. Architecture Vision
-
-        ↓
-
-6. Business Architecture
-
-        ↓
-
-7. Information Architecture
-
-        ↓
-
-8. Application Architecture
-
-        ↓
-
-9. Technology Architecture
-
-        ↓
-
-10. Governance e Roadmap
-```
-
----
-
-# Público-Alvo
-
-Este programa foi estruturado para diferentes níveis de decisão arquitetural.
-
-## Liderança Executiva
-
-Exemplos:
-
-* CIO;
-* CTO;
-* Chief Data Officer;
-* Liderança Digital.
-
-Foco:
-
-* Estratégia;
-* Resultados esperados;
-* Evolução organizacional.
-
----
-
-## Enterprise Architecture
-
-Foco:
-
-* Visão arquitetural;
-* Capacidades;
-* Princípios;
-* Decisões estratégicas.
-
----
-
-## Arquitetura de Soluções e Times Técnicos
-
-Foco:
-
-* Modelos arquiteturais;
-* Capacidades técnicas;
-* Direcionamentos para implementação.
-
----
-
-# Próximos Passos
-
-A próxima etapa do bloco **Foundation** será:
-
-1. `company-profile.md`
-
-O objetivo será contextualizar:
-
-* Quem é a organização;
-* Qual seu contexto estratégico;
-* Quais desafios motivam a criação da plataforma;
-* Por que dados e IA são capacidades estratégicas.
-
-Após a conclusão do Foundation, o programa avançará para **Business Architecture**, iniciando a definição das capacidades corporativas e modelos orientados a dados.
-
----
-
-# Roadmap de Evolução do Programa
-
-| Fase                     | Objetivo                                      | Status       |
-| ------------------------ | --------------------------------------------- | ------------ |
-| Foundation               | Estabelecer contexto e visão arquitetural     | Em andamento |
-| Business Architecture    | Definir capacidades e alinhamento ao negócio  | Planejado    |
-| Information Architecture | Estruturar modelo corporativo de informação   | Planejado    |
-| Application Architecture | Definir plataformas e ecossistema de soluções | Planejado    |
-| Technology Architecture  | Definir fundamentos tecnológicos              | Planejado    |
-| Governance               | Estabelecer modelo operacional e controles    | Planejado    |
-| Continuous Evolution     | Evoluir maturidade arquitetural continuamente | Planejado    |
-
----
-
-# Alinhamento com a Enterprise Architecture Practice
-
-Este programa segue os princípios definidos para o portfólio:
-
-* Arquitetura orientada ao negócio;
-* Evolução progressiva da arquitetura;
-* Documentação baseada em capacidades;
-* Governança desde a concepção;
-* Alinhamento entre estratégia, informação e tecnologia.
-
-A documentação evolui da visão executiva para os detalhes arquiteturais, garantindo rastreabilidade, consistência e maturidade.
+Governança, Segurança e Observabilidade
