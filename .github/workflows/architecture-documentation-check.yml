@@ -1,0 +1,35 @@
+name: Architecture Documentation Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+
+  push:
+    branches:
+      - main
+
+jobs:
+  architecture-documentation-check:
+    name: Validate Architecture Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Run architecture documentation validation
+        run: |
+          python tools/architecture/run-documentation-check.py
+
+      - name: Upload architecture documentation report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: architecture-documentation-report
+          path: reports/architecture-documentation-report.md
