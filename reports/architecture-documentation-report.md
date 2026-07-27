@@ -1,9 +1,9 @@
 # Architecture Documentation Report
 ## Summary
-- Total documents: 79
-- Documents with title: 75
-- Documents with context section: 21
-- Documents with references: 36
+- Total documents: 85
+- Documents with title: 81
+- Documents with context section: 29
+- Documents with references: 40
 
 ---
 
@@ -45,6 +45,12 @@
 | programs\02-enterprise-data-ai-platform\adrs\adr-006-security-by-design.md | 5222 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\adrs\adr-007-cloud-native-platform.md | 6977 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\adrs\README.md | 5382 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\ai-lifecycle-management.md | 6855 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\ai-operating-model.md | 1575 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\ai-platform-architecture.md | 5452 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\ai-reference-architecture-diagram.md | 1049 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\genai-reference-architecture.md | 7483 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\model-governance.md | 6986 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\application-architecture\api-strategy.md | 2717 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\application-architecture\application-architecture-principles.md | 6013 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\application-architecture\application-interaction-model.md | 7050 bytes | 2026-07-27 |
@@ -57,8 +63,8 @@
 | programs\02-enterprise-data-ai-platform\business-architecture\capability-assessment.md | 10107 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\business-architecture\capability-map.md | 8283 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\business-architecture\data-ownership-model.md | 8089 bytes | 2026-07-20 |
-| programs\02-enterprise-data-ai-platform\diagrams\executive-target-state.md | 6304 bytes | 2026-07-14 |
-| programs\02-enterprise-data-ai-platform\docs\architecture-vision.md | 3514 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\diagrams\executive-target-state.md | 6839 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\docs\architecture-vision.md | 4473 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\docs\business-context.md | 9386 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\docs\company-profile.md | 8816 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\executive-target-state.md | 1503 bytes | 2026-07-27 |
@@ -74,7 +80,7 @@
 | programs\02-enterprise-data-ai-platform\information-architecture\enterprise-information-model.md | 6152 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\information-architecture\metadata-strategy.md | 6280 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\maturity-assessment.md | 5519 bytes | 2026-07-27 |
-| programs\02-enterprise-data-ai-platform\README.md | 7100 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\README.md | 9602 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\roadmap\architecture-evolution-plan.md | 2162 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\roadmap\capability-evolution-roadmap.md | 2675 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\roadmap\implementation-phases.md | 3555 bytes | 2026-07-27 |

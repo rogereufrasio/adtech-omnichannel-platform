@@ -1,136 +1,125 @@
 # Architecture Vision
 
-## Informações do Documento
+## Context
 
-| Item | Valor |
-| --- | --- |
-| Documento | Architecture Vision |
-| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
-| Domínio Arquitetural | Foundation |
-| Tipo | Visão Arquitetural Estratégica |
-| Responsável | Enterprise Architecture Practice |
-| Versão | 1.1 |
-| Status | Em evolução |
+The Enterprise Data & Artificial Intelligence Platform establishes the strategic foundation for transforming enterprise data into trusted, governed, and intelligent capabilities.
+
+The platform enables the organization to evolve from traditional data management practices into a data-driven and AI-enabled operating model, where data products, analytics capabilities, and artificial intelligence solutions are delivered with governance, security, and scalability.
+
+The architecture follows an enterprise blueprint approach aligned with Business Architecture, Application Architecture, Information Architecture, AI Architecture, Technology Architecture, and Governance disciplines.
 
 ---
 
-# Resumo Executivo
+# Architecture Vision
 
-A **Architecture Vision** define a visão arquitetural futura para a **Enterprise Data & Artificial Intelligence Platform**, estabelecendo os direcionadores que orientarão a transformação da organização em uma empresa orientada a dados e preparada para adoção de Inteligência Artificial em escala corporativa.
+The target vision is to establish an Enterprise Data & AI Platform capable of supporting:
 
-A visão proposta estabelece uma arquitetura corporativa capaz de conectar:
+- trusted enterprise data products;
+- governed analytical capabilities;
+- scalable AI and Generative AI solutions;
+- intelligent decision-making processes;
+- reusable data and AI services;
+- secure and compliant AI adoption.
 
-- estratégia de negócio;
-- capacidades organizacionais;
-- informações corporativas;
-- plataformas digitais;
-- Inteligência Artificial;
-- governança.
-
-O objetivo não é apenas disponibilizar tecnologia, mas criar uma capacidade corporativa sustentável que permita:
-
-- transformar dados em ativos estratégicos;
-- acelerar decisões;
-- aumentar eficiência operacional;
-- habilitar inovação baseada em IA.
-
-A arquitetura futura será fundamentada em:
-
-- orientação ao negócio;
-- dados como produto;
-- governança desde a concepção;
-- reutilização de capacidades;
-- evolução progressiva.
+The platform acts as an enterprise capability layer connecting business domains, operational systems, analytical consumers, and intelligent applications.
 
 ---
 
-# Motivadores Arquiteturais
+# Strategic Architecture Model
 
-A arquitetura futura é direcionada pelos principais desafios identificados no contexto organizacional.
+The platform architecture is structured across complementary architecture layers:
 
----
-
-## Crescimento da Complexidade Digital
-
-A expansão dos canais digitais aumentou:
-
-- quantidade de dados gerados;
-- variedade das fontes de informação;
-- velocidade de processamento necessária;
-- dependência de capacidades analíticas.
-
-A arquitetura deve suportar crescimento contínuo sem aumento proporcional da complexidade operacional.
+| Layer | Purpose |
+|---|---|
+| Business Architecture | Defines business capabilities, value streams, ownership models, and strategic outcomes |
+| Application Architecture | Defines applications, services, APIs, integration patterns, and interaction models |
+| Information Architecture | Defines enterprise information models, data products, metadata, and lifecycle management |
+| AI Architecture | Defines AI capabilities, GenAI patterns, model lifecycle, governance, and responsible AI practices |
+| Technology Architecture | Defines cloud foundation, infrastructure, security, observability, and platform standards |
+| Governance Architecture | Ensures architectural control, compliance, decision governance, and continuous evolution |
 
 ---
 
-## Necessidade de Visão Integrada do Negócio
+# AI Architecture Vision
 
-Decisões estratégicas dependem cada vez mais de informações completas e confiáveis.
+Artificial Intelligence is treated as a first-class architectural capability of the enterprise platform.
 
-A organização precisa evoluir de uma visão fragmentada para uma visão corporativa integrada baseada em:
+The AI Architecture establishes the foundation for:
 
-- domínios de negócio;
-- produtos de dados;
-- indicadores confiáveis;
-- capacidades compartilhadas.
+- AI capability enablement across business domains;
+- reusable AI services and components;
+- Generative AI adoption patterns;
+- machine learning lifecycle management;
+- model governance and operationalization;
+- responsible and secure AI usage.
 
----
-
-## Escala na Utilização de Inteligência Artificial
-
-A Inteligência Artificial deixa de ser uma iniciativa experimental e passa a representar uma capacidade estratégica.
-
-A arquitetura deve permitir:
-
-- desenvolvimento seguro de modelos;
-- reutilização de componentes;
-- governança de soluções inteligentes;
-- adoção corporativa.
+The AI layer is not isolated from the data platform. It depends on governed, discoverable, and high-quality data products following the Data as a Product principle.
 
 ---
 
-## Evolução do Modelo Operacional
+# AI Architecture Principles
 
-A organização precisa migrar de uma abordagem baseada em demandas isoladas para um modelo baseado em:
+The AI Architecture follows these principles:
 
-- capacidades reutilizáveis;
-- produtos de dados;
-- plataformas compartilhadas;
-- governança integrada.
+## AI by Design
+
+AI capabilities must be considered during solution architecture decisions from the beginning, rather than added as an isolated feature.
+
+## Model Lifecycle Governance
+
+AI models must follow controlled lifecycle management:
+
+- development;
+- validation;
+- deployment;
+- monitoring;
+- improvement;
+- retirement.
+
+## Responsible AI
+
+AI solutions must consider:
+
+- transparency;
+- explainability;
+- fairness;
+- security;
+- privacy;
+- human oversight.
+
+## Vendor Agnostic AI
+
+AI capabilities should avoid unnecessary coupling with specific providers, enabling flexibility across:
+
+- foundation models;
+- AI services;
+- machine learning platforms;
+- deployment environments.
 
 ---
 
-# Visão Arquitetural Futura
+# Target Business Outcomes
 
-A arquitetura alvo estabelece um ecossistema corporativo onde dados fluem desde os domínios de negócio até capacidades inteligentes e consumidores corporativos.
+The Enterprise Data & AI Platform enables:
 
-```text
-Estratégia de Negócio
+| Outcome | Business Impact |
+|---|---|
+| Data democratization | Faster access to trusted information |
+| AI acceleration | Reduced time from idea to intelligent capability |
+| Decision intelligence | Better business decisions supported by data and AI |
+| Operational efficiency | Automation of repetitive and complex activities |
+| Enterprise governance | Controlled and compliant adoption of AI |
 
-        ↓
+---
 
-Capacidades Corporativas
+# Architecture Evolution Direction
 
-        ↓
+The architecture evolves progressively:
 
-Domínios de Dados
+1. Establish governed data foundations.
+2. Enable enterprise data products.
+3. Introduce reusable AI capabilities.
+4. Scale Generative AI adoption.
+5. Operationalize AI governance and continuous improvement.
 
-        ↓
-
-Enterprise Data & AI Platform
-
-        ↓
-
-Produtos de Dados + Analytics + IA
-
-        ↓
-
-Consumo Corporativo
-
-        ↓
-
-Decisão | Automação | Produtos Digitais
-
-        ↓
-
-Governança Transversal
+The Enterprise Data & AI Platform becomes a strategic capability enabling the organization to transform information into intelligence.

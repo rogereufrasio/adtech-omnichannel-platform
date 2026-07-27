@@ -1,267 +1,409 @@
-# Executive Target State
+# Executive Target State Diagram
 
-> Visão executiva da arquitetura alvo para a **Enterprise Data & Artificial Intelligence Platform**, demonstrando como a organização transforma dados em ativos estratégicos para Analytics, Inteligência Artificial e tomada de decisão orientada por dados.
+## Context
 
----
+This diagram represents the executive target state architecture for the Enterprise Data & Artificial Intelligence Platform.
 
-# Informações do Documento
+The objective is to provide a strategic view of how business capabilities, enterprise data, artificial intelligence, consumption channels, and governance capabilities integrate into a unified enterprise platform.
 
-| Item | Valor |
-|------|-------|
-| Documento | Executive Target State |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Tipo | Executive Architecture Diagram |
-| Responsável | Enterprise Architecture Practice |
-| Versão | 1.0 |
+The architecture follows the enterprise layered pattern:
 
----
-
-# Executive Summary
-
-A Enterprise Data & Artificial Intelligence Platform representa uma capacidade estratégica da organização para consolidar, governar e disponibilizar dados corporativos de forma confiável, escalável e orientada ao negócio.
-
-A plataforma integra dados provenientes de múltiplos domínios de negócio, aplica práticas corporativas de governança e disponibiliza produtos de dados que suportam Analytics, Machine Learning, Inteligência Artificial Generativa e decisões em tempo real.
-
-Mais do que uma plataforma tecnológica, esta iniciativa estabelece a fundação para uma organização **Data-Driven** e **AI-Driven**, permitindo inovação contínua, redução da complexidade operacional e aceleração da transformação digital.
-
----
-
-# Executive Target State
-
-```mermaid
-flowchart TB
-
-%% ---------- Business Domains ----------
-
-subgraph Domains["Business Domains"]
-EC["E-commerce"]
-APP["Mobile App"]
-STORE["Physical Stores"]
-CRM["CRM"]
-ERP["ERP"]
-PARTNER["Partners"]
-IOT["IoT"]
-end
-
-%% ---------- Ingestion ----------
-
-subgraph Ingestion["Enterprise Data Ingestion"]
-STREAM["Streaming Events"]
-CDC["Change Data Capture"]
-API["APIs"]
-BATCH["Batch Integration"]
-end
-
-%% ---------- Enterprise Platform ----------
-
-subgraph Platform["Enterprise Data Platform"]
-
-LAKE["Lakehouse Platform"]
-
-CATALOG["Metadata Catalog"]
-
-QUALITY["Data Quality"]
-
-LINEAGE["Data Lineage"]
-
-GOV["Data Governance"]
-
-end
-
-%% ---------- Data Products ----------
-
-subgraph Products["Trusted Data Products"]
-
-CUSTOMER["Customer 360"]
-
-SALES["Sales Analytics"]
-
-MARKETING["Marketing Intelligence"]
-
-SUPPLY["Supply Chain"]
-
-FINANCE["Financial Analytics"]
-
-end
-
-%% ---------- AI ----------
-
-subgraph AI["Enterprise AI Platform"]
-
-FEATURE["Feature Store"]
-
-MLOPS["MLOps"]
-
-MODELS["AI Models"]
-
-VECTOR["Vector Database"]
-
-RAG["RAG Services"]
-
-AGENTS["AI Agents"]
-
-end
-
-%% ---------- Consumers ----------
-
-subgraph Consumers["Business Consumption"]
-
-BI["Business Intelligence"]
-
-DASH["Executive Dashboards"]
-
-PRODUCT["Digital Products"]
-
-AUTOMATION["Business Automation"]
-
-DECISION["Decision Intelligence"]
-
-end
-
-%% ---------- Governance ----------
-
-subgraph Cross["Cross-Cutting Capabilities"]
-
-SECURITY["Security"]
-
-PRIVACY["Privacy"]
-
-OBS["Observability"]
-
-FINOPS["FinOps"]
-
-end
-
-Domains --> Ingestion
-
-Ingestion --> Platform
-
-Platform --> Products
-
-Products --> AI
-
-Products --> Consumers
-
-AI --> Consumers
-
-Cross -.-> Platform
-Cross -.-> Products
-Cross -.-> AI
+```text
+Business
+   |
+Integration
+   |
+Data
+   |
+AI
+   |
+Consumption
+   |
+Governance
 ```
 
 ---
 
-# Visão Estratégica
+# Enterprise Data & AI Platform — Executive View
 
-A plataforma estabelece um modelo corporativo baseado em cinco capacidades fundamentais.
+```mermaid
+flowchart TB
 
-| Capability | Objetivo Estratégico |
-|------------|----------------------|
-| Enterprise Data Platform | Consolidar dados corporativos em uma plataforma única. |
-| Trusted Data Products | Disponibilizar dados confiáveis para toda a organização. |
-| Enterprise AI Platform | Democratizar Inteligência Artificial de forma governada. |
-| Business Consumption | Transformar dados em decisões e produtos digitais. |
-| Cross-Cutting Governance | Garantir segurança, qualidade e conformidade corporativa. |
+    %% Business Layer
 
----
+    B1[Business Capabilities]
+    B2[Business Domains]
+    B3[Value Streams]
 
-# Princípios Arquiteturais Evidenciados
 
-A arquitetura proposta materializa os seguintes princípios corporativos:
+    %% Integration Layer
 
-- Data as a Product
-- AI by Design
-- Business Driven Architecture
-- API First
-- Event-Driven Integration
-- Metadata First
-- Security by Design
-- Privacy by Design
-- Observability by Default
-- Cloud Native
+    I1[API Management]
+    I2[Event Driven Integration]
+    I3[Enterprise Integration Patterns]
 
----
 
-# Benefícios Esperados
+    %% Data Layer
 
-## Negócio
+    D1[Enterprise Data Platform]
+    D2[Data Products]
+    D3[Data Domains]
+    D4[Metadata Management]
+    D5[Data Quality]
 
-- Aceleração da tomada de decisão.
-- Maior conhecimento sobre clientes e operações.
-- Redução do time-to-insight.
-- Escalabilidade para novos produtos digitais.
 
-## Tecnologia
+    %% AI Layer
 
-- Redução de integrações redundantes.
-- Padronização dos pipelines de dados.
-- Reutilização de produtos de dados.
-- Maior governança e rastreabilidade.
+    A1[AI Platform]
+    A2[Machine Learning Models]
+    A3[Generative AI Platform]
+    A4[Knowledge Management]
+    A5[Decision Intelligence]
 
-## Inteligência Artificial
 
-- Reutilização de Features.
-- Governança do ciclo de vida dos modelos.
-- Escalabilidade para IA Generativa.
-- Base para AI Agents corporativos.
+    %% Consumption Layer
 
----
+    C1[Business Applications]
+    C2[Analytics & BI]
+    C3[AI Assistants]
+    C4[Digital Experiences]
 
-# Relação com os Próximos Artefatos
 
-Este documento serve como referência para:
+    %% Governance Layer
 
-- README
-- Company Profile
-- Business Context
-- Architecture Vision
-- Data Strategy
-- Data Domains
-- Data Products
-- AI Platform
-- Data Governance
-- Enterprise Roadmap
+    G1[Data Governance]
+    G2[AI Governance]
+    G3[Security & Privacy]
+    G4[Architecture Governance]
 
-Todos os documentos subsequentes detalham uma parte específica desta visão executiva.
 
----
+    B1 --> B2
+    B2 --> B3
 
-# Decisões Arquiteturais
+    B3 --> I1
+    B3 --> I2
+    B3 --> I3
 
-## DA-01 — Plataforma Corporativa Unificada
+    I1 --> D1
+    I2 --> D1
+    I3 --> D1
 
-Adotar uma plataforma corporativa única para ingestão, armazenamento, processamento e disponibilização de dados.
+    D1 --> D2
+    D1 --> D3
+    D1 --> D4
+    D1 --> D5
 
-**Motivação**
+    D2 --> A1
+    D3 --> A1
+    D4 --> A1
+    D5 --> A1
 
-Reduzir silos de informação e aumentar a reutilização de ativos de dados.
+    A1 --> A2
+    A1 --> A3
+    A1 --> A4
+    A1 --> A5
 
----
+    A2 --> C2
+    A3 --> C3
+    A4 --> C3
+    A5 --> C1
 
-## DA-02 — Data Products como Unidade de Consumo
+    C1 --> G1
+    C2 --> G1
+    C3 --> G2
+    C4 --> G3
 
-Os consumidores corporativos deverão acessar produtos de dados em vez de bases de dados diretamente.
-
-**Motivação**
-
-Promover ownership, qualidade e reutilização dos ativos de informação.
-
----
-
-## DA-03 — Inteligência Artificial como Capability Corporativa
-
-Os serviços de Inteligência Artificial serão disponibilizados como capacidades compartilhadas da plataforma.
-
-**Motivação**
-
-Evitar duplicidade de soluções e acelerar a adoção de IA em múltiplos domínios.
+    G1 --> D1
+    G2 --> A1
+    G3 --> I1
+    G4 --> B1
+```
 
 ---
 
-## DA-04 — Governança Transversal
+# Architecture Layers
 
-Segurança, privacidade, observabilidade e FinOps serão capacidades transversais aplicadas a toda a plataforma.
+## Business Layer
 
-**Motivação**
+Represents the enterprise capabilities and value streams enabled by the platform.
 
-Garantir conformidade, sustentabilidade operacional e excelência arquitetural desde a concepção da solução.
+Main capabilities:
+
+- business domain management;
+- operational decision support;
+- customer and enterprise processes;
+- data-driven business transformation.
+
+Related artifacts:
+
+```text
+business-architecture/
+
+├── business-domains.md
+├── business-value-streams.md
+└── capability-map.md
+```
+
+---
+
+# Integration Layer
+
+Provides enterprise connectivity and orchestration capabilities.
+
+Core principles:
+
+- API First;
+- Event Driven Architecture;
+- loosely coupled integration;
+- reusable services.
+
+Capabilities:
+
+- API Management;
+- event streaming;
+- integration patterns;
+- service orchestration.
+
+Related artifacts:
+
+```text
+application-architecture/
+
+├── api-strategy.md
+├── event-driven-architecture.md
+└── integration-patterns.md
+```
+
+---
+
+# Data Layer
+
+Provides the enterprise data foundation.
+
+Core concepts:
+
+## Data as a Product
+
+Data is managed as an enterprise product with:
+
+- ownership;
+- quality;
+- documentation;
+- lifecycle management.
+
+## Data Domains
+
+Data ownership follows business domains.
+
+## Metadata First
+
+Metadata enables:
+
+- discovery;
+- lineage;
+- governance;
+- trust.
+
+Capabilities:
+
+- enterprise data platform;
+- data products;
+- metadata management;
+- data quality.
+
+Related artifacts:
+
+```text
+information-architecture/
+
+├── data-domain-model.md
+├── data-product-model.md
+├── enterprise-information-model.md
+└── metadata-strategy.md
+```
+
+---
+
+# AI Layer
+
+The AI layer transforms enterprise data into intelligence and automated decisions.
+
+Capabilities:
+
+## AI Platform
+
+Provides:
+
+- model lifecycle management;
+- AI services;
+- experimentation capabilities;
+- operational AI capabilities.
+
+## Machine Learning Models
+
+Supports:
+
+- predictive analytics;
+- optimization;
+- classification;
+- forecasting.
+
+## Generative AI Platform
+
+Provides:
+
+- enterprise language models;
+- retrieval augmented generation;
+- AI assistants;
+- knowledge interaction.
+
+## Knowledge Management
+
+Enables:
+
+- enterprise knowledge repositories;
+- semantic search;
+- contextual AI experiences.
+
+## Decision Intelligence
+
+Combines:
+
+- data;
+- analytics;
+- AI models;
+- business rules;
+
+to improve enterprise decision-making.
+
+Related artifacts:
+
+```text
+ai-architecture/
+
+├── ai-platform-architecture.md
+├── ai-lifecycle-management.md
+├── genai-reference-architecture.md
+└── model-governance.md
+```
+
+---
+
+# Consumption Layer
+
+Provides access to enterprise intelligence.
+
+Channels:
+
+- business applications;
+- analytical platforms;
+- AI assistants;
+- digital experiences.
+
+Examples:
+
+- executive dashboards;
+- operational intelligence;
+- intelligent automation;
+- customer experiences.
+
+---
+
+# Governance Layer
+
+Provides enterprise control across all architecture layers.
+
+Capabilities:
+
+## Data Governance
+
+Ensures:
+
+- ownership;
+- quality;
+- lifecycle;
+- compliance.
+
+## AI Governance
+
+Ensures:
+
+- responsible AI;
+- model control;
+- transparency;
+- risk management.
+
+## Security and Privacy
+
+Ensures:
+
+- identity management;
+- protection controls;
+- privacy by design.
+
+## Architecture Governance
+
+Ensures:
+
+- standards compliance;
+- architecture decisions;
+- technology alignment.
+
+Related artifacts:
+
+```text
+governance/
+
+├── ai-governance-framework.md
+├── data-governance-framework.md
+├── architecture-governance.md
+└── reference-architecture-compliance.md
+```
+
+---
+
+# Strategic Outcomes
+
+The Enterprise Data & Artificial Intelligence Platform enables:
+
+| Outcome | Business Impact |
+|---|---|
+| Trusted enterprise data | Better decisions |
+| Governed AI adoption | Responsible automation |
+| Reusable AI capabilities | Faster innovation |
+| Data products | Scalable data consumption |
+| Decision intelligence | Improved business outcomes |
+| Enterprise governance | Reduced risk |
+
+---
+
+# Architecture Principles
+
+The target state is guided by:
+
+1. Data as a Product
+2. AI by Design
+3. API First
+4. Event Driven Integration
+5. Metadata First
+6. Security and Privacy by Design
+7. Cloud Native Platform
+8. Observability by Default
+
+---
+
+# References
+
+- Executive Target State
+- Architecture Target State
+- AI Platform Architecture
+- AI Lifecycle Management
+- Generative AI Reference Architecture
+- Model Governance
+- ADR-001 API First
+- ADR-002 Event Driven Architecture
+- ADR-003 Data as a Product
+- ADR-004 Vendor Agnostic AI
+- ADR-005 Metadata First
+- ADR-006 Security by Design
+- ADR-007 Cloud Native Platform
