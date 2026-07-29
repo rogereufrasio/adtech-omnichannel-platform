@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 from pathlib import Path
+from validate_blueprint import validate
 
 
 ROOT_FILES = [
@@ -30,10 +31,12 @@ DIRECTORIES = {
     "business-architecture": [],
     "application-architecture": [],
     "information-architecture": [],
+    "integration-architecture": [],
     "technology-architecture": [],
     "governance": [],
-    "roadmap": [],
     "diagrams": [],
+    "roadmap": [],
+    "docs": [],
 }
 
 
@@ -99,6 +102,37 @@ Follow the template defined in:
 standards/program-blueprint/adr-template.md
 """
 
+def preview_program(program_path: Path, number: int, name: str) -> None:
+    print()
+    print("Enterprise Architecture Program Preview")
+    print("=" * 60)
+    print()
+
+    print(f"Program: {number:02d}-{name}")
+    print()
+
+    print("Files that would be created:")
+    print()
+
+    for filename in ROOT_FILES:
+        print(
+            f"  {program_path / filename}"
+        )
+
+    for directory, files in DIRECTORIES.items():
+        print()
+
+        if files:
+            for filename in files:
+                print(
+                    f"  {program_path / directory / filename}"
+                )
+        else:
+            print(
+                f"  {program_path / directory}/"
+            )
+
+    print()
 
 def scaffold(program_path: Path, number: int, name: str) -> None:
     create_directory(program_path)
@@ -142,10 +176,25 @@ def parse_args():
         help="Program name (kebab-case)",
     )
 
+    parser.add_argument(
+    "--dry-run",
+    action="store_true",
+    help="Preview generated program structure without creating files",
+    )
+
     return parser.parse_args()
 
 
 def main():
+
+    if not validate():
+        print(
+            "Program generation cancelled because "
+            "blueprint validation failed."
+        )
+
+        return 1
+
     args = parse_args()
 
     program_path = build_program_path(
@@ -153,10 +202,16 @@ def main():
         args.name,
     )
 
-    if program_path.exists():
-        raise SystemExit(
-            f"Program already exists: {program_path}"
+    if args.dry_run:
+        preview_program(
+            program_path,
+            args.number,
+            args.name,
         )
+
+        return 0
+
+    exists_before = program_path.exists()
 
     scaffold(
         program_path=program_path,
@@ -165,10 +220,20 @@ def main():
     )
 
     print()
-    print("Enterprise Architecture Program created successfully.")
+
+    if exists_before:
+        print("Enterprise Architecture Program scaffold updated successfully.")
+    else:
+        print("Enterprise Architecture Program created successfully.")
+
     print(f"Location: {program_path}")
     print()
 
+    scaffold(
+        program_path=program_path,
+        number=args.number,
+        name=args.name,
+    )
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
