@@ -1,409 +1,476 @@
 # AI Lifecycle Management
 
-## Context
+## Objetivo
 
-Enterprise Artificial Intelligence requires a structured lifecycle management approach to ensure that AI solutions are developed, validated, deployed, monitored, and continuously improved with appropriate governance controls.
+Definir o ciclo de vida corporativo para desenvolvimento, implantação, operação, evolução e descontinuação de soluções de Inteligência Artificial, estabelecendo processos padronizados para Machine Learning (ML), Inteligência Artificial Generativa (GenAI) e modelos híbridos.
 
-Without a defined lifecycle, AI initiatives tend to become isolated experiments with limited scalability, inconsistent quality, and operational risks.
-
-This document defines the target architecture and operating principles for managing the lifecycle of artificial intelligence assets across the enterprise.
+O objetivo é garantir que todos os modelos utilizados pela organização sejam desenvolvidos, operados e monitorados de forma consistente, auditável, segura e alinhada às políticas de governança corporativa.
 
 ---
 
-# Purpose
+# Contexto
 
-The purpose of AI Lifecycle Management is to establish capabilities for:
+Este documento faz parte da arquitetura de referência do Programa 02 – Enterprise Data & Artificial Intelligence Platform.
 
-- AI solution development;
-- model lifecycle management;
-- automated deployment;
-- continuous monitoring;
-- model improvement;
-- governance and compliance.
+Seu objetivo é complementar os demais artefatos arquiteturais do programa, descrevendo as decisões relacionadas à Plataforma Corporativa de Inteligência Artificial e seu modelo de governança.
 
 ---
 
-# Lifecycle Vision
+# Escopo
 
-The AI lifecycle follows a continuous improvement model:
+Este documento abrange:
 
-```text
-                Business Problem
+- ciclo de vida de modelos de IA;
+- ciclo de vida de prompts;
+- gestão de datasets;
+- MLOps;
+- LLMOps;
+- monitoramento contínuo;
+- revalidação;
+- versionamento;
+- aposentadoria de modelos.
 
-                       |
-                       v
+Não contempla:
 
-              AI Use Case Definition
+- metodologias ágeis;
+- gerenciamento de projetos;
+- arquitetura de dados;
+- arquitetura de infraestrutura.
 
-                       |
-                       v
+---
 
-              Data Preparation
+# Objetivos Arquiteturais
 
-                       |
-                       v
+O gerenciamento do ciclo de vida deve garantir:
 
-          Model Development & Training
+- repetibilidade;
+- rastreabilidade;
+- automação;
+- governança;
+- qualidade;
+- observabilidade;
+- segurança;
+- conformidade regulatória.
 
-                       |
-                       v
+---
 
-              Validation & Approval
+# Visão Geral do Ciclo de Vida
 
-                       |
-                       v
-
-              Deployment
-
-                       |
-                       v
-
-              Monitoring
-
-                       |
-                       v
-
-          Continuous Improvement
+```
+Ideação
+    │
+    ▼
+Descoberta
+    │
+    ▼
+Preparação dos Dados
+    │
+    ▼
+Desenvolvimento
+    │
+    ▼
+Validação
+    │
+    ▼
+Homologação
+    │
+    ▼
+Implantação
+    │
+    ▼
+Operação
+    │
+    ▼
+Monitoramento
+    │
+    ▼
+Revalidação
+    │
+    ▼
+Evolução ou Descontinuação
 ```
 
 ---
 
-# AI Lifecycle Stages
+# Fases do Ciclo de Vida
 
-## 1. Use Case Identification
+## 1. Ideação
 
-The lifecycle begins with business-driven AI opportunities.
+Objetivo:
 
-Activities:
+Identificar oportunidades de utilização de Inteligência Artificial.
 
-- identify business problems;
-- evaluate AI applicability;
-- define expected outcomes;
-- assess feasibility.
+Entradas:
 
-Inputs:
+- necessidades de negócio;
+- indicadores;
+- problemas recorrentes;
+- oportunidades de automação.
 
-- business capabilities;
-- value streams;
-- strategic objectives.
+Saídas:
 
----
-
-## 2. Data Preparation
-
-AI solutions depend on trusted enterprise information assets.
-
-Capabilities:
-
-- data discovery;
-- data quality assessment;
-- feature preparation;
-- dataset versioning;
-- metadata management.
-
-Integration:
-
-```text
-information-architecture/
-
-├── data-domain-model.md
-├── data-product-model.md
-└── metadata-strategy.md
-```
+- hipótese de solução;
+- objetivos mensuráveis;
+- patrocinador do negócio.
 
 ---
 
-## 3. Model Development
+## 2. Descoberta
 
-AI teams develop and validate models using standardized environments.
+Objetivo:
 
-Capabilities:
+Avaliar a viabilidade técnica.
 
-- experimentation;
-- feature engineering;
-- model training;
-- evaluation;
-- version control.
+Atividades:
 
-Expected practices:
+- análise dos dados disponíveis;
+- avaliação de riscos;
+- definição de métricas;
+- identificação de restrições regulatórias;
+- classificação do caso de uso.
 
-- reproducible experiments;
-- documented assumptions;
-- measurable performance indicators.
+Artefatos:
 
----
-
-## 4. Model Validation
-
-Before production usage, models must pass technical and business validation.
-
-Validation dimensions:
-
-| Dimension | Objective |
-|---|---|
-| Performance | Validate accuracy and effectiveness |
-| Security | Identify vulnerabilities |
-| Explainability | Understand model decisions |
-| Bias Assessment | Evaluate fairness risks |
-| Business Value | Confirm expected outcomes |
+- documento de viabilidade;
+- inventário de dados;
+- requisitos do modelo.
 
 ---
 
-## 5. Model Deployment
+## 3. Preparação dos Dados
 
-Validated models are deployed through controlled release processes.
+Objetivo:
 
-Deployment capabilities:
+Preparar dados para treinamento ou inferência.
 
-- automated pipelines;
-- model packaging;
-- environment promotion;
-- API exposure;
-- service integration.
+Inclui:
 
-Deployment flow:
+- limpeza;
+- enriquecimento;
+- anonimização;
+- catalogação;
+- validação;
+- versionamento.
 
-```text
-Development
-
-      |
-
-Validation Environment
-
-      |
-
-Production Environment
-```
+Todos os conjuntos de dados devem possuir metadados registrados.
 
 ---
 
-## 6. Model Operations
+## 4. Desenvolvimento
 
-Production AI systems require continuous operational management.
+Nesta etapa ocorre:
 
-Capabilities:
+- experimentação;
+- engenharia de atributos;
+- engenharia de prompts;
+- treinamento;
+- ajuste de hiperparâmetros;
+- avaliação inicial.
 
-- model monitoring;
-- performance tracking;
-- availability monitoring;
-- incident management;
-- lifecycle management.
-
-Operational metrics:
-
-- prediction accuracy;
-- latency;
-- availability;
-- data drift;
-- model drift.
+Todos os experimentos devem ser reproduzíveis.
 
 ---
 
-## 7. Continuous Improvement
+## 5. Validação
 
-AI systems evolve according to business needs and operational feedback.
+Objetivo:
 
-Activities:
+Validar tecnicamente o modelo.
 
-- model retraining;
-- parameter optimization;
-- dataset improvement;
-- architecture evolution;
-- capability expansion.
+Critérios:
 
----
+- desempenho;
+- precisão;
+- robustez;
+- estabilidade;
+- segurança;
+- explicabilidade quando aplicável.
 
-# MLOps Architecture
-
-The AI lifecycle requires integration between development, operations, and governance.
-
-```text
-             Source Control
-
-                   |
-                   v
-
-            CI/CD Pipelines
-
-                   |
-                   v
-
-          Model Development
-
-                   |
-                   v
-
-          Model Registry
-
-                   |
-                   v
-
-          Deployment Platform
-
-                   |
-                   v
-
-          Production Monitoring
-
-                   |
-                   v
-
-          Feedback Loop
-```
+Modelos que não atingirem os critérios mínimos não seguem para homologação.
 
 ---
 
-# Generative AI Lifecycle
+## 6. Homologação
 
-Generative AI introduces additional lifecycle considerations:
+Objetivo:
 
-```text
-Knowledge Sources
+Avaliação corporativa antes da produção.
 
-        |
+Participantes:
 
-Data Preparation
+- Data Science;
+- Arquitetura;
+- Segurança;
+- Governança;
+- Área de Negócio.
 
-        |
+São avaliados:
 
-Embedding Generation
+- aderência arquitetural;
+- conformidade regulatória;
+- riscos;
+- custos;
+- impacto operacional.
 
-        |
+---
 
-Vector Storage
+## 7. Implantação
 
-        |
+A implantação deve ocorrer por pipelines automatizados.
 
-Prompt Engineering
+Características:
 
-        |
+- versionamento;
+- rollback;
+- rastreabilidade;
+- auditoria;
+- segregação de ambientes.
 
-Retrieval Augmented Generation
+Nenhuma implantação deve ocorrer manualmente em ambiente produtivo.
 
-        |
+---
 
-Evaluation
+## 8. Operação
 
-        |
+Durante a operação devem ser monitorados:
 
-Production Monitoring
-```
+- disponibilidade;
+- latência;
+- consumo;
+- utilização;
+- custos;
+- qualidade.
 
-Key lifecycle assets:
+Todos os eventos devem ser registrados para auditoria.
 
+---
+
+## 9. Monitoramento Contínuo
+
+O monitoramento contempla:
+
+### Dados
+
+- Data Drift;
+- Schema Drift;
+- qualidade dos dados;
+- volume.
+
+### Modelos
+
+- Model Drift;
+- degradação;
+- precisão;
+- estabilidade.
+
+### IA Generativa
+
+- consumo de tokens;
+- tempo de resposta;
+- utilização de contexto;
+- frequência de alucinações identificadas;
+- efetividade do RAG.
+
+### Plataforma
+
+- disponibilidade;
+- throughput;
+- utilização;
+- capacidade.
+
+---
+
+## 10. Revalidação
+
+Todo modelo deve possuir revisão periódica.
+
+A revalidação pode ser disparada por:
+
+- degradação de desempenho;
+- mudança regulatória;
+- alteração significativa dos dados;
+- atualização de políticas;
+- evolução tecnológica.
+
+---
+
+## 11. Evolução
+
+Quando mantido em operação, o modelo pode receber:
+
+- novas versões;
+- novos datasets;
+- novos prompts;
+- novos embeddings;
+- otimizações;
+- melhorias de desempenho.
+
+Toda evolução deve preservar compatibilidade com consumidores existentes sempre que possível.
+
+---
+
+## 12. Descontinuação
+
+Um modelo deve ser aposentado quando:
+
+- tornar-se obsoleto;
+- apresentar desempenho inadequado;
+- existir solução superior;
+- deixar de atender requisitos regulatórios;
+- deixar de possuir justificativa de negócio.
+
+A descontinuação deve preservar:
+
+- histórico;
+- auditoria;
+- versões;
+- documentação;
+- registros operacionais.
+
+---
+
+# Gestão de Versionamento
+
+Devem possuir versionamento independente:
+
+- modelos;
 - prompts;
 - embeddings;
-- knowledge sources;
-- retrieval strategies;
-- evaluation datasets.
+- datasets;
+- pipelines;
+- APIs;
+- artefatos.
+
+Cada versão deve ser identificável e reproduzível.
 
 ---
 
-# Governance Integration
+# MLOps
 
-AI lifecycle management integrates with enterprise governance capabilities.
+Para modelos tradicionais, o ciclo automatizado deve contemplar:
 
-Governance controls:
-
-- approval workflows;
-- model ownership;
-- risk classification;
-- compliance validation;
-- auditability.
-
-Related document:
-
-```text
-governance/ai-governance-framework.md
-```
+- treinamento;
+- validação;
+- testes;
+- publicação;
+- implantação;
+- monitoramento;
+- rollback.
 
 ---
 
-# Operating Responsibilities
+# LLMOps
 
-| Role | Responsibility |
-|---|---|
-| Business Owner | Define objectives and expected outcomes |
-| Data Owner | Ensure data availability and quality |
-| AI Engineer | Develop and maintain models |
-| Platform Team | Operate AI infrastructure |
-| Architecture Team | Maintain standards |
-| Governance Team | Ensure compliance |
+Para IA Generativa, além das práticas de MLOps, devem existir processos específicos para:
 
----
-
-# Lifecycle Maturity Model
-
-The enterprise AI capability evolves through maturity stages:
-
-```text
-Level 01
-
-Experimental AI
-
-        |
-
-Level 02
-
-Managed AI Solutions
-
-        |
-
-Level 03
-
-Operational AI Platform
-
-        |
-
-Level 04
-
-Enterprise AI Capability
-```
+- versionamento de prompts;
+- gerenciamento de contexto;
+- avaliação de respostas;
+- testes de Prompt Injection;
+- avaliação de custos;
+- monitoramento de consumo de tokens;
+- atualização de modelos fundacionais.
 
 ---
 
-# Related Architecture Domains
+# Critérios de Promoção
 
-## AI Platform Architecture
+Um modelo somente pode ser promovido para produção quando atender simultaneamente aos seguintes critérios:
 
-Defines the platform capabilities supporting lifecycle execution.
-
-Location:
-
-```text
-ai-architecture/ai-platform-architecture.md
-```
-
----
-
-## Governance
-
-Defines controls for responsible AI adoption.
-
-Location:
-
-```text
-governance/ai-governance-framework.md
-```
+- aprovação técnica;
+- aprovação de segurança;
+- aprovação da arquitetura;
+- aprovação da governança;
+- testes concluídos;
+- documentação atualizada;
+- registro no Model Registry.
 
 ---
 
-## Roadmap
+# Papéis e Responsabilidades
 
-Defines progressive AI capability evolution.
-
-Location:
-
-```text
-roadmap/implementation-roadmap.md
-```
+| Papel | Responsabilidades |
+|--------|-------------------|
+| Data Scientist | Desenvolvimento e validação técnica |
+| ML Engineer | Pipelines, implantação e operação |
+| Enterprise Architect | Conformidade arquitetural |
+| Data Architect | Governança dos dados |
+| Security Architect | Segurança e privacidade |
+| Product Owner | Priorização do caso de uso |
+| Business Owner | Aprovação funcional |
+| AI Governance | Gestão do ciclo de vida e conformidade |
 
 ---
 
-# References
+# Indicadores
 
+Indicadores mínimos:
+
+## Desenvolvimento
+
+- tempo médio de desenvolvimento;
+- taxa de aprovação;
+- retrabalho.
+
+## Implantação
+
+- frequência de deploy;
+- tempo de implantação;
+- taxa de rollback.
+
+## Operação
+
+- disponibilidade;
+- tempo médio de resposta;
+- custo operacional.
+
+## Qualidade
+
+- precisão;
+- deriva;
+- estabilidade;
+- satisfação dos usuários.
+
+---
+
+# Integração com a Arquitetura Corporativa
+
+O ciclo de vida integra-se com:
+
+- Information Architecture;
+- AI Platform Architecture;
+- Governance Architecture;
+- Security Architecture;
+- DevSecOps;
+- Observability Platform.
+
+Todos os componentes devem compartilhar metadados e mecanismos de auditoria.
+
+---
+
+# Benefícios Esperados
+
+- padronização do ciclo de vida de IA;
+- redução de riscos operacionais;
+- maior governança;
+- rastreabilidade completa;
+- automação das implantações;
+- maior qualidade dos modelos;
+- conformidade regulatória;
+- evolução contínua da plataforma de Inteligência Artificial.
+
+---
+
+# Referências
+
+## Documentos Relacionados
+
+- Architecture Target State
+- Executive Target State
+- Information Architecture
+- Application Architecture
+- Technology Architecture
 - AI Platform Architecture
+- AI Lifecycle Management
 - AI Governance Framework
-- ADR-004 Vendor Agnostic AI
-- Data Product Model
-- Metadata Strategy
+- ADR-004 — Vendor Agnostic AI

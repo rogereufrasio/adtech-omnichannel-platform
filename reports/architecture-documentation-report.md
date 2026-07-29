@@ -45,12 +45,12 @@
 | programs\02-enterprise-data-ai-platform\adrs\adr-006-security-by-design.md | 5222 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\adrs\adr-007-cloud-native-platform.md | 6977 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\adrs\README.md | 5382 bytes | 2026-07-27 |
-| programs\02-enterprise-data-ai-platform\ai-architecture\ai-lifecycle-management.md | 6855 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\ai-lifecycle-management.md | 8819 bytes | 2026-07-28 |
 | programs\02-enterprise-data-ai-platform\ai-architecture\ai-operating-model.md | 1575 bytes | 2026-07-27 |
-| programs\02-enterprise-data-ai-platform\ai-architecture\ai-platform-architecture.md | 5452 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\ai-platform-architecture.md | 8968 bytes | 2026-07-28 |
 | programs\02-enterprise-data-ai-platform\ai-architecture\ai-reference-architecture-diagram.md | 1049 bytes | 2026-07-27 |
-| programs\02-enterprise-data-ai-platform\ai-architecture\genai-reference-architecture.md | 7483 bytes | 2026-07-27 |
-| programs\02-enterprise-data-ai-platform\ai-architecture\model-governance.md | 6986 bytes | 2026-07-27 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\genai-reference-architecture.md | 9332 bytes | 2026-07-28 |
+| programs\02-enterprise-data-ai-platform\ai-architecture\model-governance.md | 10051 bytes | 2026-07-28 |
 | programs\02-enterprise-data-ai-platform\application-architecture\api-strategy.md | 2717 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\application-architecture\application-architecture-principles.md | 6013 bytes | 2026-07-27 |
 | programs\02-enterprise-data-ai-platform\application-architecture\application-interaction-model.md | 7050 bytes | 2026-07-27 |

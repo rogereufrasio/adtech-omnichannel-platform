@@ -1,445 +1,479 @@
 # Model Governance
 
-## Context
+## Objetivo
 
-Enterprise Artificial Intelligence requires governance mechanisms to ensure that AI models are developed, deployed, and operated with appropriate controls for quality, security, transparency, and compliance.
+Definir o modelo de governança corporativa para ativos de Inteligência Artificial utilizados pela organização, estabelecendo políticas, papéis, processos e controles para garantir que modelos de Machine Learning (ML) e Inteligência Artificial Generativa (GenAI) sejam desenvolvidos, implantados e operados de forma segura, ética, transparente e em conformidade com requisitos regulatórios e arquiteturais.
 
-As AI adoption expands across business domains, models become enterprise assets that require ownership, lifecycle management, monitoring, and controlled evolution.
-
-This document defines the governance architecture for AI models within the Enterprise Data & Artificial Intelligence Platform Program.
+A governança de modelos complementa as arquiteturas de Dados, Aplicações, Tecnologia, Segurança e Governança Corporativa, garantindo controle sobre todo o ciclo de vida dos ativos de IA.
 
 ---
 
-# Purpose
+# Contexto
 
-The purpose of Model Governance is to establish:
+Este documento faz parte da arquitetura de referência do Programa 02 – Enterprise Data & Artificial Intelligence Platform.
 
-- ownership of AI models;
-- lifecycle controls;
-- approval processes;
-- risk management practices;
-- operational monitoring;
-- auditability.
+Seu objetivo é complementar os demais artefatos arquiteturais do programa, descrevendo as decisões relacionadas à Plataforma Corporativa de Inteligência Artificial e seu modelo de governança.
 
 ---
 
-# Governance Vision
+# Escopo
 
-AI models must be managed as governed enterprise assets.
+Este documento abrange:
 
-```text
-                 AI Use Cases
+- governança de modelos;
+- governança de prompts;
+- governança de embeddings;
+- governança de datasets utilizados por IA;
+- gestão de riscos;
+- conformidade;
+- auditoria;
+- monitoramento;
+- catálogo de modelos;
+- gestão de versões;
+- aprovação para produção.
 
-                       |
-                       v
+Não contempla:
 
-              Model Governance Layer
-
-        +--------------+--------------+
-        |              |              |
-        v              v              v
-
-   Ownership      Risk Control   Monitoring
-
-        |
-        v
-
-          AI Lifecycle Management
-
-        |
-        v
-
-          AI Platform Architecture
-
-        |
-        v
-
-       Enterprise Data Foundation
-```
+- desenvolvimento de algoritmos;
+- processos de Data Governance;
+- governança de APIs.
 
 ---
 
-# Model Governance Principles
+# Objetivos Arquiteturais
 
-## Model Ownership
+A governança deve assegurar:
 
-Every AI model must have clearly defined ownership.
-
-Ownership responsibilities include:
-
-- business accountability;
-- technical maintenance;
-- performance monitoring;
-- lifecycle decisions.
-
-Required ownership definition:
-
-| Role | Responsibility |
-|---|---|
-| Business Owner | Defines business value and expected outcomes |
-| Model Owner | Responsible for model performance |
-| Data Owner | Ensures data quality and availability |
-| Platform Team | Provides operational capabilities |
-| Governance Team | Ensures compliance |
+- rastreabilidade completa;
+- responsabilidade claramente definida;
+- transparência;
+- conformidade regulatória;
+- reutilização de ativos;
+- segurança operacional;
+- controle de mudanças;
+- independência tecnológica.
 
 ---
 
-## Transparency and Explainability
+# Princípios de Governança
 
-AI models must provide appropriate visibility into their behavior.
+## Governança por Design
 
-Required capabilities:
+Todo ativo de IA deve nascer governado.
 
-- model documentation;
-- decision explanation;
-- feature importance analysis;
-- limitations identification.
-
-The level of explainability must consider:
-
-- business impact;
-- regulatory requirements;
-- risk classification.
+Os requisitos de auditoria, segurança, documentação e observabilidade devem fazer parte do desenvolvimento desde o início.
 
 ---
 
-## Risk-Based Governance
+## Responsabilidade Compartilhada
 
-AI models must be classified according to their potential impact.
+A qualidade e conformidade de um modelo não são responsabilidade exclusiva da equipe de Data Science.
 
-Example classification:
-
-```text
-Low Risk
-
-        |
-        v
-
-Medium Risk
-
-        |
-        v
-
-High Risk
-
-        |
-        v
-
-Critical AI Systems
-```
-
-Risk evaluation criteria:
-
-- business impact;
-- customer impact;
-- regulatory exposure;
-- data sensitivity;
-- automation level.
+A governança envolve áreas de negócio, arquitetura, segurança, dados e operações.
 
 ---
 
-# Model Lifecycle Governance
+## Transparência
 
-Governance activities are applied throughout the AI lifecycle.
+Todo modelo deve possuir documentação suficiente para permitir:
 
-```text
-Development
-
-      |
-      v
-
-Validation
-
-      |
-      v
-
-Approval
-
-      |
-      v
-
-Deployment
-
-      |
-      v
-
-Monitoring
-
-      |
-      v
-
-Retirement
-```
+- identificação do objetivo;
+- entendimento do funcionamento;
+- rastreabilidade das versões;
+- histórico de alterações;
+- responsáveis;
+- critérios de aprovação.
 
 ---
 
-# Development Governance
+## Auditabilidade
 
-During development, AI solutions must maintain:
+Toda decisão relevante deve poder ser reconstruída posteriormente.
 
-- documented objectives;
-- training data references;
-- experiment records;
-- model versions;
-- evaluation results.
+A plataforma deve registrar:
 
-Required artifacts:
-
-- model documentation;
-- dataset information;
-- performance metrics;
-- risk assessment.
+- versões;
+- datasets utilizados;
+- prompts utilizados;
+- aprovações;
+- implantações;
+- inferências quando aplicável.
 
 ---
 
-# Validation Governance
+## Vendor Agnostic AI
 
-Before production deployment, models must be evaluated.
+Nenhum processo de governança deve depender exclusivamente de funcionalidades proprietárias de um fornecedor específico.
 
-Validation dimensions:
-
-| Area | Objective |
-|---|---|
-| Accuracy | Confirm model effectiveness |
-| Robustness | Evaluate stability |
-| Security | Identify vulnerabilities |
-| Fairness | Assess potential bias |
-| Explainability | Understand decisions |
-| Business Value | Validate expected outcomes |
+O catálogo corporativo deve representar os ativos de forma independente da tecnologia utilizada.
 
 ---
 
-# Deployment Governance
+# Ativos Governados
 
-Production deployment requires controlled promotion.
+São considerados ativos sujeitos à governança:
 
-Deployment controls:
-
-- approval workflow;
-- environment separation;
-- version management;
-- rollback capability;
-- operational ownership.
-
-Deployment stages:
-
-```text
-Development
-
-        |
-
-Validation
-
-        |
-
-Production
-```
-
----
-
-# Model Monitoring
-
-Production AI models require continuous monitoring.
-
-Monitoring capabilities:
-
-## Performance Monitoring
-
-Measures:
-
-- prediction quality;
-- business effectiveness;
-- accuracy evolution.
-
----
-
-## Data Drift Monitoring
-
-Identifies changes in input data patterns.
-
-Examples:
-
-- distribution changes;
-- missing information;
-- unexpected values.
-
----
-
-## Model Drift Monitoring
-
-Identifies degradation in model behavior over time.
-
-Actions:
-
-- retraining;
-- recalibration;
-- replacement.
-
----
-
-# Generative AI Governance
-
-Generative AI introduces additional governance requirements.
-
-Governed assets:
-
-- language models;
-- prompts;
+- modelos de Machine Learning;
+- modelos generativos;
+- prompts corporativos;
 - embeddings;
-- knowledge sources;
-- retrieval strategies;
-- AI agents.
-
-Controls:
-
-- prompt review;
-- knowledge source validation;
-- output evaluation;
-- usage monitoring.
+- datasets de treinamento;
+- datasets de validação;
+- pipelines;
+- Feature Store;
+- APIs de inferência;
+- configurações de RAG;
+- políticas de Guardrails.
 
 ---
 
-# AI Compliance and Auditability
+# Classificação dos Modelos
 
-AI solutions must maintain traceability.
+## Modelos Experimentais
 
-Required information:
+Características:
 
-- model version;
-- training information;
-- approval history;
-- usage records;
-- operational metrics.
+- utilizados apenas em ambientes de experimentação;
+- sem impacto operacional;
+- sem uso por usuários finais.
 
-Audit capabilities support:
-
-- internal governance;
-- regulatory requirements;
-- operational reviews.
+Exigem governança simplificada.
 
 ---
 
-# Integration with Enterprise Governance
+## Modelos Homologados
 
-Model Governance integrates with existing governance capabilities:
+Características:
 
-## AI Governance Framework
-
-Defines:
-
-- responsible AI;
-- risk management;
-- compliance.
-
-Location:
-
-```text
-governance/ai-governance-framework.md
-```
+- aprovados tecnicamente;
+- disponíveis para testes integrados;
+- sujeitos à validação do negócio.
 
 ---
 
-## Data Governance Framework
+## Modelos Produtivos
 
-Provides:
+Características:
 
-- data ownership;
-- quality controls;
-- metadata governance.
-
-Location:
-
-```text
-governance/data-governance-framework.md
-```
+- utilizados por aplicações corporativas;
+- monitorados continuamente;
+- sujeitos às políticas completas de governança.
 
 ---
 
-## Architecture Governance
+## Modelos Descontinuados
 
-Ensures alignment with enterprise standards.
+Características:
 
-Location:
-
-```text
-governance/architecture-governance.md
-```
+- não recebem novas implantações;
+- permanecem registrados para auditoria;
+- mantêm histórico preservado.
 
 ---
 
-# Model Governance Maturity
+# Catálogo Corporativo de Modelos
 
-The enterprise capability evolves through maturity stages:
+Todo modelo deve possuir registro único contendo, no mínimo:
 
-```text
-Level 01
-
-Ad Hoc AI Models
-
-        |
-
-Level 02
-
-Documented AI Models
-
-        |
-
-Level 03
-
-Governed AI Lifecycle
-
-        |
-
-Level 04
-
-Enterprise AI Governance
-```
+- identificador;
+- nome;
+- descrição;
+- domínio de negócio;
+- proprietário;
+- equipe responsável;
+- versão;
+- data de criação;
+- data de implantação;
+- status;
+- tipo de modelo;
+- finalidade;
+- classificação de risco;
+- datasets utilizados;
+- prompts associados;
+- APIs consumidoras;
+- métricas de desempenho.
 
 ---
 
-# Related Architecture Domains
+# Processo de Aprovação
 
-## AI Lifecycle Management
+## Etapa 1 — Avaliação Técnica
 
-Defines lifecycle execution capabilities.
+Responsável:
 
-Location:
+- Data Science;
+- ML Engineering.
 
-```text
-ai-architecture/ai-lifecycle-management.md
-```
+Verificações:
 
----
-
-## Generative AI Reference Architecture
-
-Defines GenAI architecture patterns.
-
-Location:
-
-```text
-ai-architecture/genai-reference-architecture.md
-```
+- desempenho;
+- estabilidade;
+- documentação;
+- reprodutibilidade.
 
 ---
 
-## AI Platform Architecture
+## Etapa 2 — Avaliação Arquitetural
 
-Defines AI platform capabilities.
+Responsável:
 
-Location:
+- Enterprise Architecture.
 
-```text
-ai-architecture/ai-platform-architecture.md
-```
+Verificações:
+
+- aderência aos princípios;
+- integração;
+- reutilização;
+- conformidade com ADRs.
 
 ---
 
-# References
+## Etapa 3 — Avaliação de Segurança
 
+Responsável:
+
+- Security Architecture.
+
+Verificações:
+
+- proteção de dados;
+- autenticação;
+- autorização;
+- criptografia;
+- riscos de exposição.
+
+---
+
+## Etapa 4 — Avaliação de Governança
+
+Responsável:
+
+- AI Governance.
+
+Verificações:
+
+- documentação;
+- registro no catálogo;
+- classificação de risco;
+- monitoramento;
+- plano de evolução.
+
+---
+
+## Etapa 5 — Aprovação do Negócio
+
+Responsável:
+
+- Business Owner.
+
+Verificações:
+
+- aderência aos objetivos;
+- valor gerado;
+- indicadores esperados.
+
+---
+
+# Gestão de Mudanças
+
+Alterações que exigem nova aprovação:
+
+- mudança significativa do algoritmo;
+- troca de modelo fundacional;
+- alteração relevante de prompts;
+- alteração dos datasets;
+- mudança de arquitetura;
+- mudança de políticas de segurança;
+- alteração dos mecanismos de RAG.
+
+Mudanças exclusivamente operacionais podem seguir fluxo simplificado conforme política corporativa.
+
+---
+
+# Gestão de Riscos
+
+Cada modelo deve possuir avaliação periódica considerando:
+
+## Riscos Técnicos
+
+- degradação;
+- indisponibilidade;
+- dependências externas;
+- escalabilidade.
+
+---
+
+## Riscos de Dados
+
+- Data Drift;
+- baixa qualidade;
+- inconsistência;
+- perda de integridade.
+
+---
+
+## Riscos de IA Generativa
+
+- alucinação;
+- Prompt Injection;
+- vazamento de informações;
+- geração de conteúdo inadequado;
+- respostas inconsistentes.
+
+---
+
+## Riscos Regulatórios
+
+- privacidade;
+- retenção de dados;
+- requisitos legais;
+- auditoria;
+- conformidade contratual.
+
+---
+
+# Monitoramento
+
+A governança deve acompanhar continuamente:
+
+## Plataforma
+
+- disponibilidade;
+- utilização;
+- capacidade;
+- custos.
+
+## Modelos
+
+- precisão;
+- deriva;
+- estabilidade;
+- tempo de resposta.
+
+## IA Generativa
+
+- consumo de tokens;
+- utilização de contexto;
+- precisão do RAG;
+- efetividade dos Guardrails;
+- taxa de respostas rejeitadas.
+
+---
+
+# Auditoria
+
+Devem ser registrados:
+
+- aprovações;
+- implantações;
+- alterações;
+- execuções de pipelines;
+- mudanças de prompts;
+- mudanças de embeddings;
+- mudanças de configuração;
+- acessos administrativos.
+
+Os registros devem seguir as políticas corporativas de retenção.
+
+---
+
+# Papéis e Responsabilidades
+
+| Papel | Responsabilidades |
+|--------|-------------------|
+| AI Governance | Definir políticas e supervisionar conformidade |
+| Enterprise Architect | Garantir aderência à arquitetura corporativa |
+| Data Architect | Governança dos ativos de dados utilizados pelos modelos |
+| Security Architect | Avaliar riscos e controles de segurança |
+| Data Scientist | Desenvolver e documentar modelos |
+| ML Engineer | Operação e implantação |
+| Business Owner | Aprovação funcional |
+| Product Owner | Priorização e evolução dos casos de uso |
+| Platform Team | Operação da plataforma de IA |
+
+---
+
+# Indicadores de Governança
+
+Indicadores mínimos:
+
+## Conformidade
+
+- percentual de modelos documentados;
+- percentual de modelos registrados;
+- percentual de modelos auditáveis.
+
+## Operação
+
+- disponibilidade;
+- incidentes;
+- tempo médio de recuperação.
+
+## Qualidade
+
+- precisão média;
+- taxa de deriva;
+- retrabalho.
+
+## Governança
+
+- tempo médio de aprovação;
+- quantidade de exceções;
+- quantidade de revisões realizadas.
+
+---
+
+# Integração com a Arquitetura Corporativa
+
+A governança de modelos integra-se diretamente com:
+
+- AI Platform Architecture;
+- AI Lifecycle Management;
+- Information Architecture;
+- Technology Architecture;
+- Governance Architecture;
+- Security Architecture.
+
+Todos os ativos de IA devem compartilhar mecanismos comuns de identidade, observabilidade, auditoria e gerenciamento de metadados.
+
+---
+
+# Conformidade com os ADRs
+
+Esta arquitetura está alinhada aos Architecture Decision Records do Programa 02, com destaque para:
+
+- desacoplamento entre consumidores e provedores de IA;
+- arquitetura baseada em APIs;
+- observabilidade corporativa;
+- governança centralizada;
+- conformidade integral com o ADR-004 (Vendor Agnostic AI).
+
+---
+
+# Benefícios Esperados
+
+- padronização da governança de IA;
+- redução de riscos operacionais;
+- rastreabilidade completa dos ativos;
+- maior transparência das decisões;
+- conformidade regulatória;
+- reutilização de modelos e componentes;
+- facilidade para auditorias;
+- redução de dependência tecnológica;
+- evolução controlada da plataforma de Inteligência Artificial.
+
+---
+
+# Referências
+
+## Documentos Relacionados
+
+- Architecture Target State
+- Executive Target State
+- Information Architecture
+- Application Architecture
+- Technology Architecture
 - AI Platform Architecture
 - AI Lifecycle Management
-- Generative AI Reference Architecture
 - AI Governance Framework
-- ADR-004 Vendor Agnostic AI
-- Security Architecture
+- ADR-004 — Vendor Agnostic AI

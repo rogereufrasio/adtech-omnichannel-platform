@@ -1,463 +1,489 @@
 # Generative AI Reference Architecture
 
-## Context
+## Objetivo
 
-Generative Artificial Intelligence introduces new enterprise capabilities based on Large Language Models (LLMs), retrieval mechanisms, intelligent agents, and natural language interfaces.
+Definir a Arquitetura de Referência para soluções de Inteligência Artificial Generativa na plataforma corporativa, estabelecendo componentes, responsabilidades, fluxos e padrões arquiteturais reutilizáveis para o desenvolvimento de aplicações baseadas em Large Language Models (LLMs).
 
-To scale GenAI adoption safely, enterprises require an architecture approach that integrates AI capabilities with existing data platforms, governance models, security controls, and business applications.
-
-This document defines the reference architecture for enterprise Generative AI capabilities within the Enterprise Data & Artificial Intelligence Platform Program.
+Esta arquitetura fornece um modelo de referência para casos de uso como assistentes virtuais, copilotos, busca semântica, geração de conteúdo, sumarização, classificação inteligente e automação de processos cognitivos, preservando os princípios de segurança, governança e independência tecnológica definidos para a plataforma.
 
 ---
 
-# Purpose
+# Contexto
 
-The purpose of the Generative AI Reference Architecture is to establish:
+Este documento faz parte da arquitetura de referência do Programa 02 – Enterprise Data & Artificial Intelligence Platform.
 
-- enterprise patterns for GenAI adoption;
-- secure integration with enterprise knowledge;
-- reusable AI assistant capabilities;
-- governance and operational controls;
-- scalable architecture patterns.
+Seu objetivo é complementar os demais artefatos arquiteturais do programa, descrevendo as decisões relacionadas à Plataforma Corporativa de Inteligência Artificial e seu modelo de governança.
 
 ---
 
-# Architecture Vision
+# Escopo
 
-Generative AI operates as an intelligence layer on top of trusted enterprise information assets.
+A arquitetura contempla:
 
-```text
-                    Business Consumption
+- Large Language Models (LLMs);
+- Retrieval-Augmented Generation (RAG);
+- Embeddings;
+- Busca Vetorial;
+- Prompt Engineering;
+- Prompt Management;
+- Model Routing;
+- Context Management;
+- Guardrails;
+- AI Gateway;
+- Observabilidade;
+- Segurança;
+- Governança.
 
-        AI Assistants | Applications | Digital Channels
+Não contempla:
 
-                             |
-                             v
+- treinamento de modelos fundacionais;
+- desenvolvimento de Foundation Models;
+- algoritmos proprietários;
+- implementação específica de fornecedores.
 
-                  Generative AI Services Layer
+---
 
-                             |
-                             v
+# Objetivos Arquiteturais
 
-                    Retrieval Augmented Generation
+A arquitetura deve permitir:
 
-        +--------------------+--------------------+
-        |                    |                    |
-        v                    v                    v
+- reutilização de capacidades de IA Generativa;
+- desacoplamento entre aplicações e modelos;
+- substituição transparente de provedores;
+- redução de alucinações;
+- controle de custos;
+- governança centralizada;
+- segurança dos dados corporativos;
+- monitoramento contínuo.
 
- Knowledge Sources     Vector Platform      Prompt Management
+---
 
-        |
-        v
+# Princípios Arquiteturais
 
-          Enterprise Data Platform
+## Vendor Agnostic AI
 
-        |
-        v
+A arquitetura não estabelece dependência de qualquer fornecedor específico.
 
- Data Products | Metadata | Governance | Security
+Os consumidores interagem exclusivamente com serviços corporativos padronizados.
+
+A troca entre modelos comerciais ou open source deve ocorrer sem alteração nas aplicações.
+
+---
+
+## Context First
+
+As respostas devem priorizar conhecimento corporativo antes do conhecimento geral do modelo.
+
+O contexto recuperado possui precedência sobre o conhecimento interno do LLM.
+
+---
+
+## Retrieval Before Generation
+
+Sempre que aplicável, a geração de respostas deve utilizar recuperação de conhecimento corporativo.
+
+Este padrão reduz alucinações e melhora a rastreabilidade.
+
+---
+
+## Prompt as Code
+
+Prompts são ativos arquiteturais.
+
+Devem possuir:
+
+- versionamento;
+- histórico;
+- aprovação;
+- reutilização;
+- documentação.
+
+---
+
+## Secure by Design
+
+Dados corporativos nunca devem ser expostos diretamente ao modelo sem aplicação prévia das políticas de segurança.
+
+---
+
+# Arquitetura Lógica
+
+```
+Aplicação
+      │
+      ▼
+API Gateway
+      │
+      ▼
+AI Gateway
+      │
+      ▼
+Prompt Manager
+      │
+      ▼
+Context Builder
+      │
+      ├──────────────┐
+      ▼              ▼
+Vector Search   Metadata
+      │
+      ▼
+Document Retrieval
+      │
+      ▼
+Model Router
+      │
+ ┌────┴───────────────┐
+ ▼                    ▼
+LLM Provider A    LLM Provider B
+      │
+      ▼
+Response Processor
+      │
+      ▼
+Observability
+      │
+      ▼
+Consumer
 ```
 
 ---
 
-# Core Architecture Components
+# Componentes Arquiteturais
 
-## Enterprise Knowledge Layer
+## API Gateway
 
-The knowledge layer provides trusted information sources required by GenAI solutions.
+Responsável pela entrada das requisições externas.
 
-Sources may include:
+Funções:
 
-- enterprise documents;
-- structured data assets;
-- knowledge bases;
-- policies;
-- operational information;
-- business content repositories.
-
-Required capabilities:
-
-- content classification;
-- metadata enrichment;
-- access control;
-- lifecycle management.
+- autenticação;
+- autorização;
+- limitação de consumo;
+- auditoria;
+- roteamento.
 
 ---
 
-# Retrieval Augmented Generation Architecture
+## AI Gateway
 
-Retrieval Augmented Generation (RAG) enables GenAI solutions to use enterprise knowledge while reducing dependency on model internal knowledge.
+Camada de abstração entre aplicações e modelos.
 
-Architecture flow:
+Responsabilidades:
 
-```text
-Enterprise Content
+- seleção de políticas;
+- roteamento;
+- autenticação junto aos provedores;
+- observabilidade;
+- controle de custos;
+- aplicação de guardrails.
 
-        |
-        v
-
-Content Processing
-
-        |
-        v
-
-Embedding Generation
-
-        |
-        v
-
-Vector Storage
-
-        |
-        v
-
-Semantic Retrieval
-
-        |
-        v
-
-LLM Generation
-
-        |
-        v
-
-Business Response
-```
+Nenhuma aplicação acessa diretamente um modelo.
 
 ---
 
-# GenAI Platform Components
+## Prompt Manager
 
-## Large Language Model Layer
+Centraliza os prompts corporativos.
 
-Provides language understanding and generation capabilities.
+Responsabilidades:
 
-Capabilities:
-
-- text generation;
-- summarization;
-- classification;
-- reasoning assistance;
-- conversational experiences.
-
-Architecture principle:
-
-The enterprise architecture must support multiple model providers.
-
-Reference:
-
-```text
-adrs/adr-004-vendor-agnostic-ai.md
-```
+- templates;
+- versionamento;
+- parametrização;
+- reutilização;
+- aprovação;
+- histórico.
 
 ---
 
-## Prompt Engineering Layer
+## Context Builder
 
-Provides lifecycle management for prompts and instructions.
+Responsável pela preparação do contexto enviado ao modelo.
 
-Capabilities:
+Executa:
 
-- prompt templates;
-- version management;
-- prompt evaluation;
-- optimization.
-
-Prompt assets must be treated as governed AI artifacts.
-
----
-
-## Retrieval Layer
-
-Provides contextual information retrieval.
-
-Capabilities:
-
-- semantic search;
-- similarity matching;
-- document retrieval;
-- knowledge grounding.
+- recuperação documental;
+- montagem do contexto;
+- filtragem;
+- deduplicação;
+- limitação de tamanho;
+- enriquecimento semântico.
 
 ---
 
-## AI Agent Layer
+## Vector Database
 
-Supports autonomous or semi-autonomous AI workflows.
+Armazena representações vetoriais de documentos.
 
-Capabilities:
+Suporta:
 
-- task orchestration;
-- tool invocation;
-- workflow automation;
-- decision support.
-
-Agent usage must follow enterprise governance requirements.
+- busca semântica;
+- similaridade;
+- recuperação contextual;
+- memória de longo prazo.
 
 ---
 
-# Enterprise GenAI Patterns
+## Embedding Service
 
-## AI Assistant Pattern
+Converte conteúdo corporativo em vetores semânticos.
 
-Purpose:
+Tipos de conteúdo:
 
-Provide conversational access to enterprise knowledge and capabilities.
-
-Examples:
-
-- employee assistants;
-- customer support assistants;
-- operational assistants.
-
-Architecture:
-
-```text
-User
-
- |
-
-Conversation Interface
-
- |
-
-AI Assistant
-
- |
-
-RAG + LLM
-
- |
-
-Enterprise Knowledge
-```
-
----
-
-## Intelligent Document Processing Pattern
-
-Purpose:
-
-Extract insights from enterprise documents.
-
-Capabilities:
-
-- document classification;
-- information extraction;
-- summarization;
-- validation.
-
----
-
-## Knowledge Discovery Pattern
-
-Purpose:
-
-Enable enterprise information exploration.
-
-Capabilities:
-
-- semantic search;
-- natural language queries;
-- knowledge navigation.
-
----
-
-# Security Architecture Considerations
-
-Generative AI introduces specific security requirements.
-
-Controls:
-
-## Data Protection
-
-- data classification;
-- access control;
-- sensitive information protection;
-- privacy enforcement.
-
----
-
-## Prompt Security
-
-Controls:
-
-- prompt validation;
-- injection protection;
-- output filtering;
-- misuse prevention.
-
----
-
-## Model Security
-
-Controls:
-
-- approved model usage;
-- model monitoring;
-- vulnerability assessment;
-- lifecycle governance.
-
----
-
-# Responsible AI Considerations
-
-GenAI solutions must incorporate responsible AI practices.
-
-Key principles:
-
-| Principle | Objective |
-|---|---|
-| Transparency | Explain AI usage and limitations |
-| Human Oversight | Maintain appropriate human control |
-| Safety | Reduce harmful outputs |
-| Privacy | Protect enterprise information |
-| Accountability | Define ownership |
-
----
-
-# Integration Model
-
-GenAI capabilities integrate with enterprise architecture through:
-
-## Application Integration
-
-Interfaces:
-
+- documentos;
 - APIs;
-- application services;
-- conversational interfaces.
+- artigos;
+- manuais;
+- catálogos;
+- FAQs;
+- registros estruturados.
 
 ---
 
-## Data Integration
+## Model Router
 
-Sources:
+Seleciona dinamicamente o modelo mais adequado conforme critérios como:
 
-- enterprise data platform;
-- data products;
-- knowledge repositories.
-
----
-
-## Event Integration
-
-Events may trigger AI workflows:
-
-Examples:
-
-- document received;
-- customer interaction started;
-- business process completed.
+- custo;
+- desempenho;
+- latência;
+- idioma;
+- capacidade;
+- disponibilidade;
+- políticas corporativas.
 
 ---
 
-# Operational Model
+## Response Processor
 
-GenAI operations require management of:
+Executa pós-processamento da resposta.
 
-- models;
-- prompts;
-- knowledge sources;
-- retrieval strategies;
-- evaluation datasets.
+Inclui:
 
-Operational capabilities:
-
-- usage monitoring;
-- response quality measurement;
-- cost management;
-- performance monitoring.
+- validação;
+- sanitização;
+- remoção de informações sensíveis;
+- padronização;
+- enriquecimento;
+- formatação.
 
 ---
 
-# Evolution Roadmap
+## Guardrails
 
-The enterprise GenAI capability evolves progressively:
+Implementam políticas de proteção.
 
-```text
-Phase 01
+Exemplos:
 
-GenAI Foundation
+- prevenção de vazamento de dados;
+- bloqueio de conteúdo inadequado;
+- validação de entrada;
+- validação de saída;
+- limitação de contexto;
+- detecção de ataques de Prompt Injection.
 
-        |
-        v
+---
 
-Phase 02
+# Retrieval-Augmented Generation (RAG)
 
-Enterprise Knowledge Integration
+A arquitetura adota RAG como padrão para utilização de conhecimento corporativo.
 
-        |
-        v
+Fluxo:
 
-Phase 03
+1. Recepção da pergunta.
+2. Geração do embedding.
+3. Busca vetorial.
+4. Recuperação dos documentos.
+5. Construção do contexto.
+6. Geração da resposta.
+7. Validação.
+8. Auditoria.
+9. Retorno ao consumidor.
 
-AI Assistants
+---
 
-        |
-        v
+# Fluxo Arquitetural
 
-Phase 04
-
-Enterprise AI Agents
+```
+Pergunta
+    │
+    ▼
+Embedding
+    │
+    ▼
+Vector Search
+    │
+    ▼
+Documentos
+    │
+    ▼
+Context Builder
+    │
+    ▼
+Prompt
+    │
+    ▼
+LLM
+    │
+    ▼
+Response Processor
+    │
+    ▼
+Resposta Final
 ```
 
 ---
 
-# Related Architecture Domains
+# Padrões Arquiteturais
 
-## Information Architecture
+## AI Gateway Pattern
 
-Provides:
-
-- data products;
-- metadata;
-- information models.
-
-Location:
-
-```text
-information-architecture/
-```
+Desacopla consumidores dos modelos.
 
 ---
 
-## AI Platform Architecture
+## Model Router Pattern
 
-Provides:
-
-- AI execution capabilities;
-- lifecycle management;
-- reusable services.
-
-Location:
-
-```text
-ai-architecture/ai-platform-architecture.md
-```
+Seleciona dinamicamente modelos conforme políticas.
 
 ---
 
-## Governance
+## RAG Pattern
 
-Provides:
-
-- responsible AI controls;
-- compliance;
-- risk management.
-
-Location:
-
-```text
-governance/ai-governance-framework.md
-```
+Enriquece respostas utilizando conhecimento corporativo.
 
 ---
 
-# References
+## Prompt Repository Pattern
 
+Centraliza todos os prompts reutilizáveis.
+
+---
+
+## Guardrails Pattern
+
+Aplica políticas de segurança antes e após a inferência.
+
+---
+
+## Semantic Search Pattern
+
+Recupera conhecimento utilizando similaridade vetorial.
+
+---
+
+# Segurança
+
+A arquitetura implementa:
+
+- autenticação corporativa;
+- RBAC;
+- criptografia em trânsito;
+- criptografia em repouso;
+- auditoria;
+- segregação de ambientes;
+- anonimização quando necessária;
+- mascaramento de dados sensíveis.
+
+---
+
+# Observabilidade
+
+Indicadores monitorados:
+
+## Plataforma
+
+- disponibilidade;
+- throughput;
+- latência.
+
+## Modelos
+
+- tempo de inferência;
+- taxa de erro;
+- indisponibilidade;
+- utilização por modelo.
+
+## Prompts
+
+- versões utilizadas;
+- taxa de sucesso;
+- reutilização;
+- desempenho.
+
+## RAG
+
+- precisão da recuperação;
+- quantidade de documentos recuperados;
+- tempo de busca;
+- utilização de contexto.
+
+## Custos
+
+- consumo de tokens;
+- custo por requisição;
+- custo por aplicação;
+- custo por domínio de negócio.
+
+---
+
+# Integração com a Plataforma Corporativa
+
+A arquitetura integra-se com:
+
+- Data Lake;
+- Data Catalog;
+- Feature Store;
+- API Platform;
+- Identity Provider;
+- Event Platform;
+- Observability Platform;
+- Security Platform.
+
+Todos os acessos permanecem desacoplados por APIs e contratos arquiteturais.
+
+---
+
+# Alinhamento com os ADRs
+
+A arquitetura atende aos Architecture Decision Records do Programa 02, com destaque para:
+
+- utilização de componentes desacoplados;
+- independência tecnológica;
+- APIs padronizadas;
+- observabilidade centralizada;
+- segurança por padrão;
+- arquitetura orientada a serviços;
+- conformidade integral com o ADR-004 (Vendor Agnostic AI).
+
+---
+
+# Benefícios Esperados
+
+- padronização das soluções de IA Generativa;
+- reutilização de componentes arquiteturais;
+- menor dependência tecnológica;
+- redução de alucinações por meio de RAG;
+- maior segurança no consumo de LLMs;
+- governança centralizada de prompts e modelos;
+- escalabilidade corporativa;
+- redução do custo operacional;
+- facilidade para evolução tecnológica;
+- maior consistência entre diferentes produtos corporativos.
+
+---
+
+# Referências
+
+## Documentos Relacionados
+
+- Architecture Target State
+- Executive Target State
+- Information Architecture
+- Application Architecture
+- Technology Architecture
 - AI Platform Architecture
 - AI Lifecycle Management
 - AI Governance Framework
-- ADR-004 Vendor Agnostic AI
-- Metadata Strategy
-- Data Product Model
+- ADR-004 — Vendor Agnostic AI
