@@ -4,6 +4,16 @@
 
 ---
 
+## Contexto
+
+Este documento integra a Arquitetura de Aplicações do Programa 02 – Enterprise Data & AI Platform.
+
+Seu objetivo é estabelecer as diretrizes arquiteturais referentes a princípios de arquitetura de aplicações, assegurando alinhamento com os princípios corporativos da plataforma, os Architecture Decision Records (ADRs) aprovados e a arquitetura alvo do programa.
+
+As definições aqui apresentadas devem ser utilizadas como referência para decisões de arquitetura, evolução da plataforma e revisão técnica das soluções implementadas.
+
+---
+
 # Informações do Documento
 
 | Item | Valor |
