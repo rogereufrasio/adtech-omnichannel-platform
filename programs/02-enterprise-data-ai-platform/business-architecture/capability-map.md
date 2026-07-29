@@ -14,6 +14,16 @@
 
 ---
 
+## Contexto
+
+Este documento integra a Arquitetura de Negócios do Programa 02 – Enterprise Data & AI Platform.
+
+Seu objetivo é apresentar o mapa corporativo de capacidades utilizado como referência para a arquitetura da plataforma, demonstrando a organização funcional necessária para suportar a estratégia de dados e inteligência artificial.
+
+O mapa de capacidades constitui um dos principais artefatos para alinhamento entre arquitetura corporativa e estratégia de negócio.
+
+---
+
 # Resumo Executivo
 
 O **Business Capability Map** representa as capacidades de negócio necessárias para suportar a estratégia de transformação orientada por dados e Inteligência Artificial da organização.
