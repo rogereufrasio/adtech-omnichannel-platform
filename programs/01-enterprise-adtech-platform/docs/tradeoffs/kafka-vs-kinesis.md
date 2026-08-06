@@ -46,3 +46,7 @@ Kafka foi selecionado por oferecer maior flexibilidade estratégica e menor depe
 ## Trade-off
 
 Aceitamos maior complexidade operacional em troca de maior independência tecnológica.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../../README.md)

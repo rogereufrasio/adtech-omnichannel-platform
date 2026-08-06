@@ -128,7 +128,7 @@ Context Builder
 Vector Search   Metadata
       │
       ▼
-Document Retrieval
+Recuperação de Documentos
       │
       ▼
 Model Router

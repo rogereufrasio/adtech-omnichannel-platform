@@ -9,8 +9,8 @@
 | Domínio Arquitetural | Foundation |
 | Tipo | Contexto Organizacional |
 | Responsável | Enterprise Architecture Practice |
-| Versão | 1.1 |
-| Status | Em evolução |
+| Versão | 1.0 |
+| Status | Aprovado |
 
 ---
 
@@ -337,3 +337,13 @@ Business Architecture
 ├── Business Value Streams
 ├── Business Domains
 └── Data Ownership Model
+```
+
+---
+
+## Relação com Outros Artefatos
+
+- [Architecture Vision](./architecture-vision.md)
+- [Business Context](./business-context.md)
+- [Diagrama Executivo do Estado-Alvo](../diagrams/executive-target-state.md)
+- [Landing Page Executiva do Programa](../README.md)

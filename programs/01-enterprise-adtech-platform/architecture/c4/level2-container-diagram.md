@@ -1,5 +1,9 @@
 # C4 - Nível 2 (Containers)
 
+## Contexto
+
+Este diagrama apresenta os containers lógicos da Enterprise AdTech Platform e suas principais interações.
+
 ```mermaid
 flowchart LR
 
@@ -30,3 +34,8 @@ flowchart LR
     Activation --> GoogleAds
     Activation --> MetaAds
 ```
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../../README.md)

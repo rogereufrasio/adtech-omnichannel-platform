@@ -5,12 +5,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Data Lifecycle Model |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Information Architecture |
 | Tipo | Modelo de Ciclo de Vida dos Dados |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Information Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os princípios, modelos e padrões necessários para garantir consistência, interoperabilidade, governança e escalabilidade dos ativos de informação da plataforma corporativa.
+
+A Information Architecture estabelece a estrutura necessária para que dados sejam tratados como produtos estratégicos, suportando analytics, inteligência artificial, integração corporativa e tomada de decisão baseada em dados.
 
 ---
 
@@ -175,6 +183,17 @@ Durante todas as fases do ciclo de vida deverão ser aplicados os seguintes cont
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Domain Model](./data-domain-model.md)
+- [Data Product Model](./data-product-model.md)
+- [Enterprise Information Model](./enterprise-information-model.md)
+- [Metadata Strategy](./metadata-strategy.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Gestão Corporativa do Ciclo de Vida
@@ -210,11 +229,3 @@ O descarte de dados deverá ocorrer de forma controlada, registrada e auditável
 **Motivação**
 
 Garantir conformidade regulatória, reduzir riscos de segurança e proteger informações sensíveis.
-
----
-
-# Conclusão
-
-O Data Lifecycle Model define a abordagem corporativa para gerenciamento dos ativos de dados ao longo de todo o seu ciclo de vida.
-
-Ao estabelecer processos padronizados para criação, utilização, retenção, arquivamento e descarte, a organização fortalece sua Governança de Dados, reduz riscos regulatórios e garante que a Enterprise Data Platform permaneça sustentável, escalável e preparada para suportar iniciativas de Analytics e Inteligência Artificial.

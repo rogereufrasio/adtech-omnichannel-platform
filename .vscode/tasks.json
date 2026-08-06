@@ -2,22 +2,32 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Architecture: Validate Documentation",
+      "label": "Architecture: Create Program Scaffold",
       "type": "shell",
-      "command": "python",
-      "args": [
-        "tools/architecture/run-documentation-check.py"
-      ],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      },
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared",
-        "clear": true
-      },
-      "problemMatcher": []
+      "command": "python tools/architecture/create-program.py --number ${input:programNumber} --name ${input:programName} --force",
+      "problemMatcher": [],
+      "group": "build"
+    },
+    {
+      "label": "Architecture: Run Documentation Check",
+      "type": "shell",
+      "command": "python tools/architecture/run-documentation-check.py",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "programNumber",
+      "type": "promptString",
+      "description": "Número do Programa (ex: 03)",
+      "default": "03"
+    },
+    {
+      "id": "programName",
+      "type": "promptString",
+      "description": "Nome do Programa em minúsculas separadas por hífens (ex: enterprise-integration-platform)",
+      "default": "enterprise-integration-platform"
     }
   ]
 }

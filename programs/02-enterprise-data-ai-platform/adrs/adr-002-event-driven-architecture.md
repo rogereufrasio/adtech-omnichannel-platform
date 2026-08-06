@@ -276,6 +276,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [Event-Driven Architecture](../application-architecture/event-driven-architecture.md)
+- [Integration Patterns](../application-architecture/integration-patterns.md)
+- [Data Product Model](../information-architecture/data-product-model.md)

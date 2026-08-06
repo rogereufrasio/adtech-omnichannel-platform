@@ -5,12 +5,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Enterprise Information Model |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Information Architecture |
 | Tipo | Modelo Conceitual Corporativo |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Information Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os princípios, modelos e padrões necessários para garantir consistência, interoperabilidade, governança e escalabilidade dos ativos de informação da plataforma corporativa.
+
+A Information Architecture estabelece a estrutura necessária para que dados sejam tratados como produtos estratégicos, suportando analytics, inteligência artificial, integração corporativa e tomada de decisão baseada em dados.
 
 ---
 
@@ -83,15 +91,15 @@ ModeloIA --> ProdutoDeDados
 
 | Entidade | Descrição | Domínio Responsável |
 |----------|-----------|---------------------|
-| Cliente | Consumidores e organizações que se relacionam com a empresa. | Customer Management |
-| Produto | Produtos e serviços comercializados. | Commercial |
-| Pedido | Transações comerciais realizadas pelos clientes. | Sales |
-| Pagamento | Eventos financeiros associados aos pedidos. | Finance |
-| Canal | Pontos de contato físicos e digitais. | Omnichannel |
-| Campanha | Iniciativas de marketing e relacionamento. | Marketing |
-| Evento | Eventos corporativos gerados pelos sistemas. | Enterprise Integration |
-| Produto de Dados | Ativos analíticos disponibilizados para consumo corporativo. | Data Office |
-| Modelo de IA | Modelos analíticos e generativos utilizados pela organização. | AI Center of Excellence |
+| Cliente | Consumidores e organizações que se relacionam com a empresa. | Gestão de Clientes |
+| Produto | Produtos e serviços comercializados. | Gestão Comercial |
+| Pedido | Transações comerciais realizadas pelos clientes. | Gestão Comercial |
+| Pagamento | Eventos financeiros associados aos pedidos. | Gestão Financeira |
+| Canal | Pontos de contato físicos e digitais. | Gestão de Clientes |
+| Campanha | Iniciativas de marketing, oferta e relacionamento. | Gestão Comercial |
+| Evento | Fatos de negócio publicados por domínios produtores. | Domínio produtor do evento |
+| Produto de Dados | Ativos informacionais disponibilizados para consumo corporativo. | Gestão de Dados e domínio proprietário |
+| Modelo de IA | Modelos analíticos e generativos utilizados pela organização. | Inteligência Artificial |
 
 ---
 
@@ -100,15 +108,11 @@ ModeloIA --> ProdutoDeDados
 ```mermaid
 flowchart LR
 
-A[Operational Data]
-
-B[Integrated Information]
-
-C[Trusted Information]
-
-D[Data Products]
-
-E[Analytics & AI]
+A["Dados Operacionais"]
+B["Informação Integrada"]
+C["Informação Confiável"]
+D["Produtos de Dados"]
+E["Analytics e IA"]
 
 A --> B
 B --> C
@@ -118,11 +122,11 @@ D --> E
 
 | Camada | Objetivo |
 |----------|----------|
-| Operational Data | Dados produzidos pelas aplicações transacionais. |
-| Integrated Information | Consolidação e padronização corporativa. |
-| Trusted Information | Dados governados e certificados. |
-| Data Products | Dados preparados para reutilização. |
-| Analytics & AI | Consumo analítico e inteligência artificial. |
+| Dados Operacionais | Dados produzidos pelas aplicações transacionais. |
+| Informação Integrada | Consolidação e padronização corporativa. |
+| Informação Confiável | Dados governados e certificados. |
+| Produtos de Dados | Dados preparados para reutilização. |
+| Analytics e IA | Consumo analítico e Inteligência Artificial. |
 
 ---
 
@@ -168,6 +172,18 @@ Todos os artefatos da Arquitetura da Informação deverão manter aderência às
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Domains](../business-architecture/business-domains.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Domain Model](./data-domain-model.md)
+- [Data Lifecycle Model](./data-lifecycle-model.md)
+- [Data Product Model](./data-product-model.md)
+- [Metadata Strategy](./metadata-strategy.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Modelo Conceitual Independente de Tecnologia
@@ -203,11 +219,3 @@ Todos os modelos conceituais, lógicos e físicos derivados deverão manter alin
 **Motivação**
 
 Assegurar rastreabilidade arquitetural e coerência entre os diferentes níveis de abstração.
-
----
-
-# Conclusão
-
-O Enterprise Information Model estabelece a fundação conceitual da Arquitetura da Informação da Enterprise Data & Artificial Intelligence Platform.
-
-Ao definir uma linguagem corporativa comum e independente de tecnologia, este documento garante consistência entre domínios de negócio, produtos de dados, iniciativas analíticas e soluções de Inteligência Artificial, sustentando a evolução da organização para um modelo verdadeiramente Data-Driven e AI-Driven.

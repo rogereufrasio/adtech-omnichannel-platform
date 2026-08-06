@@ -67,3 +67,7 @@ Principais capacidades:
 ## Valor para o Negócio
 
 A plataforma permite reduzir a fragmentação dos dados de clientes, acelerar a ativação de campanhas e fornecer uma visão unificada da jornada do consumidor em todos os canais da organização.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../../README.md)

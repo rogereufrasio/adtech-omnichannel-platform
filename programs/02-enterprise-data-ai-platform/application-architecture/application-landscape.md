@@ -19,12 +19,12 @@ As definições aqui apresentadas devem ser utilizadas como referência para dec
 | Item | Valor |
 |------|-------|
 | Documento | Application Landscape |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Application Architecture |
-| Tipo | Architecture Definition |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Application Architecture |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -72,54 +72,54 @@ subgraph Sources["Sistemas de Origem"]
 ERP["ERP"]
 CRM["CRM"]
 ECOM["E-commerce"]
-APP["Mobile App"]
+APP["Aplicação Mobile"]
 PARTNER["Parceiros"]
 IOT["IoT"]
 end
 
-subgraph DataPlatform["Enterprise Data Platform"]
+subgraph DataPlatform["Plataforma Corporativa de Dados"]
 
-INGEST["Data Ingestion"]
+INGEST["Ingestão de Dados"]
 
-STREAM["Streaming Platform"]
+STREAM["Plataforma de Streaming"]
 
-PROCESS["Data Processing"]
+PROCESS["Processamento de Dados"]
 
 LAKE["Lakehouse"]
 
-CATALOG["Metadata Catalog"]
+CATALOG["Catálogo de Metadados"]
 
-QUALITY["Data Quality"]
+QUALITY["Qualidade de Dados"]
 
-PRODUCTS["Data Products"]
+PRODUCTS["Produtos de Dados"]
 
 end
 
-subgraph AI["Enterprise AI Platform"]
+subgraph AI["Plataforma Corporativa de IA"]
 
 FEATURE["Feature Store"]
 
-MODELS["Model Serving"]
+MODELS["Serviço de Modelos"]
 
-VECTOR["Vector Database"]
+VECTOR["Banco de Dados Vetorial"]
 
-RAG["RAG Services"]
+RAG["Serviços de RAG"]
 
-AGENTS["AI Agents"]
+AGENTS["Agentes de IA"]
 
 end
 
-subgraph Consumption["Business Consumption"]
+subgraph Consumption["Consumo de Negócio"]
 
 BI["Business Intelligence"]
 
-ANALYTICS["Advanced Analytics"]
+ANALYTICS["Analytics Avançado"]
 
-DIGITAL["Digital Products"]
+DIGITAL["Produtos Digitais"]
 
 DECISION["Decision Intelligence"]
 
-API["Corporate APIs"]
+API["APIs Corporativas"]
 
 end
 
@@ -390,6 +390,8 @@ A comunicação entre componentes deverá seguir os seguintes padrões:
 | Processamento analítico | Batch |
 | Consumo de dados | Data Products |
 
+A capacidade corporativa de API Management e Event Streaming é provida pelo **Programa Estratégico 03 — Enterprise Integration Platform**. Os componentes de streaming representados neste landscape correspondem ao processamento de dados do Programa 02 e não substituem o broker corporativo de integração.
+
 ---
 
 # Benefícios Esperados
@@ -425,13 +427,14 @@ A comunicação entre componentes deverá seguir os seguintes padrões:
 
 Este documento complementa:
 
-- Executive Target State
-- Architecture Vision
-- Business Capability Map
-- Business Domains
-- Business Value Streams
-- Data Ownership Model
-- Enterprise Information Model
+- [Executive Target State](../diagrams/executive-target-state.md)
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Capability Map](../business-architecture/capability-map.md)
+- [Business Domains](../business-architecture/business-domains.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Enterprise Information Model](../information-architecture/enterprise-information-model.md)
+- [Data Product Model](../information-architecture/data-product-model.md)
+- [Application Interaction Model](./application-interaction-model.md)
 - Integration Patterns
 - API Strategy
 - Event-Driven Architecture
@@ -486,9 +489,3 @@ As integrações entre aplicações deverão priorizar APIs para comunicações 
 **Motivação**
 
 Garantir baixo acoplamento, escalabilidade e maior resiliência da plataforma.
-
----
-
-# Conclusão
-
-O Application Landscape estabelece a visão lógica das aplicações que compõem a Enterprise Data & Artificial Intelligence Platform, definindo responsabilidades claras, padrões de integração e capacidades compartilhadas. Essa arquitetura fornece uma base consistente para a evolução da plataforma, suportando Analytics, Produtos de Dados e Inteligência Artificial de forma escalável, governada e alinhada aos objetivos estratégicos da organização.

@@ -70,3 +70,8 @@ Capacidades de segurança, observabilidade e qualidade devem estar incorporadas 
 Ao final do programa de transformação, a organização deverá ser capaz de reduzir significativamente o tempo entre a interação do cliente e sua ativação em campanhas, jornadas e experiências personalizadas.
 
 Além dos ganhos operacionais, a nova arquitetura estabelecerá os fundamentos necessários para evolução da plataforma corporativa de dados, Customer 360 e futuras iniciativas de Inteligência Artificial.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

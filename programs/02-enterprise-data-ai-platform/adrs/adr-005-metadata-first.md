@@ -270,6 +270,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [Metadata Strategy](../information-architecture/metadata-strategy.md)
+- [Data Product Model](../information-architecture/data-product-model.md)
+- [Data Governance Framework](../governance/data-governance-framework.md)

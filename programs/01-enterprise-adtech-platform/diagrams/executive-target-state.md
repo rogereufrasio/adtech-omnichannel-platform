@@ -99,4 +99,8 @@ Maior controle sobre consentimento, qualidade e rastreabilidade dos dados.
 ### Escalabilidade
 
 Arquitetura preparada para crescimento do negócio e futuras iniciativas de IA.
-````
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

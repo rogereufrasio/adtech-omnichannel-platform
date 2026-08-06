@@ -26,3 +26,7 @@ flowchart LR
 
     Consent -->|Preferências de consentimento| AdTech
 ```
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../../README.md)

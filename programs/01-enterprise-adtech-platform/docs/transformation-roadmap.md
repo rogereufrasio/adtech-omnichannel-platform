@@ -72,3 +72,7 @@ Redução do tempo de ativação.
 ### Marketing Agents
 
 ### Retail Media Expansion
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

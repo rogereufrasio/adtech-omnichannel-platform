@@ -28,7 +28,7 @@ A análise considera critérios técnicos, operacionais e estratégicos alinhado
 | Salesforce Data Cloud | 8,9 |
 | Segment Personas | 8,1 |
 
-### Considerações
+## Considerações
 
 A Adobe Experience Platform apresentou melhor aderência aos requisitos de Customer 360, ativação omnichannel e integração com plataformas de mídia digital.
 
@@ -42,7 +42,7 @@ A Adobe Experience Platform apresentou melhor aderência aos requisitos de Custo
 | AWS Kinesis | 8,4 |
 | Azure Event Hub | 8,2 |
 
-### Considerações
+## Considerações
 
 Apache Kafka foi selecionado devido à sua ampla adoção de mercado, independência de fornecedor e flexibilidade para diferentes cenários de integração.
 
@@ -55,7 +55,7 @@ Apache Kafka foi selecionado devido à sua ampla adoção de mercado, independê
 | OneTrust | 9,2 |
 | TrustArc | 8,5 |
 
-### Considerações
+## Considerações
 
 OneTrust apresentou maior maturidade para suporte aos requisitos de privacidade, governança e conformidade regulatória.
 
@@ -64,3 +64,8 @@ OneTrust apresentou maior maturidade para suporte aos requisitos de privacidade,
 ## Conclusão
 
 A combinação entre Apache Kafka, Adobe Experience Platform e OneTrust oferece o melhor equilíbrio entre escalabilidade, governança, flexibilidade tecnológica e aderência aos objetivos estratégicos da ShopSphere.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

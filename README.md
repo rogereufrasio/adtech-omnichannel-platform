@@ -1,202 +1,113 @@
-# Portfólio de Arquitetura Corporativa
+# Enterprise Architecture Practice
 
-Este portfólio reúne estudos de arquitetura corporativa construídos a partir de cenários realistas de transformação digital, cobrindo disciplinas como Arquitetura de Soluções, Dados, Analytics, Inteligência Artificial, Integração e Governança.
-
-O objetivo é demonstrar a capacidade de traduzir estratégias de negócio em arquiteturas escaláveis, governáveis e orientadas à geração de valor, utilizando artefatos amplamente empregados em programas corporativos de transformação tecnológica.
+> Repositório oficial da prática de Arquitetura Corporativa da OmniRetail, reunindo princípios, governança, padrões e cinco Programas Estratégicos integrados para a transformação digital.
 
 ---
 
-# Perfil Arquitetural
+## Informações do Repositório
 
-Atuação orientada à evolução de plataformas corporativas, definição de arquiteturas de referência, governança tecnológica e alinhamento entre estratégia, produto e engenharia.
+| Item | Valor |
+| --- | --- |
+| Identidade oficial | Enterprise Architecture Practice |
+| Organização de referência | OmniRetail |
+| Responsável | Enterprise Architecture Practice |
+| Release | 1.0 |
+| Status | Aprovado |
 
-Os cenários deste portfólio simulam responsabilidades típicas de posições como:
+## Executive Summary
 
-* Enterprise Architect
-* Solution Architect
-* Data Architect
-* AI Architect
-* Lead Architect
-* Principal Architect
+Este repositório representa uma **Enterprise Architecture Practice** em operação. Seu conteúdo conecta estratégia, capacidades de negócio, informação, aplicações, tecnologia, governança, roadmaps e decisões arquiteturais em um baseline corporativo coerente.
 
-Principais responsabilidades representadas nos cases:
+A Release 1.0 organiza a transformação em cinco Programas Estratégicos. Cada programa possui escopo, boundaries, artefatos executivos, arquitetura detalhada, governança, roadmap e Architecture Decision Records compatíveis com seu domínio.
 
-* Evolução de arquiteturas corporativas;
-* Definição de arquiteturas de referência;
-* Governança arquitetural;
-* Avaliação de fornecedores e plataformas;
-* Alinhamento entre negócio, produto e engenharia;
-* Estratégia de Dados, Analytics e Inteligência Artificial;
-* Modernização de plataformas digitais.
+## Propósito
 
----
+- orientar decisões de investimento e transformação;
+- estabelecer arquiteturas de referência e estados-alvo;
+- promover coerência e reutilização entre domínios;
+- controlar riscos, dependências e exceções;
+- preservar rastreabilidade entre outcomes, capacidades e soluções;
+- comunicar decisões arquiteturais a executivos, arquitetos e times de entrega.
 
-# O Que Este Portfólio Demonstra
+## Programas Estratégicos
 
-## Capacidades Estratégicas
+| Ordem | Programa Estratégico | Foco | Status |
+| ---: | --- | --- | --- |
+| 01 | [Enterprise AdTech Platform](./programs/01-enterprise-adtech-platform/) | AdTech, audiências e ativação omnichannel | Aprovado |
+| 02 | [Enterprise Data & Artificial Intelligence Platform](./programs/02-enterprise-data-ai-platform/) | Dados, analytics e Inteligência Artificial | Aprovado |
+| 03 | [Enterprise Integration Platform](./programs/03-enterprise-integration-platform/) | APIs, eventos, mensageria e contratos | Aprovado |
+| 04 | [Enterprise Customer Platform](./programs/04-enterprise-customer-platform/) | Customer 360, identidade, consentimento e experiência | Aprovado |
+| 05 | [Enterprise Observability Platform](./programs/05-enterprise-observability-platform/) | Telemetria, confiabilidade e inteligência operacional | Aprovado |
 
-* Definição de arquiteturas alvo (Target Architecture)
-* Construção de roadmaps de transformação
-* Avaliação de fornecedores e tecnologias
-* Governança arquitetural
-* Modelagem de capacidades (Capability Mapping)
-* Arquiteturas de referência
-* Gestão de decisões arquiteturais (ADR)
-* Planejamento de evolução tecnológica
-
-## Capacidades Técnicas
-
-* Event-Driven Architecture
-* API Design & Integration
-* Cloud-Native Architecture
-* Data Architecture
-* Customer Data Platforms (CDP)
-* Data Governance
-* Analytics Platforms
-* GenAI Platforms
-* Retrieval-Augmented Generation (RAG)
-* Agentic AI
-* AI Governance
-
----
-
-# Domínios de Atuação
-
-### Marketing Technology (AdTech)
-
-Customer 360, CDP, Tracking, Segmentação e Ativação Omnichannel.
-
-### Dados & Analytics
-
-Lakehouse, Data Products, Governança, BI e Analytics.
-
-### Inteligência Artificial
-
-GenAI, RAG, AI Agents, MLOps e AI Governance.
-
-### Arquitetura Corporativa
-
-Arquiteturas de Referência, Governança, Capacidades e Transformação Digital.
-
----
-
-# Jornada de Construção
-
-| Case | Tema | Status |
-|--------|--------|--------|
-| [Program 01](./programs/01-enterprise-adtech-platform) | Plataforma AdTech Omnichannel | ✅ Concluído |
-| [Program 02](./programs/02-enterprise-data-ai-platform/) | Plataforma Corporativa de Dados & IA | 🚧 Em Construção |
-| [Program 03](./programs/03-enterprise-integration-platform/) | Plataforma de IA Generativa e Agentes | 📋 Planejado |
-| [Program 04](./programs/04-enterprise-customer-platform/) | Framework de Governança de Dados & IA | 📋 Planejado |
-| [Program 05](./programs/05-enterprise-observability-platform/) | Retail Media Network | 📋 Planejado |
-
----
-
-# Destaque Atual
-
-## Case 01 — Plataforma AdTech Omnichannel
-
-Transformação arquitetural de um ecossistema AdTech para uma varejista omnichannel fictícia chamada **ShopSphere**.
-
-### Objetivos Estratégicos
-
-* Construção de Customer 360;
-* Segmentação em tempo quase real;
-* Ativação omnichannel;
-* Governança de dados;
-* Conformidade com LGPD;
-* Modernização das integrações;
-* Arquitetura orientada a eventos.
-
----
-
-# Arquitetura Executiva (Target State)
+## Visão Integrada
 
 ```mermaid
 flowchart LR
+    EA[Enterprise Architecture Practice]
+    P01[01 · AdTech]
+    P02[02 · Data & AI]
+    P03[03 · Integration]
+    P04[04 · Customer]
+    P05[05 · Observability]
 
-    WEB[Website]
-    APP[Mobile App]
-    TRACK[Tracking API]
-
-    KAFKA[Apache Kafka]
-
-    CDP[Customer 360]
-
-    DATA[Data Platform]
-
-    ACT[Audience Activation]
-
-    WEB --> TRACK
-    APP --> TRACK
-
-    TRACK --> KAFKA
-
-    KAFKA --> CDP
-    KAFKA --> DATA
-
-    CDP --> ACT
+    EA --> P01
+    EA --> P02
+    EA --> P03
+    EA --> P04
+    EA --> P05
+    P03 --> P02
+    P02 --> P04
+    P01 <--> P04
+    P05 -. observa .-> P01
+    P05 -. observa .-> P02
+    P05 -. observa .-> P03
+    P05 -. observa .-> P04
 ```
 
----
+## Modelo de Evolução dos Programas
 
-# Principais Entregáveis
+1. Foundation;
+2. Business Architecture;
+3. Information Architecture;
+4. Application Architecture;
+5. Technology Architecture;
+6. Governance;
+7. Roadmap;
+8. Architecture Decision Records.
 
-## Arquitetura
+Cada bloco somente integra o baseline após Architecture Review.
 
-* Arquitetura de Referência
-* Arquitetura de Dados
-* Arquitetura Alvo (Target State)
-* Diagramas C4
+## Navegação Corporativa
 
-## Governança
+| Área | Conteúdo |
+| --- | --- |
+| [Backlog](./backlog/) | Itens planejados e controlados por release |
+| [Documentação Corporativa](./docs/) | Visão empresarial, capacidades, princípios e roadmap |
+| [Governança](./governance/) | Modelo, papéis, processos e controles corporativos |
+| [Programas Estratégicos](./programs/) | Arquiteturas completas dos cinco programas |
+| [Padrões](./standards/) | Blueprint, templates e critérios documentais |
+| [Automação](./tools/architecture/) | Validadores e inventário documental |
 
-* Princípios Arquiteturais
-* Architecture Review Board
-* Processo de Onboarding de Vendors
+## Princípios Arquiteturais
 
-## Decisões Arquiteturais
+- API First;
+- Cloud Native;
+- Data as a Product;
+- Event-Driven Architecture;
+- Metadata First;
+- Observability by Design;
+- Security & Privacy by Design;
+- decisões orientadas a capacidades e outcomes;
+- governança federada com guardrails corporativos.
 
-* ADR-001 — Arquitetura Orientada a Eventos
-* ADR-002 — Kafka vs Kinesis
-* ADR-003 — Buy vs Build para Customer Data Platform
+Consulte os [Princípios de Arquitetura Corporativa](./docs/architecture-principles.md).
 
-## Integração e Dados
+## Governança da Release
 
-* OpenAPI 3.0
-* Catálogo de Eventos
-* Ownership de Eventos
-* Modelo de Governança de Dados
+A Release 1.0 é composta pelos cinco Programas Estratégicos aprovados. Mudanças no baseline exigem rastreabilidade, revisão arquitetural e decisão compatível com o modelo de governança.
 
----
+Consulte o [Modelo de Governança Corporativa](./governance/governance-model.md) e o [Enterprise Architecture Roadmap](./docs/enterprise-roadmap.md).
 
-# Estrutura do Repositório
+## Status da Release 1.0
 
-```text
-.
-├── docs
-├── architecture
-├── adrs
-├── api
-├── events
-├── governance
-├── diagrams
-```
-
----
-
-# Próxima Evolução
-
-O próximo case do portfólio abordará a evolução de uma Plataforma Corporativa de Dados & Inteligência Artificial, cobrindo:
-
-* Data Lakehouse
-* Data Mesh
-* Data Governance
-* Analytics Platform
-* Data Products
-* GenAI Platform
-* Agentic AI
-* AI Governance
-* Roadmap de Transformação de Dados & IA
-
-O objetivo será demonstrar como uma organização pode evoluir de um ambiente fragmentado de dados para uma plataforma corporativa moderna, preparada para Analytics Avançado, Machine Learning e Inteligência Artificial Generativa.
+**APPROVED** — os cinco Programas Estratégicos compõem o baseline arquitetural oficial da Enterprise Architecture Practice.

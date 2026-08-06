@@ -257,6 +257,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [Security Architecture](../technology-architecture/security-architecture.md)
+- [Data Lifecycle Model](../information-architecture/data-lifecycle-model.md)
+- [Reference Architecture Compliance](../governance/reference-architecture-compliance.md)

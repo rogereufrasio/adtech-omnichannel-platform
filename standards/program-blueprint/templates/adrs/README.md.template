@@ -1,0 +1,29 @@
+# Architecture Decision Records
+
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Programa Estratégico | {{PROGRAM_TITLE}} |
+| Domínio Arquitetural | ADRs |
+| Versão | 1.0 |
+| Status | Em elaboração |
+
+## Propósito
+
+Organizar as decisões arquiteturais estruturantes do Programa Estratégico.
+
+## Catálogo de Decisões
+
+Inclua ADR, título, status e data de decisão.
+
+## Governança
+
+Decisões aceitas são normativas. Substituições exigem novo ADR e preservação do histórico.
+
+## Relação com Outros Artefatos
+
+- Architecture Vision;
+- estado-alvo;
+- framework de governança;
+- roadmap.

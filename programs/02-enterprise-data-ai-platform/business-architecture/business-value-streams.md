@@ -10,7 +10,17 @@
 | Tipo | Modelo de Fluxos de Valor |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento integra a Arquitetura de Negócios do Programa 02 – Enterprise Data & AI Platform.
+
+Seu objetivo é descrever os fluxos de valor do negócio suportados pela plataforma, evidenciando como dados, aplicações e capacidades corporativas colaboram para a geração de valor aos consumidores internos e externos.
+
+As definições aqui apresentadas orientam a evolução da arquitetura empresarial e o alinhamento entre estratégia, negócio e tecnologia.
 
 ---
 
@@ -271,6 +281,15 @@ Os próximos artefatos utilizarão estes fluxos como referência para identifica
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Capability Map](./capability-map.md)
+- [Business Domains](./business-domains.md)
+- [Capability Assessment](./capability-assessment.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Fluxos de Valor Orientam a Arquitetura
@@ -306,13 +325,3 @@ Toda iniciativa relacionada ao programa deverá demonstrar claramente qual fluxo
 **Motivação**
 
 Priorizar investimentos capazes de gerar benefícios mensuráveis para o negócio e fortalecer o alinhamento entre estratégia e arquitetura.
-
----
-
-# Conclusão
-
-Os Business Value Streams consolidam a visão de como a organização transforma dados em valor de negócio.
-
-Ao conectar capacidades organizacionais, governança da informação, analytics e Inteligência Artificial, este documento estabelece uma narrativa arquitetural contínua entre a estratégia corporativa e os futuros domínios de arquitetura.
-
-Sua principal contribuição é demonstrar que a **Enterprise Data & Artificial Intelligence Platform** não é apenas uma iniciativa tecnológica, mas um habilitador estratégico para uma organização verdadeiramente orientada por dados e Inteligência Artificial.

@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Technology Platform |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Technology Architecture |
-| Tipo | Technology Architecture |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Technology Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os componentes tecnológicos, padrões de infraestrutura, serviços compartilhados e capacidades técnicas que sustentam a plataforma corporativa de dados e inteligência artificial.
+
+A Technology Architecture estabelece as diretrizes para garantir escalabilidade, disponibilidade, segurança, observabilidade, automação e padronização tecnológica, permitindo que as demais camadas da arquitetura evoluam de forma consistente e sustentável.
 
 ---
 
@@ -234,14 +242,13 @@ Esse princípio está alinhado ao ADR-004, que estabelece independência em rela
 
 Este documento complementa:
 
-- Application Landscape
-- Integration Patterns
-- API Strategy
-- Event-Driven Architecture
-- Application Interaction Model
-- Technology Standards
-- Infrastructure Architecture
-- Security Architecture
+- [Infrastructure Architecture](./infrastructure-architecture.md)
+- [Observability Architecture](./observability-architecture.md)
+- [Security Architecture](./security-architecture.md)
+- [Technology Standards](./technology-standards.md)
+- [Application Interaction Model](../application-architecture/application-interaction-model.md)
+- [Application Landscape](../application-architecture/application-landscape.md)
+- [Data Product Model](../information-architecture/data-product-model.md)
 
 ---
 
@@ -292,9 +299,3 @@ Provisionamento e configuração deverão ser realizados preferencialmente por I
 **Motivação**
 
 Garantir padronização, repetibilidade e redução de erros operacionais.
-
----
-
-# Conclusão
-
-A Technology Platform estabelece a fundação tecnológica da Enterprise Data & Artificial Intelligence Platform, suportando processamento de dados, integração, Inteligência Artificial e serviços corporativos de maneira escalável, resiliente, observável e independente de fornecedores específicos.

@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | AI Governance Framework |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Governance |
-| Tipo | Governance Framework |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Governance |
+| Tipo | Framework de Governança |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte do domínio de Governance da Enterprise Data & AI Platform. Seu objetivo é estabelecer o modelo de governança necessário para garantir que decisões arquiteturais, ativos de dados, aplicações, inteligência artificial e tecnologias corporativas evoluam de forma consistente, segura e alinhada à estratégia de negócio.
+
+O conjunto de documentos de Governance define políticas, responsabilidades, processos de decisão, métricas e mecanismos de conformidade que sustentam a evolução contínua da arquitetura corporativa.
 
 ---
 
@@ -152,13 +160,22 @@ OWNERS --> MODELS
 
 ---
 
+# Benefícios Esperados
+
+- adoção de IA com riscos, responsabilidades e controles explícitos;
+- maior transparência, auditabilidade e supervisão de modelos;
+- reutilização segura de capacidades corporativas de IA.
+
+---
+
 # Relação com Outros Artefatos
 
-- Technology Platform
-- Security Architecture
-- Observability Architecture
-- Data Governance Framework
-- Application Architecture Principles
+- [Data Governance Framework](./data-governance-framework.md)
+- [Architecture Governance](./architecture-governance.md)
+- [Technology Platform](../technology-architecture/technology-platform.md)
+- [Security Architecture](../technology-architecture/security-architecture.md)
+- [Observability Architecture](../technology-architecture/observability-architecture.md)
+- [Application Architecture Principles](../application-architecture/application-architecture-principles.md)
 
 ---
 
@@ -185,9 +202,3 @@ Modelos que suportam decisões críticas deverão possuir supervisão humana.
 ## DA-04 — Monitoramento Contínuo
 
 Todos os modelos deverão possuir métricas operacionais e monitoramento de desempenho.
-
----
-
-# Conclusão
-
-A Governança de Inteligência Artificial estabelece os mecanismos necessários para garantir que as capacidades de IA da Enterprise Data & Artificial Intelligence Platform sejam utilizadas de forma ética, segura, transparente e alinhada às estratégias corporativas de Dados e Arquitetura Empresarial.

@@ -67,3 +67,7 @@ Eventos relacionados ao perfil e relacionamento do cliente.
 - Eventos devem representar fatos de negócio;
 - Eventos devem possuir schema versionado;
 - Eventos não devem conter dados pessoais desnecessários.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

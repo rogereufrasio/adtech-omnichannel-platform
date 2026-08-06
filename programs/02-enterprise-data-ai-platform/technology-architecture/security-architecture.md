@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Security Architecture |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Technology Architecture |
 | Tipo | Security Architecture |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Technology Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os componentes tecnológicos, padrões de infraestrutura, serviços compartilhados e capacidades técnicas que sustentam a plataforma corporativa de dados e inteligência artificial.
+
+A Technology Architecture estabelece as diretrizes para garantir escalabilidade, disponibilidade, segurança, observabilidade, automação e padronização tecnológica, permitindo que as demais camadas da arquitetura evoluam de forma consistente e sustentável.
 
 ---
 
@@ -269,13 +277,13 @@ Todos os componentes deverão produzir:
 
 Este documento complementa:
 
-- Technology Platform
-- Infrastructure Architecture
-- Technology Standards
-- Application Architecture Principles
-- API Strategy
-- Event-Driven Architecture
-- Data Governance
+- [Infrastructure Architecture](./infrastructure-architecture.md)
+- [Technology Platform](./technology-platform.md)
+- [Technology Standards](./technology-standards.md)
+- [Application Architecture Principles](../application-architecture/application-architecture-principles.md)
+- [API Strategy](../application-architecture/api-strategy.md)
+- [Event-Driven Architecture](../application-architecture/event-driven-architecture.md)
+- [Data Lifecycle Model](../information-architecture/data-lifecycle-model.md)
 
 ---
 
@@ -326,9 +334,3 @@ Toda ação relevante deverá gerar registros auditáveis.
 **Motivação**
 
 Garantir rastreabilidade e conformidade.
-
----
-
-# Conclusão
-
-A Security Architecture estabelece uma abordagem corporativa para proteção da Enterprise Data & Artificial Intelligence Platform, incorporando controles de identidade, acesso, criptografia, auditoria e observabilidade como capacidades nativas da arquitetura. Essa estratégia reduz riscos, fortalece a governança e garante aderência aos requisitos de segurança e conformidade da organização.

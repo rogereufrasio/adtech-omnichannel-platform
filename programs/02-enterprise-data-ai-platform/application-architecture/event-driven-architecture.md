@@ -19,12 +19,12 @@ As definições aqui apresentadas devem ser utilizadas como referência para dec
 | Item | Valor |
 |------|-------|
 | Documento | Event-Driven Architecture |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Application Architecture |
-| Tipo | Architecture Definition |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -72,30 +72,30 @@ subgraph Producers["Produtores de Eventos"]
 ERP["ERP"]
 CRM["CRM"]
 ECOM["E-commerce"]
-APP["Mobile App"]
+APP["Aplicação Mobile"]
 end
 
-subgraph Platform["Event Platform"]
+subgraph Platform["Plataforma de Eventos"]
 
-BROKER["Enterprise Event Broker"]
+BROKER["Broker Corporativo de Eventos"]
 
-CATALOG["Event Catalog"]
+CATALOG["Catálogo de Eventos"]
 
-SCHEMA["Schema Registry"]
+SCHEMA["Registro de Schemas"]
 
 end
 
 subgraph Consumers["Consumidores"]
 
-DATA["Data Platform"]
+DATA["Plataforma de Dados"]
 
-API["Corporate APIs"]
+API["APIs Corporativas"]
 
-AI["Enterprise AI Platform"]
+AI["Plataforma Corporativa de IA"]
 
 ANALYTICS["Analytics"]
 
-AUTOMATION["Business Automation"]
+AUTOMATION["Automação de Negócio"]
 
 end
 
@@ -259,26 +259,32 @@ Exemplos:
 
 ---
 
+# Limites e Dependências
+
+O Programa 02 define eventos, contratos e requisitos de consumo necessários à plataforma de dados e IA. A capacidade corporativa de publicação, distribuição e operação de eventos é provida pelo **Programa Estratégico 03 — Enterprise Integration Platform**, que mantém o broker, o catálogo de eventos e o registro de schemas compartilhados.
+
+---
+
 # Relação com Outros Artefatos
 
 Este documento complementa:
 
-- Application Landscape
-- Integration Patterns
-- API Strategy
-- Enterprise Information Model
-- Data Product Model
-- Technology Architecture
+- [API Strategy](./api-strategy.md)
+- [Application Interaction Model](./application-interaction-model.md)
+- [Application Landscape](./application-landscape.md)
+- [Integration Patterns](./integration-patterns.md)
+- [Data Product Model](../information-architecture/data-product-model.md)
+- [Enterprise Information Model](../information-architecture/enterprise-information-model.md)
 
 ---
 
 # Decisões Arquiteturais
 
-## DA-01 — Event Broker Corporativo
+## DA-01 — Uso da Plataforma Corporativa de Eventos
 
 **Decisão**
 
-Toda comunicação assíncrona deverá ocorrer por meio de um broker corporativo de eventos.
+Toda comunicação assíncrona entre domínios deverá utilizar a plataforma corporativa de eventos provida pelo Programa Estratégico 03.
 
 **Motivação**
 
@@ -319,9 +325,3 @@ Todos os eventos deverão possuir contrato versionado e registrado em catálogo 
 **Motivação**
 
 Assegurar interoperabilidade e reduzir impactos de evolução.
-
----
-
-# Conclusão
-
-A arquitetura orientada a eventos estabelece um modelo corporativo para integração assíncrona entre aplicações, produtos de dados e serviços de Inteligência Artificial. Ao adotar eventos como mecanismo padrão de comunicação, a plataforma reduz acoplamento, aumenta escalabilidade e cria uma base sólida para processamento em tempo real, analytics e automação inteligente.

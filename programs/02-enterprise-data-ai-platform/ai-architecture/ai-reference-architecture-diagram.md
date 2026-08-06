@@ -1,6 +1,6 @@
-# AI Reference Architecture Diagram
+# Diagrama da Arquitetura de Referência de IA
 
-## Context
+## Contexto
 
 A AI Reference Architecture define a visão estrutural da capacidade de Inteligência Artificial dentro do Enterprise Data & AI Platform.
 
@@ -49,3 +49,14 @@ F -. governs .-> B
 F -. governs .-> C
 F -. governs .-> D
 F -. governs .-> E
+```
+
+---
+
+## Referências
+
+- AI Platform Architecture
+- GenAI Reference Architecture
+- AI Lifecycle Management
+- AI Operating Model
+- Model Governance

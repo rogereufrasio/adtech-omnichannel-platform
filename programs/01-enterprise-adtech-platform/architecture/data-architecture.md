@@ -147,3 +147,8 @@ Consumidores:
 * Governança integrada ao ciclo de vida dos dados;
 * Catálogo obrigatório para produtos de dados;
 * Qualidade monitorada continuamente.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

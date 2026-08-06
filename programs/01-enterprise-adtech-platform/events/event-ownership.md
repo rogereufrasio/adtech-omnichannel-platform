@@ -61,3 +61,7 @@ Eventos críticos devem possuir monitoramento e alertas associados.
 4. Atualização de schema;
 5. Publicação da documentação;
 6. Liberação para produção.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

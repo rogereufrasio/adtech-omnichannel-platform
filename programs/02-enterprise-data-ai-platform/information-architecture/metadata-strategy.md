@@ -5,12 +5,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Metadata Strategy |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Information Architecture |
 | Tipo | Estratégia de Metadados |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Information Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os princípios, modelos e padrões necessários para garantir consistência, interoperabilidade, governança e escalabilidade dos ativos de informação da plataforma corporativa.
+
+A Information Architecture estabelece a estrutura necessária para que dados sejam tratados como produtos estratégicos, suportando analytics, inteligência artificial, integração corporativa e tomada de decisão baseada em dados.
 
 ---
 
@@ -50,19 +58,13 @@ Esta estratégia estabelece uma abordagem corporativa baseada no princípio **Me
 ```mermaid
 flowchart LR
 
-Sources["Data Sources"]
-
-Ingestion["Data Ingestion"]
-
-Catalog["Enterprise Metadata Catalog"]
-
-Lineage["Data Lineage"]
-
-Quality["Data Quality"]
-
-Governance["Data Governance"]
-
-Consumers["Business & Technical Consumers"]
+Sources["Fontes de Dados"]
+Ingestion["Ingestão de Dados"]
+Catalog["Catálogo Corporativo de Metadados"]
+Lineage["Linhagem de Dados"]
+Quality["Qualidade de Dados"]
+Governance["Governança de Dados"]
+Consumers["Consumidores de Negócio e Tecnologia"]
 
 Sources --> Ingestion
 Ingestion --> Catalog
@@ -117,17 +119,12 @@ Todo Produto de Dados deverá possuir, no mínimo:
 ```mermaid
 flowchart LR
 
-Creation["Asset Creation"]
-
-Registration["Metadata Registration"]
-
-Validation["Governance Validation"]
-
-Publication["Catalog Publication"]
-
-Consumption["Business Consumption"]
-
-Monitoring["Continuous Monitoring"]
+Creation["Criação do Ativo"]
+Registration["Registro de Metadados"]
+Validation["Validação de Governança"]
+Publication["Publicação no Catálogo"]
+Consumption["Consumo de Negócio"]
+Monitoring["Monitoramento Contínuo"]
 
 Creation --> Registration
 Registration --> Validation
@@ -186,6 +183,17 @@ Monitoring --> Registration
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Domain Model](./data-domain-model.md)
+- [Data Lifecycle Model](./data-lifecycle-model.md)
+- [Data Product Model](./data-product-model.md)
+- [Enterprise Information Model](./enterprise-information-model.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Catálogo Corporativo Único
@@ -221,11 +229,3 @@ Sempre que tecnicamente viável, a captura e atualização de metadados deverá 
 **Motivação**
 
 Reduzir esforço manual e manter o catálogo sempre atualizado.
-
----
-
-# Conclusão
-
-A Metadata Strategy estabelece os princípios, processos e responsabilidades para a gestão dos metadados corporativos, transformando o catálogo de dados em um componente estratégico da Enterprise Data Platform.
-
-Ao adotar uma abordagem **Metadata First**, a organização fortalece sua Governança de Dados, aumenta a confiança nos ativos de informação e cria uma base sólida para Analytics, Inteligência Artificial e tomada de decisão baseada em dados.

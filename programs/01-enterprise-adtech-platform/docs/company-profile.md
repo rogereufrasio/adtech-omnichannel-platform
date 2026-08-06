@@ -1,6 +1,10 @@
-# Company Profile
+# Perfil da Organização
 
-## About ShopSphere
+## Contexto
+
+Este documento descreve o perfil organizacional utilizado como contexto do Programa Estratégico 01.
+
+## Sobre a ShopSphere
 
 ShopSphere é uma varejista omnichannel fictícia especializada em produtos para casa, tecnologia e lifestyle.
 
@@ -41,3 +45,8 @@ A diretoria definiu como prioridade estratégica a criação de uma plataforma c
 * Governança de dados
 * Conformidade com LGPD
 * Escalabilidade para os próximos cinco anos
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

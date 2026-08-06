@@ -10,7 +10,17 @@
 | Tipo | Avaliação de Capacidades de Negócio |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento integra a Arquitetura de Negócios do Programa 02 – Enterprise Data & AI Platform.
+
+Seu objetivo é avaliar o nível de maturidade das capacidades corporativas relacionadas à gestão de dados, analytics e inteligência artificial, identificando oportunidades de evolução arquitetural.
+
+Esta avaliação subsidia o planejamento do roadmap e a priorização das iniciativas estratégicas do programa.
 
 ---
 
@@ -211,6 +221,24 @@ Este documento fornece os insumos para:
 - Data Ownership Model.
 
 Esses artefatos detalharão como as capacidades avaliadas se relacionam entre si e como sustentam a estratégia apresentada no Foundation.
+
+---
+
+## Benefícios Esperados
+
+- priorização de investimentos baseada em lacunas de capacidade;
+- baseline comum para acompanhar a evolução da transformação;
+- alinhamento entre outcomes de negócio e iniciativas arquiteturais;
+- transparência executiva sobre maturidade atual, alvo e dependências.
+
+---
+
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Capability Map](./capability-map.md)
+- [Business Domains](./business-domains.md)
+- [Business Value Streams](./business-value-streams.md)
 
 ---
 

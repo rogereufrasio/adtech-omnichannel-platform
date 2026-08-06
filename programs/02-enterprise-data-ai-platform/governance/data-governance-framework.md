@@ -4,17 +4,25 @@
 
 ---
 
+## Context
+
+Este documento faz parte do domínio de Governance da Enterprise Data & AI Platform. Seu objetivo é estabelecer o modelo de governança necessário para garantir que decisões arquiteturais, ativos de dados, aplicações, inteligência artificial e tecnologias corporativas evoluam de forma consistente, segura e alinhada à estratégia de negócio.
+
+O conjunto de documentos de Governance define políticas, responsabilidades, processos de decisão, métricas e mecanismos de conformidade que sustentam a evolução contínua da arquitetura corporativa.
+
+---
+
 # Informações do Documento
 
 | Item | Valor |
 |------|-------|
 | Documento | Data Governance Framework |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Governance |
-| Tipo | Governance Framework |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Governance |
+| Tipo | Framework de Governança |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -168,11 +176,13 @@ Responsável pelo consumo adequado dos ativos de dados.
 
 # Relação com Outros Artefatos
 
-- Data Ownership Model
-- Business Domains
-- Technology Platform
-- Security Architecture
-- Information Architecture
+- [AI Governance Framework](./ai-governance-framework.md)
+- [Architecture Governance](./architecture-governance.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Domain Model](../information-architecture/data-domain-model.md)
+- [Data Product Model](../information-architecture/data-product-model.md)
+- [Metadata Strategy](../information-architecture/metadata-strategy.md)
+- [Security Architecture](../technology-architecture/security-architecture.md)
 
 ---
 
@@ -193,9 +203,3 @@ Todo produto de dados deverá possuir documentação, SLA e Owner.
 ## DA-03 — Metadados Obrigatórios
 
 Nenhum Data Product poderá ser publicado sem metadados mínimos.
-
----
-
-# Conclusão
-
-A Governança de Dados estabelece os mecanismos necessários para transformar dados corporativos em ativos confiáveis, reutilizáveis e preparados para suportar decisões estratégicas e Inteligência Artificial.

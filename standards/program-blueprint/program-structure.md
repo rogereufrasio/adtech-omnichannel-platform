@@ -1,315 +1,249 @@
-# Enterprise Architecture Program Structure
+# Estrutura Padrão de um Enterprise Architecture Program
 
 ## Objetivo
 
-Este documento define a estrutura padrão que deve ser utilizada por todos os Enterprise Architecture Programs deste repositório.
+Este documento define a estrutura oficial utilizada por todos os Enterprise Architecture Programs deste repositório.
 
-A padronização da estrutura garante consistência entre programas, facilita a navegação, reduz o esforço de manutenção e permite a automação da criação de novos programas.
+Seu objetivo é garantir padronização, previsibilidade, facilidade de navegação e suporte à automação dos processos de documentação e governança arquitetural.
 
 ---
 
-# Estrutura padrão
-
-Todo programa deve seguir a seguinte organização de diretórios:
+# Estrutura de Diretórios
 
 ```text
-programs/
-└── NN-program-name/
-    ├── README.md
-    ├── architecture-target-state.md
-    ├── executive-target-state.md
-    ├── maturity-assessment.md
-    │
-    ├── adrs/
-    │   ├── README.md
-    │   └── adr-xxx-*.md
-    │
-    ├── business-architecture/
-    │
-    ├── application-architecture/
-    │
-    ├── information-architecture/
-    │
-    ├── technology-architecture/
-    │
-    ├── governance/
-    │
-    ├── roadmap/
-    │
-    └── diagrams/
-```
-
----
-
-# Diretório raiz
-
-O diretório principal representa um programa completo de Arquitetura Corporativa.
-
-O nome deve seguir o padrão:
-
-```text
-NN-program-name
-```
-
-Onde:
-
-- **NN** corresponde ao número sequencial do programa;
-- **program-name** corresponde ao nome do domínio utilizando letras minúsculas e hífens.
-
-Exemplos:
-
-```text
-01-enterprise-business-architecture
-02-enterprise-data-ai-platform
-03-enterprise-integration-platform
-04-enterprise-security-platform
-```
-
----
-
-# Documentos da raiz
-
-Os documentos localizados na raiz representam a visão geral do programa.
-
-## README.md
-
-Documento de entrada do programa.
-
-Deve apresentar:
-
-- propósito;
-- escopo;
-- objetivos;
-- organização;
-- documentos relacionados.
-
----
-
-## architecture-target-state.md
-
-Define a arquitetura alvo completa do programa.
-
-Deve conter:
-
-- visão arquitetural;
-- capacidades;
-- componentes;
-- princípios;
-- direcionadores.
-
----
-
-## executive-target-state.md
-
-Versão executiva da arquitetura alvo.
-
-Destinada à comunicação com liderança e stakeholders.
-
----
-
-## maturity-assessment.md
-
-Avaliação do estado atual da arquitetura.
-
-Pode incluir:
-
-- maturidade;
-- lacunas;
-- riscos;
-- oportunidades.
-
----
-
-# Diretório adrs
-
-Contém todos os Architecture Decision Records (ADR).
-
-Estrutura:
-
-```text
-adrs/
+program-xx-domain-name/
+│
 ├── README.md
-├── adr-001-*.md
-├── adr-002-*.md
-└── ...
+├── architecture-target-state.md
+├── executive-target-state.md
+├── maturity-assessment.md
+│
+├── adrs/
+│   └── README.md
+│
+├── business-architecture/
+├── application-architecture/
+├── information-architecture/
+├── technology-architecture/
+├── governance/
+├── roadmap/
+├── diagrams/
+├── docs/
+│
+└── <domain-specific-folders>
 ```
-
-Cada ADR representa uma decisão arquitetural registrada e aprovada.
 
 ---
 
-# Business Architecture
+# Documentos da Raiz
 
-```text
-business-architecture/
-```
+| Documento | Objetivo |
+|-----------|----------|
+| README.md | Visão geral do programa |
+| architecture-target-state.md | Arquitetura-alvo |
+| executive-target-state.md | Resumo executivo |
+| maturity-assessment.md | Avaliação de maturidade |
 
-Reúne toda a documentação relacionada ao negócio.
+---
+
+# Diretórios Obrigatórios
+
+## adrs
+
+Contém todas as decisões arquiteturais (Architecture Decision Records).
+
+---
+
+## business-architecture
+
+Documentação da arquitetura de negócio.
 
 Exemplos:
 
-- Business Domains
 - Capability Map
-- Business Value Streams
-- Organization Mapping
-- Business Processes
+- Value Streams
+- Business Domains
+- Capability Assessment
 
 ---
 
-# Application Architecture
+## application-architecture
 
-```text
-application-architecture/
-```
-
-Reúne toda a documentação da arquitetura de aplicações.
+Documentação da arquitetura de aplicações.
 
 Exemplos:
 
 - Application Landscape
 - API Strategy
-- Integration Strategy
-- Event-Driven Architecture
-- Service Landscape
+- Integration Patterns
+- Interaction Model
 
 ---
 
-# Information Architecture
+## information-architecture
 
-```text
-information-architecture/
-```
-
-Centraliza a documentação relacionada aos dados corporativos.
+Modelos de informação corporativa.
 
 Exemplos:
 
 - Enterprise Information Model
 - Data Domain Model
-- Data Product Model
 - Metadata Strategy
-- Master Data
+- Data Lifecycle
 
 ---
 
-# Technology Architecture
+## technology-architecture
 
-```text
-technology-architecture/
-```
-
-Define os componentes tecnológicos da solução.
+Arquitetura tecnológica.
 
 Exemplos:
 
+- Infrastructure
 - Technology Platform
 - Security Architecture
-- Observability
-- Infrastructure
-- Cloud Platform
+- Technology Standards
 
 ---
 
-# Governance
+## governance
 
-```text
-governance/
-```
-
-Documenta os processos de governança da arquitetura.
+Governança da arquitetura.
 
 Exemplos:
 
 - Architecture Governance
-- Data Governance
-- AI Governance
-- Standards
-- Review Process
+- Decision Governance
+- Architecture Metrics
+- Compliance
 
 ---
 
-# Roadmap
+## roadmap
 
-```text
-roadmap/
-```
-
-Contém o planejamento evolutivo do programa.
+Planejamento da evolução arquitetural.
 
 Exemplos:
 
 - Implementation Roadmap
 - Architecture Evolution Plan
-- Transformation Backlog
-- Releases
-- Milestones
+- Success Metrics
 
 ---
 
-# Diagrams
+## diagrams
 
-```text
-diagrams/
-```
+Diagramas executivos e arquiteturais.
 
-Armazena diagramas utilizados pela documentação.
-
-Sempre que possível:
-
-- utilizar Mermaid;
-- manter diagramas próximos aos documentos relacionados;
-- evitar duplicação.
+Preferencialmente utilizando Mermaid.
 
 ---
 
-# Convenções de nomenclatura
+## docs
 
-Todos os arquivos devem utilizar:
+Documentação de apoio.
+
+Exemplos:
+
+- Company Profile
+- Business Context
+- Architecture Vision
+
+---
+
+# Diretórios Específicos por Domínio
+
+Cada programa pode incluir diretórios especializados quando necessário.
+
+Exemplos:
+
+| Programa | Diretório |
+|----------|-----------|
+| Enterprise Data & AI Platform | ai-architecture |
+| Enterprise Integration Platform | integration-architecture |
+| Enterprise Customer Platform | customer-architecture |
+| Enterprise Security Platform | security-architecture |
+| Enterprise Observability Platform | observability-architecture |
+
+Esses diretórios complementam a estrutura padrão e não substituem os diretórios obrigatórios.
+
+---
+
+# Convenções de Nomenclatura
+
+## Diretórios
 
 - letras minúsculas;
-- palavras separadas por hífen;
-- nomes descritivos;
+- separados por hífen (`-`);
+- nomes descritivos.
+
+Exemplos:
+
+```text
+business-architecture
+technology-architecture
+integration-architecture
+```
+
+---
+
+## Arquivos
+
+- letras minúsculas;
+- separados por hífen;
 - extensão `.md`.
 
-Exemplo:
+Exemplos:
 
 ```text
-enterprise-information-model.md
-```
-
-Evitar:
-
-```text
-EnterpriseInformationModel.md
-enterprise_information_model.md
-doc1.md
+application-landscape.md
+technology-platform.md
+architecture-governance.md
 ```
 
 ---
 
-# Organização dos documentos
+## ADRs
 
-Cada documento deve pertencer a apenas uma categoria arquitetural.
+Formato:
 
-Evitar:
+```text
+adr-001-nome-da-decisao.md
+```
 
-- duplicação de conteúdo;
-- documentos equivalentes em múltiplas pastas;
-- referências cruzadas desnecessárias.
-
-Quando necessário, utilizar links relativos entre documentos.
+Numeração sequencial.
 
 ---
 
-# Evolução da estrutura
+# Organização dos Diagramas
 
-Novos diretórios somente devem ser adicionados quando houver justificativa arquitetural clara.
+Todos os diagramas devem:
 
-Sempre que uma alteração estrutural for incorporada ao blueprint:
+- utilizar Mermaid sempre que possível;
+- possuir sintaxe válida;
+- ser versionados juntamente com a documentação;
+- representar a arquitetura descrita nos documentos relacionados.
 
-1. atualizar este documento;
-2. atualizar a matriz documental;
-3. atualizar o script de scaffold;
-4. manter compatibilidade com os programas futuros.
+---
 
-O Programa 02 permanece como referência histórica da evolução do padrão estrutural.
+# Princípios
+
+A estrutura do programa segue os seguintes princípios:
+
+- padronização;
+- modularidade;
+- reutilização;
+- rastreabilidade;
+- simplicidade;
+- escalabilidade;
+- automação.
+
+---
+
+# Referências
+
+- `README.md`
+- `document-matrix.md`
+- `checklist.md`
+- `adr-template.md`
+- `../architecture-document-catalog.md`

@@ -40,12 +40,36 @@ DIRECTORIES = {
 }
 
 
-def create_file(path: Path, content: str = "") -> None:
-    """Create a file if it does not already exist."""
-    if path.exists():
-        return
+def create_file(
+    path: Path,
+    content: str = "",
+    mode: str = "default",
+) -> str:
+    """
+    Create or update a file according to generation mode.
 
-    path.write_text(content, encoding="utf-8")
+    Modes:
+    - default: create only if missing
+    - update: create only missing files
+    - force: overwrite existing files
+    """
+
+    if path.exists():
+        if mode == "force":
+            path.write_text(
+                content,
+                encoding="utf-8",
+            )
+            return "updated"
+
+        return "skipped"
+
+    path.write_text(
+        content,
+        encoding="utf-8",
+    )
+
+    return "created"
 
 
 def create_directory(path: Path) -> None:
@@ -53,54 +77,29 @@ def create_directory(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
 
+def render_template(
+    template_path: Path,
+    **variables,
+) -> str:
+    """
+    Render blueprint template replacing variables.
+    """
+
+    content = template_path.read_text(encoding="utf-8")
+
+    for key, value in variables.items():
+        content = content.replace(
+            f"{{{{{key}}}}}",
+            str(value),
+        )
+
+    return content
+
+
 def build_program_path(number: int, name: str) -> Path:
     directory = f"{number:02d}-{name}"
     return Path("programs") / directory
 
-
-def generate_readme(program_name: str, number: int) -> str:
-    title = program_name.replace("-", " ").title()
-
-    return f"""# Program {number:02d} — {title}
-
-## Overview
-
-Describe the purpose of this Enterprise Architecture Program.
-
-## Objectives
-
-- Define the architectural vision.
-- Document the target state.
-- Guide implementation.
-- Support architecture governance.
-
-## Documentation
-
-- architecture-target-state.md
-- executive-target-state.md
-- maturity-assessment.md
-
-## Architecture Domains
-
-- Business Architecture
-- Application Architecture
-- Information Architecture
-- Technology Architecture
-- Governance
-- Roadmap
-"""
-
-
-def generate_adr_readme() -> str:
-    return """# Architecture Decision Records
-
-This directory stores all Architecture Decision Records (ADRs)
-for this Enterprise Architecture Program.
-
-Follow the template defined in:
-
-standards/program-blueprint/adr-template.md
-"""
 
 def preview_program(program_path: Path, number: int, name: str) -> None:
     print()
@@ -115,36 +114,56 @@ def preview_program(program_path: Path, number: int, name: str) -> None:
     print()
 
     for filename in ROOT_FILES:
-        print(
-            f"  {program_path / filename}"
-        )
+        print(f"  {program_path / filename}")
 
     for directory, files in DIRECTORIES.items():
         print()
 
         if files:
             for filename in files:
-                print(
-                    f"  {program_path / directory / filename}"
-                )
+                print(f"  {program_path / directory / filename}")
         else:
-            print(
-                f"  {program_path / directory}/"
-            )
+            print(f"  {program_path / directory}/")
 
     print()
 
-def scaffold(program_path: Path, number: int, name: str) -> None:
+
+def scaffold(
+    program_path: Path,
+    number: int,
+    name: str,
+    mode: str = "default",
+) -> dict:
     create_directory(program_path)
 
+    created_files = []
+
+    # 1. Process Root Files
     for filename in ROOT_FILES:
+        template = (
+            Path("standards")
+            / "program-blueprint"
+            / "templates"
+            / f"{filename}.template"
+        )
+
         file_path = program_path / filename
 
-        if filename == "README.md":
-            create_file(file_path, generate_readme(name, number))
-        else:
-            create_file(file_path)
+        content = render_template(
+            template,
+            PROGRAM_NUMBER=f"{number:02d}",
+            PROGRAM_TITLE=name.replace("-", " ").title(),
+        )
 
+        create_file(
+            file_path,
+            content,
+            mode=mode,
+        )
+
+        created_files.append(str(file_path))
+
+    # 2. Process Directories and Sub-templates
     for directory, files in DIRECTORIES.items():
         folder = program_path / directory
         create_directory(folder)
@@ -152,10 +171,32 @@ def scaffold(program_path: Path, number: int, name: str) -> None:
         for filename in files:
             target = folder / filename
 
-            if directory == "adrs" and filename == "README.md":
-                create_file(target, generate_adr_readme())
-            else:
-                create_file(target)
+            template_path = (
+                Path("standards")
+                / "program-blueprint"
+                / "templates"
+                / directory
+                / f"{filename}.template"
+            )
+
+            content = render_template(
+                template_path,
+                PROGRAM_NUMBER=f"{number:02d}",
+                PROGRAM_TITLE=name.replace("-", " ").title(),
+            )
+
+            create_file(
+                target,
+                content,
+                mode=mode,
+            )
+
+            created_files.append(str(target))
+
+    return {
+        "program": str(program_path),
+        "files": created_files,
+    }
 
 
 def parse_args():
@@ -173,20 +214,31 @@ def parse_args():
     parser.add_argument(
         "--name",
         required=True,
-        help="Program name (kebab-case)",
+        help="Nome do programa (minúsculas separadas por hífens)",
     )
 
     parser.add_argument(
-    "--dry-run",
-    action="store_true",
-    help="Preview generated program structure without creating files",
+        "--dry-run",
+        action="store_true",
+        help="Preview generated program structure without creating files",
+    )
+
+    parser.add_argument(
+        "--update",
+        action="store_true",
+        help="Create only missing files and preserve existing files",
+    )
+
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite existing files",
     )
 
     return parser.parse_args()
 
 
 def main():
-
     if not validate():
         print(
             "Program generation cancelled because "
@@ -196,6 +248,12 @@ def main():
         return 1
 
     args = parse_args()
+
+    mode = "default"
+    if args.force:
+        mode = "force"
+    elif args.update:
+        mode = "update"
 
     program_path = build_program_path(
         args.number,
@@ -217,6 +275,7 @@ def main():
         program_path=program_path,
         number=args.number,
         name=args.name,
+        mode=mode,
     )
 
     print()
@@ -229,11 +288,6 @@ def main():
     print(f"Location: {program_path}")
     print()
 
-    scaffold(
-        program_path=program_path,
-        number=args.number,
-        name=args.name,
-    )
 
 if __name__ == "__main__":
     raise SystemExit(main())

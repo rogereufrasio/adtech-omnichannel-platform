@@ -9,7 +9,15 @@
 | Categoria | Visão Executiva de Arquitetura |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.1 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento fornece uma visão executiva da arquitetura-alvo da Enterprise Data & AI Platform, permitindo que executivos, arquitetos e líderes de tecnologia compreendam rapidamente os principais componentes da plataforma e sua contribuição para os objetivos estratégicos da organização.
+
+A visão executiva complementa os documentos detalhados de arquitetura e serve como principal artefato de comunicação da arquitetura corporativa.
 
 ---
 
@@ -57,3 +65,15 @@ Capacidades de Analytics e IA
         ↓
 
 Consumo Estratégico de Negócio
+```
+
+---
+
+## Referências
+
+- Architecture Vision
+- Architecture Target State
+- Executive Target State Diagram
+- Capability Map
+- Technology Platform
+- Architecture Governance

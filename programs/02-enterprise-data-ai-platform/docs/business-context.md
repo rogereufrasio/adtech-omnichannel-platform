@@ -9,8 +9,8 @@
 | Domínio Arquitetural | Foundation |
 | Tipo | Contexto Estratégico de Negócio |
 | Responsável | Enterprise Architecture Practice |
-| Versão | 1.1 |
-| Status | Em evolução |
+| Versão | 1.0 |
+| Status | Aprovado |
 
 ---
 
@@ -374,3 +374,13 @@ Após conclusão deste documento:
 
 ```text
 docs/architecture-vision.md
+```
+
+---
+
+## Relação com Outros Artefatos
+
+- [Architecture Vision](./architecture-vision.md)
+- [Company Profile](./company-profile.md)
+- [Diagrama Executivo do Estado-Alvo](../diagrams/executive-target-state.md)
+- [Landing Page Executiva do Programa](../README.md)

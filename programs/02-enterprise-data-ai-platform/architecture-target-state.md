@@ -9,7 +9,15 @@
 | Categoria | Arquitetura Corporativa |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.1 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento apresenta o estado-alvo da Enterprise Data & AI Platform, consolidando a visão arquitetural que orienta a evolução das capacidades corporativas de dados, integração, inteligência artificial e analytics.
+
+O Target State representa a arquitetura de referência utilizada como base para decisões de arquitetura, definição de roadmaps e evolução das capacidades empresariais.
 
 ---
 
@@ -47,3 +55,16 @@ Agentic AI Layer
         ↓
 
 Business Consumption
+```
+
+---
+
+## Referências
+
+- Architecture Vision
+- Executive Target State
+- Reference Architecture
+- Enterprise Information Model
+- Technology Platform
+- Architecture Principles
+- TOGAF® Standard (10th Edition)

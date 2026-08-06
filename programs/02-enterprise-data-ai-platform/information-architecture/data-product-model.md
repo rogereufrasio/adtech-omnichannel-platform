@@ -5,12 +5,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Data Product Model |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Information Architecture |
 | Tipo | Arquitetura de Produtos de Dados |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Information Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os princípios, modelos e padrões necessários para garantir consistência, interoperabilidade, governança e escalabilidade dos ativos de informação da plataforma corporativa.
+
+A Information Architecture estabelece a estrutura necessária para que dados sejam tratados como produtos estratégicos, suportando analytics, inteligência artificial, integração corporativa e tomada de decisão baseada em dados.
 
 ---
 
@@ -50,12 +58,12 @@ Esta abordagem está alinhada aos princípios de Data as a Product e Data Mesh, 
 ```mermaid
 flowchart LR
 
-subgraph Domains["Business Domains"]
-Customer["Customer"]
-Sales["Sales"]
-Marketing["Marketing"]
-Finance["Finance"]
-Operations["Operations"]
+subgraph Domains["Domínios de Dados"]
+Customer["Cliente"]
+Commercial["Comercial"]
+Finance["Financeiro"]
+Operations["Operações"]
+Data["Dados Corporativos"]
 end
 
 subgraph Products["Enterprise Data Products"]
@@ -74,10 +82,11 @@ Dashboards["Executive Dashboards"]
 end
 
 Customer --> Customer360
-Sales --> SalesAnalytics
-Marketing --> MarketingInsights
+Commercial --> SalesAnalytics
+Commercial --> MarketingInsights
 Finance --> FinancialAnalytics
 Operations --> SupplyAnalytics
+Data --> Customer360
 
 Customer360 --> BI
 Customer360 --> AI
@@ -132,19 +141,13 @@ Todo Produto de Dados deverá possuir os seguintes componentes:
 ```mermaid
 flowchart LR
 
-Proposal["Proposal"]
-
-Design["Design"]
-
-Development["Development"]
-
-Certification["Certification"]
-
-Publication["Publication"]
-
-Consumption["Consumption"]
-
-Evolution["Continuous Improvement"]
+Proposal["Proposição"]
+Design["Desenho"]
+Development["Desenvolvimento"]
+Certification["Certificação"]
+Publication["Publicação"]
+Consumption["Consumo"]
+Evolution["Evolução Contínua"]
 
 Proposal --> Design
 Design --> Development
@@ -208,6 +211,17 @@ Um Produto de Dados somente poderá ser publicado quando atender aos seguintes r
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Domain Model](./data-domain-model.md)
+- [Data Lifecycle Model](./data-lifecycle-model.md)
+- [Enterprise Information Model](./enterprise-information-model.md)
+- [Metadata Strategy](./metadata-strategy.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Produtos de Dados como Unidade Oficial de Compartilhamento
@@ -243,11 +257,3 @@ Produtos somente poderão ser disponibilizados após validação dos critérios 
 **Motivação**
 
 Assegurar confiança, rastreabilidade e conformidade dos ativos disponibilizados para consumo corporativo.
-
----
-
-# Conclusão
-
-O Data Product Model consolida a estratégia de compartilhamento de informações da Enterprise Data & Artificial Intelligence Platform, estabelecendo os Produtos de Dados como ativos corporativos reutilizáveis, governados e orientados ao negócio.
-
-Essa abordagem reduz a complexidade das integrações, fortalece a Governança de Dados e cria uma base escalável para Analytics, Inteligência Artificial e novos produtos digitais, acelerando a evolução da organização para um modelo Data-Driven.

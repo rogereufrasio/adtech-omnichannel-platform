@@ -19,12 +19,12 @@ As definições aqui apresentadas devem ser utilizadas como referência para dec
 | Item | Valor |
 |------|-------|
 | Documento | API Strategy |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Application Architecture |
-| Tipo | Architecture Definition |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Application Architecture |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -64,7 +64,7 @@ CLIENT["Consumidores"] --> GW["API Gateway"]
 GW --> AUTH["Identity Provider"]
 GW --> DOMAIN["Domain APIs"]
 DOMAIN --> DATA["Data Products"]
-DOMAIN --> AI["AI Services"]
+DOMAIN --> AI["Serviços de IA"]
 ```
 
 ---
@@ -99,18 +99,30 @@ DOMAIN --> AI["AI Services"]
 
 ---
 
+# Limites e Dependências
+
+O Programa 02 define os requisitos das APIs de dados e IA e utiliza a capacidade corporativa de API Management provida pelo **Programa Estratégico 03 — Enterprise Integration Platform**. A propriedade da plataforma de integração, das políticas corporativas de exposição e do runtime do API Gateway permanece no Programa 03.
+
+---
+
 # Relação com Outros Artefatos
 
-- Application Landscape
-- Integration Patterns
-- Event-Driven Architecture
-- Technology Architecture
+- [Application Architecture Principles](./application-architecture-principles.md)
+- [Application Interaction Model](./application-interaction-model.md)
+- [Application Landscape](./application-landscape.md)
+- [Event-Driven Architecture](./event-driven-architecture.md)
+- [Integration Patterns](./integration-patterns.md)
+- [Enterprise Information Model](../information-architecture/enterprise-information-model.md)
 
 ---
 
 # Decisões Arquiteturais
 
 ## DA-01 — API Gateway obrigatório
+
+**Decisão**
+
+Toda API exposta para consumo externo ao domínio deverá utilizar a capacidade corporativa de API Management provida pelo Programa Estratégico 03.
 
 **Motivação**
 
@@ -120,6 +132,10 @@ Centralizar políticas de segurança, roteamento e monitoramento.
 
 ## DA-02 — OpenAPI como padrão
 
+**Decisão**
+
+Contratos de APIs REST deverão utilizar OpenAPI como especificação oficial e versionada.
+
 **Motivação**
 
 Padronizar documentação e contratos.
@@ -128,12 +144,10 @@ Padronizar documentação e contratos.
 
 ## DA-03 — Versionamento semântico
 
+**Decisão**
+
+APIs deverão adotar versionamento semântico e política explícita de compatibilidade e descontinuação.
+
 **Motivação**
 
 Garantir evolução sem quebra de compatibilidade.
-
----
-
-# Conclusão
-
-A estratégia de APIs estabelece um modelo corporativo consistente para exposição de capacidades de negócio, promovendo interoperabilidade, governança e evolução sustentável da plataforma.

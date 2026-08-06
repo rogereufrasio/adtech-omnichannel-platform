@@ -1,125 +1,167 @@
 # Architecture Vision
 
-## Context
+## Informações do Documento
 
-The Enterprise Data & Artificial Intelligence Platform establishes the strategic foundation for transforming enterprise data into trusted, governed, and intelligent capabilities.
-
-The platform enables the organization to evolve from traditional data management practices into a data-driven and AI-enabled operating model, where data products, analytics capabilities, and artificial intelligence solutions are delivered with governance, security, and scalability.
-
-The architecture follows an enterprise blueprint approach aligned with Business Architecture, Application Architecture, Information Architecture, AI Architecture, Technology Architecture, and Governance disciplines.
-
----
-
-# Architecture Vision
-
-The target vision is to establish an Enterprise Data & AI Platform capable of supporting:
-
-- trusted enterprise data products;
-- governed analytical capabilities;
-- scalable AI and Generative AI solutions;
-- intelligent decision-making processes;
-- reusable data and AI services;
-- secure and compliant AI adoption.
-
-The platform acts as an enterprise capability layer connecting business domains, operational systems, analytical consumers, and intelligent applications.
+| Item | Valor |
+| --- | --- |
+| Documento | Architecture Vision |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Foundation |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Aprovado |
 
 ---
 
-# Strategic Architecture Model
+## Executive Summary
 
-The platform architecture is structured across complementary architecture layers:
+A visão arquitetural estabelece uma plataforma corporativa de dados e Inteligência Artificial capaz de transformar informação distribuída em produtos de dados confiáveis, capacidades analíticas reutilizáveis e serviços de IA governados.
 
-| Layer | Purpose |
-|---|---|
-| Business Architecture | Defines business capabilities, value streams, ownership models, and strategic outcomes |
-| Application Architecture | Defines applications, services, APIs, integration patterns, and interaction models |
-| Information Architecture | Defines enterprise information models, data products, metadata, and lifecycle management |
-| AI Architecture | Defines AI capabilities, GenAI patterns, model lifecycle, governance, and responsible AI practices |
-| Technology Architecture | Defines cloud foundation, infrastructure, security, observability, and platform standards |
-| Governance Architecture | Ensures architectural control, compliance, decision governance, and continuous evolution |
+O estado-alvo conecta domínios de negócio, integração, informação, aplicações, tecnologia e governança. A plataforma não constitui um produto isolado: ela fornece capacidades compartilhadas para que os domínios entreguem decisões, automações e experiências digitais com segurança e escala.
 
 ---
 
-# AI Architecture Vision
+## Propósito
 
-Artificial Intelligence is treated as a first-class architectural capability of the enterprise platform.
-
-The AI Architecture establishes the foundation for:
-
-- AI capability enablement across business domains;
-- reusable AI services and components;
-- Generative AI adoption patterns;
-- machine learning lifecycle management;
-- model governance and operationalization;
-- responsible and secure AI usage.
-
-The AI layer is not isolated from the data platform. It depends on governed, discoverable, and high-quality data products following the Data as a Product principle.
+Definir o futuro arquitetural que orientará decisões, investimentos e roadmaps do programa, preservando alinhamento entre necessidades de negócio, gestão da informação, adoção de IA e sustentabilidade operacional.
 
 ---
 
-# AI Architecture Principles
+## Visão de Futuro
 
-The AI Architecture follows these principles:
+Evoluir de um ambiente caracterizado por silos de dados, ownership difuso, processos analíticos manuais e experimentos isolados de IA para uma organização na qual:
 
-## AI by Design
-
-AI capabilities must be considered during solution architecture decisions from the beginning, rather than added as an isolated feature.
-
-## Model Lifecycle Governance
-
-AI models must follow controlled lifecycle management:
-
-- development;
-- validation;
-- deployment;
-- monitoring;
-- improvement;
-- retirement.
-
-## Responsible AI
-
-AI solutions must consider:
-
-- transparency;
-- explainability;
-- fairness;
-- security;
-- privacy;
-- human oversight.
-
-## Vendor Agnostic AI
-
-AI capabilities should avoid unnecessary coupling with specific providers, enabling flexibility across:
-
-- foundation models;
-- AI services;
-- machine learning platforms;
-- deployment environments.
+- domínios de negócio respondem pelos dados sob sua responsabilidade;
+- produtos de dados são descobertos, confiáveis e reutilizáveis;
+- APIs e eventos conectam capacidades com baixo acoplamento;
+- analytics e IA utilizam fundamentos comuns de dados, segurança e observabilidade;
+- modelos e soluções de IA possuem ciclo de vida, supervisão e riscos controlados;
+- decisões arquiteturais são rastreáveis e governadas.
 
 ---
 
-# Target Business Outcomes
+## Modelo Arquitetural Estratégico
 
-The Enterprise Data & AI Platform enables:
+| Camada | Responsabilidade no estado-alvo |
+| --- | --- |
+| Negócio | Define outcomes, capacidades, domínios, value streams e accountability |
+| Integração | Disponibiliza APIs, eventos e padrões de interoperabilidade |
+| Dados | Organiza domínios, produtos de dados, qualidade, metadados e ciclo de vida |
+| Inteligência Artificial | Oferece desenvolvimento, execução e governança de modelos e GenAI |
+| Consumo | Entrega analytics, automação, assistentes e experiências digitais |
+| Governança | Aplica decisões, segurança, privacidade, conformidade e métricas transversalmente |
 
-| Outcome | Business Impact |
-|---|---|
-| Data democratization | Faster access to trusted information |
-| AI acceleration | Reduced time from idea to intelligent capability |
-| Decision intelligence | Better business decisions supported by data and AI |
-| Operational efficiency | Automation of repetitive and complex activities |
-| Enterprise governance | Controlled and compliant adoption of AI |
+A representação visual desse modelo está no [Diagrama Executivo do Estado-Alvo](../diagrams/executive-target-state.md).
 
 ---
 
-# Architecture Evolution Direction
+## Capacidades-Alvo
 
-The architecture evolves progressively:
+### Dados e informação
 
-1. Establish governed data foundations.
-2. Enable enterprise data products.
-3. Introduce reusable AI capabilities.
-4. Scale Generative AI adoption.
-5. Operationalize AI governance and continuous improvement.
+- catálogo corporativo e gestão de metadados;
+- data quality observável;
+- domínios e ownership explícitos;
+- produtos de dados com contratos e níveis de serviço;
+- linhagem e ciclo de vida auditáveis.
 
-The Enterprise Data & AI Platform becomes a strategic capability enabling the organization to transform information into intelligence.
+### Analytics e decisão
+
+- analytics governado e self-service;
+- métricas corporativas consistentes;
+- modelos preditivos e de otimização;
+- Decision Intelligence integrada aos processos de negócio.
+
+### Inteligência Artificial
+
+- ambiente controlado de experimentação e industrialização;
+- MLOps e LLMOps;
+- serviços reutilizáveis de modelos, RAG e GenAI;
+- catálogo, monitoramento e governança de modelos;
+- guardrails, supervisão humana e gestão de riscos.
+
+### Plataforma e operação
+
+- provisionamento automatizado;
+- segurança e privacidade incorporadas;
+- observabilidade de dados, modelos, aplicações e infraestrutura;
+- elasticidade e resiliência;
+- controle de consumo e custos.
+
+---
+
+## Princípios da Visão
+
+| Princípio | Implicação arquitetural |
+| --- | --- |
+| Arquitetura orientada ao negócio | Capacidades e outcomes precedem escolhas tecnológicas |
+| Data as a Product | Produtos possuem owner, consumidores, qualidade e lifecycle |
+| Metadata First | Contexto, descoberta e linhagem acompanham os ativos desde a origem |
+| API First e Event-Driven | Integrações utilizam contratos governados e baixo acoplamento |
+| AI by Design | Potencial e riscos de IA são avaliados na concepção das soluções |
+| Responsible AI | Transparência, segurança, privacidade e supervisão são obrigatórias |
+| Vendor Agnostic AI | Abstrações reduzem dependência sem eliminar uso responsável de serviços gerenciados |
+| Observability by Design | Telemetria e métricas são requisitos arquiteturais |
+
+---
+
+## Business Outcomes
+
+| Outcome | Contribuição da arquitetura |
+| --- | --- |
+| Aceleração de decisões | Informação confiável e capacidades analíticas reutilizáveis |
+| Eficiência operacional | Automação orientada por dados e IA integrada aos processos |
+| Inovação responsável | Ambientes, padrões e controles para experimentação e escala |
+| Confiança nos dados | Ownership, qualidade, metadados e linhagem corporativos |
+| Redução de risco | Segurança, privacidade, governança de modelos e auditabilidade |
+| Escala sustentável | Plataforma compartilhada, automação e observabilidade |
+
+---
+
+## Restrições e Guardrails
+
+- nenhum produto de dados será publicado sem owner e critérios de qualidade;
+- nenhum modelo será promovido para produção sem avaliação técnica, de risco e de negócio;
+- dados sensíveis somente serão utilizados conforme finalidade, consentimento e controles aplicáveis;
+- integrações deverão utilizar contratos versionados;
+- decisões estruturantes deverão ser registradas em ADR;
+- desvios arquiteturais dependerão de aprovação e prazo de regularização.
+
+---
+
+## Direção de Evolução
+
+1. concluir a Foundation e estabelecer o baseline estratégico;
+2. definir capacidades, domínios e value streams em Business Architecture;
+3. organizar informação, produtos de dados e metadados;
+4. definir aplicações, serviços, APIs, eventos e capacidades de IA;
+5. estabelecer a plataforma tecnológica, segurança e observabilidade;
+6. formalizar governança, conformidade e métricas;
+7. priorizar work packages e dependências no Roadmap;
+8. consolidar as decisões estruturantes em ADRs.
+
+---
+
+## Relação com Outros Artefatos
+
+- [Business Context](./business-context.md)
+- [Company Profile](./company-profile.md)
+- [Diagrama Executivo do Estado-Alvo](../diagrams/executive-target-state.md)
+- [Landing Page Executiva do Programa](../README.md)
+- [Princípios de Arquitetura Corporativa](../../../docs/architecture-principles.md)
+
+---
+
+## Decisões Arquiteturais
+
+### DA-FND-07 — Plataforma corporativa compartilhada
+
+Dados, analytics e IA serão habilitados por capacidades compartilhadas, preservando o ownership dos domínios de negócio.
+
+### DA-FND-08 — Governança transversal
+
+Segurança, privacidade, qualidade, metadados, observabilidade e governança de IA serão aplicados transversalmente ao estado-alvo.
+
+### DA-FND-09 — Evolução incremental e governada
+
+A arquitetura será detalhada na sequência oficial dos blocos e cada avanço dependerá de Architecture Review.

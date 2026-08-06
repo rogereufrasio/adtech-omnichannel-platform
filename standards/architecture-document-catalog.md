@@ -1,66 +1,199 @@
-# Architecture Document Catalog
+# Catálogo de Documentos de Arquitetura Corporativa
 
-## Informações do Documento
+## Objetivo
 
-| Item | Valor |
-| --- | --- |
-| Documento | Architecture Document Catalog |
-| Categoria | Governança de Documentação Arquitetural |
-| Responsável | Enterprise Architecture Practice |
-| Versão | 1.0 |
-| Status | Em evolução |
+Este catálogo define os documentos oficiais utilizados na prática de Arquitetura Corporativa deste repositório.
+
+Seu propósito é estabelecer uma referência única para padronização, governança, rastreabilidade e evolução da documentação arquitetural.
 
 ---
 
-# Objetivo
+# Organização do Catálogo
 
-O **Architecture Document Catalog** estabelece o inventário corporativo dos artefatos de Arquitetura Corporativa mantidos pela Enterprise Architecture Practice.
+Os documentos estão agrupados conforme as principais disciplinas de Arquitetura Corporativa.
 
-O objetivo é garantir:
-
-- visibilidade dos ativos arquiteturais;
-- rastreabilidade dos documentos;
-- controle de evolução;
-- identificação de lacunas;
-- padronização entre programas.
-
-Este catálogo representa o ponto central de referência para acompanhamento da maturidade documental da prática arquitetural.
-
----
-
-# Escopo
-
-Este catálogo contempla:
-
-- Programas estratégicos;
-- Arquiteturas de referência;
-- Modelos arquiteturais;
-- Architecture Decision Records;
-- Roadmaps;
-- Princípios arquiteturais;
-- Padrões corporativos.
+- Documentação Geral
+- Business Architecture
+- Application Architecture
+- Information Architecture
+- Technology Architecture
+- Integration Architecture
+- AI Architecture
+- Governance
+- Roadmap
+- Architecture Decision Records
+- Diagramas
 
 ---
 
-# Modelo de Organização
+# Documentação Geral
 
-A documentação arquitetural segue uma organização baseada em:
+| Documento | Objetivo |
+|-----------|----------|
+| README | Visão geral do programa |
+| Company Profile | Contexto organizacional |
+| Business Context | Contexto de negócio |
+| Architecture Vision | Visão arquitetural |
+| Architecture Target State | Arquitetura-alvo |
+| Executive Target State | Resumo executivo |
+| Maturity Assessment | Avaliação de maturidade |
 
-```text
-Enterprise Architecture Practice
+---
 
-        ↓
+# Business Architecture
 
-Programas Estratégicos
+| Documento |
+|-----------|
+| Capability Map |
+| Capability Assessment |
+| Business Domains |
+| Business Value Streams |
+| Business Ownership Model |
 
-        ↓
+---
 
-Domínios Arquiteturais
+# Application Architecture
 
-        ↓
+| Documento |
+|-----------|
+| Application Landscape |
+| Application Interaction Model |
+| API Strategy |
+| Integration Patterns |
+| Event-Driven Architecture |
+| Application Architecture Principles |
 
-Artefatos Arquiteturais
+---
 
-        ↓
+# Information Architecture
 
-Decisões e Padrões
+| Documento |
+|-----------|
+| Enterprise Information Model |
+| Data Domain Model |
+| Data Product Model |
+| Metadata Strategy |
+| Data Lifecycle Model |
+
+---
+
+# Technology Architecture
+
+| Documento |
+|-----------|
+| Technology Platform |
+| Technology Standards |
+| Infrastructure Architecture |
+| Security Architecture |
+| Observability Architecture |
+
+---
+
+# Integration Architecture
+
+Documentos específicos de programas de integração podem incluir:
+
+| Documento |
+|-----------|
+| Integration Platform |
+| Integration Services Catalog |
+| API Management |
+| Messaging Architecture |
+| Event Streaming Architecture |
+| Canonical Data Model |
+| Integration Governance |
+
+---
+
+# AI Architecture
+
+Documentos opcionais para programas de IA.
+
+| Documento |
+|-----------|
+| AI Platform Architecture |
+| AI Operating Model |
+| Model Governance |
+| AI Lifecycle Management |
+| GenAI Reference Architecture |
+
+---
+
+# Governance
+
+| Documento |
+|-----------|
+| Architecture Governance |
+| Decision Governance |
+| Architecture Metrics |
+| Architecture Compliance |
+| Data Governance Framework |
+| AI Governance Framework |
+
+---
+
+# Roadmap
+
+| Documento |
+|-----------|
+| Implementation Roadmap |
+| Architecture Evolution Plan |
+| Capability Evolution Roadmap |
+| Implementation Phases |
+| Success Metrics |
+| Transformation Backlog |
+
+---
+
+# Architecture Decision Records
+
+Todo programa deve registrar suas principais decisões arquiteturais através de ADRs.
+
+Exemplos:
+
+- API First
+- Event-Driven Architecture
+- Cloud Native
+- Security by Design
+- Vendor Agnostic
+- Data as a Product
+
+---
+
+# Diagramas
+
+Os principais diagramas utilizados são:
+
+- Executive Target State
+- Reference Architecture
+- C4 Context
+- C4 Container
+- Capability Map
+- Information Flow
+- Integration Landscape
+- Technology Landscape
+- Deployment Diagram
+
+---
+
+# Regras Gerais
+
+Todo documento deve:
+
+- possuir título;
+- descrever claramente seu objetivo;
+- apresentar contexto;
+- utilizar linguagem técnica consistente;
+- conter referências;
+- ser versionado em Git;
+- seguir o Enterprise Architecture Program Blueprint.
+
+---
+
+# Referências
+
+- `program-blueprint/README.md`
+- `program-blueprint/document-matrix.md`
+- `program-blueprint/program-structure.md`
+- `architecture-documentation-quality-checklist.md`
+- `architecture-review-process.md`

@@ -54,3 +54,8 @@ Além disso, plataformas especializadas oferecem capacidades maduras de:
 ## Consequência
 
 A Adobe Experience Platform passa a ser o componente estratégico para consolidação de perfis e ativação de audiências da ShopSphere.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

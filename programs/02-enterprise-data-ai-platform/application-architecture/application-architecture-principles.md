@@ -19,12 +19,12 @@ As definições aqui apresentadas devem ser utilizadas como referência para dec
 | Item | Valor |
 |------|-------|
 | Documento | Application Architecture Principles |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Application Architecture |
-| Tipo | Architecture Principles |
+| Tipo | Princípios Arquiteturais |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -158,15 +158,15 @@ flowchart TB
 
 PRINCIPLES["Princípios Arquiteturais"]
 
-PRINCIPLES --> DOMAIN["Domain Services"]
+PRINCIPLES --> DOMAIN["Serviços de Domínio"]
 
 PRINCIPLES --> APIs["APIs"]
 
 PRINCIPLES --> EVENTS["Eventos"]
 
-PRINCIPLES --> DATA["Data Products"]
+PRINCIPLES --> DATA["Produtos de Dados"]
 
-PRINCIPLES --> AI["AI Services"]
+PRINCIPLES --> AI["Serviços de IA"]
 
 PRINCIPLES --> OBS["Observabilidade"]
 
@@ -214,13 +214,13 @@ Os desvios deverão ser formalmente registrados por meio de Architecture Decisio
 
 Este documento complementa:
 
-- Application Landscape
-- Integration Patterns
-- API Strategy
-- Event-Driven Architecture
-- Application Interaction Model
-- Technology Architecture
-- Architecture Principles (Governança Corporativa)
+- [API Strategy](./api-strategy.md)
+- [Application Interaction Model](./application-interaction-model.md)
+- [Application Landscape](./application-landscape.md)
+- [Event-Driven Architecture](./event-driven-architecture.md)
+- [Integration Patterns](./integration-patterns.md)
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Princípios de Arquitetura Corporativa](../../../docs/architecture-principles.md)
 
 ---
 
@@ -259,9 +259,3 @@ Nenhuma aplicação deverá depender diretamente de tecnologias proprietárias q
 **Motivação**
 
 Preservar flexibilidade arquitetural e aderência ao ADR-004 (independência de fornecedor de IA).
-
----
-
-# Conclusão
-
-Os princípios definidos neste documento representam a base arquitetural para o desenvolvimento das aplicações da Enterprise Data & Artificial Intelligence Platform, assegurando consistência, interoperabilidade, escalabilidade e alinhamento com a estratégia corporativa de Dados e Inteligência Artificial.

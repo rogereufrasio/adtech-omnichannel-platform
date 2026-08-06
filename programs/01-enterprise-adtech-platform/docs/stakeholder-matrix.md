@@ -1,38 +1,47 @@
-# Stakeholder Matrix
+# Matriz de Stakeholders
 
-| Stakeholder         | Interest | Influence | Responsibilities   |
+## Contexto
+
+Esta matriz identifica os stakeholders, interesses e responsabilidades relevantes para a Enterprise AdTech Platform.
+
+| Stakeholder         | Interesse | Influência | Responsabilidades   |
 | ------------------- | -------- | --------- | ------------------ |
-| CMO                 | High     | High      | Marketing strategy |
-| Head of Data        | High     | High      | Data governance    |
-| Product Director    | Medium   | High      | Product roadmap    |
-| Engineering Manager | High     | High      | Platform delivery  |
-| Privacy Officer     | High     | Medium    | LGPD compliance    |
-| Marketing Team      | High     | Medium    | Campaign execution |
-| Data Engineers      | Medium   | Medium    | Data pipelines     |
-| Data Scientists     | Medium   | Medium    | Customer analytics |
+| CMO                 | Alto     | Alta      | Estratégia de marketing |
+| Head of Data        | Alto     | Alta      | Governança de dados    |
+| Product Director    | Médio   | Alta      | Roadmap de produto  |
+| Engineering Manager | Alto     | Alta      | Entrega da plataforma  |
+| Privacy Officer     | Alto     | Média    | Conformidade com a LGPD    |
+| Marketing Team      | Alto     | Média    | Execução de campanhas |
+| Data Engineers      | Médio   | Média    | Pipelines de dados     |
+| Data Scientists     | Médio   | Média    | Analytics de clientes |
 
-## Governance Model
+## Modelo de Governança
 
-### Architecture Board
+### Architecture Review Board
 
-Responsible for:
+Responsável por:
 
-* Architectural standards
-* Technology decisions
-* ADR approval
+* padrões arquiteturais;
+* decisões tecnológicas;
+* aprovação de ADRs.
 
-### Data Governance Council
+### Conselho de Governança de Dados
 
-Responsible for:
+Responsável por:
 
-* Data quality
-* Metadata management
-* Consent governance
+* qualidade dos dados;
+* gestão de metadados;
+* governança de consentimento.
 
-### Product Architecture Review
+### Revisão da Arquitetura de Produto
 
-Responsible for:
+Responsável por:
 
-* New integrations
-* Vendor onboarding
-* Architecture compliance
+* novas integrações;
+* onboarding de fornecedores;
+* conformidade arquitetural.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

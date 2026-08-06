@@ -249,6 +249,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Technology Platform](../technology-architecture/technology-platform.md)
+- [AI Governance Framework](../governance/ai-governance-framework.md)

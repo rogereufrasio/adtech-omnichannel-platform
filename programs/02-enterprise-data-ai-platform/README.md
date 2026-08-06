@@ -1,452 +1,188 @@
-# Program 02 — Enterprise Data & Artificial Intelligence Platform
+# Programa Estratégico 02 — Enterprise Data & Artificial Intelligence Platform
 
-## Overview
-
-The **Enterprise Data & Artificial Intelligence Platform Program** establishes the target architecture, capabilities, governance model, and evolution roadmap required to transform enterprise data and artificial intelligence into strategic business capabilities.
-
-The program defines the architecture foundation for a modern enterprise data ecosystem based on:
-
-- Data as a Product;
-- AI by Design;
-- API First;
-- Event-Driven Architecture;
-- Metadata First;
-- Security & Privacy by Design;
-- Cloud Native principles;
-- Enterprise Governance.
-
-The objective is to enable trusted data consumption, advanced analytics, artificial intelligence capabilities, and decision intelligence across the organization.
+> Landing page executiva do programa responsável por estabelecer dados e Inteligência Artificial como capacidades corporativas governadas, reutilizáveis e orientadas à geração de valor.
 
 ---
 
-# Strategic Context
+## Informações do Documento
 
-Organizations increasingly depend on data-driven decisions, intelligent automation, and artificial intelligence capabilities to improve customer experience, operational efficiency, and business agility.
-
-Traditional data environments often create challenges related to:
-
-- fragmented data ownership;
-- limited data quality visibility;
-- duplicated information assets;
-- slow analytical delivery;
-- inconsistent governance;
-- difficulties scaling AI initiatives.
-
-This program addresses these challenges by defining an enterprise-scale architecture capable of supporting data democratization, AI adoption, and continuous business innovation.
+| Item | Valor |
+| --- | --- |
+| Documento | Landing Page Executiva do Programa |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Foundation |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Aprovado |
 
 ---
 
-# Program Objectives
+## Executive Summary
 
-The Enterprise Data & Artificial Intelligence Platform Program has the following strategic objectives:
+O Programa Estratégico **Enterprise Data & Artificial Intelligence Platform** define a arquitetura corporativa necessária para transformar dados dispersos e iniciativas isoladas de analytics e IA em capacidades confiáveis, governadas e escaláveis.
 
-## Establish an Enterprise Data Foundation
+O programa conecta estratégia de negócio, produtos de dados, analytics, Machine Learning e Inteligência Artificial Generativa por meio de uma plataforma compartilhada. Essa plataforma deverá reduzir a fragmentação informacional, ampliar a confiança nos dados, acelerar decisões e permitir adoção responsável de IA em escala corporativa.
 
-Create the architectural foundation required to manage enterprise data as a strategic asset.
-
-Key outcomes:
-
-- trusted enterprise data foundation;
-- governed data domains;
-- reusable data products;
-- metadata-driven data discovery;
-- improved data quality.
+A evolução documental e arquitetural segue gates obrigatórios. A existência física de um artefato não representa sua aprovação: cada bloco somente integra o baseline após Architecture Review.
 
 ---
 
-## Enable Artificial Intelligence at Enterprise Scale
+## Propósito
 
-Define the capabilities required to operationalize artificial intelligence across business domains.
+Estabelecer a visão, os princípios, as capacidades e os controles arquiteturais que permitirão à organização:
 
-Key outcomes:
-
-- AI platform foundation;
-- responsible AI governance;
-- scalable model lifecycle management;
-- reusable AI capabilities;
-- GenAI adoption patterns.
+- administrar dados como ativos e produtos corporativos;
+- disponibilizar informação confiável para decisões estratégicas e operacionais;
+- escalar analytics, Machine Learning e GenAI com segurança;
+- reutilizar capacidades de dados e IA entre domínios de negócio;
+- controlar riscos de privacidade, segurança, qualidade e uso responsável de IA.
 
 ---
 
-## Enable Decision Intelligence
+## Contexto Estratégico
 
-Provide the capabilities required to transform enterprise data into actionable intelligence.
+A expansão omnicanal aumentou o volume de dados, a diversidade de consumidores e a demanda por decisões mais rápidas. O crescimento descentralizado também criou duplicidade, baixa visibilidade de qualidade, ownership difuso e iniciativas de IA com níveis distintos de controle.
 
-Key outcomes:
-
-- advanced analytics;
-- predictive insights;
-- intelligent recommendations;
-- business decision support;
-- AI-powered applications.
+O programa responde a esse cenário por meio de uma arquitetura orientada por capacidades, na qual negócio, dados, aplicações, tecnologia e governança evoluem de forma coordenada.
 
 ---
 
-# Architecture Vision
+## Objetivos Estratégicos
 
-The target architecture follows an enterprise capability-based model:
-
-```text
-Business Capabilities
-          |
-          v
-Enterprise Data Platform
-          |
-          v
-Artificial Intelligence Platform
-          |
-          v
-Decision Intelligence
-          |
-          v
-Business Consumption
-```
-
-The architecture is organized across the following enterprise layers:
-
-```text
-Business
-   |
-Integration
-   |
-Data
-   |
-AI
-   |
-Consumption
-   |
-Governance
-```
-
-This layered approach enables progressive evolution from operational systems into an intelligent enterprise platform.
+| Objetivo | Resultado esperado |
+| --- | --- |
+| Estabelecer a fundação corporativa de dados | Domínios governados, metadados, qualidade e produtos de dados reutilizáveis |
+| Escalar Inteligência Artificial | Serviços compartilhados, ciclo de vida controlado e governança de modelos |
+| Habilitar Decision Intelligence | Decisões apoiadas por analytics, modelos preditivos e recomendações |
+| Reduzir fragmentação | Integração padronizada e menor duplicidade de ativos informacionais |
+| Fortalecer confiança e conformidade | Controles de segurança, privacidade, rastreabilidade e uso responsável |
 
 ---
 
-# Target State Architecture
+## Business Outcomes
 
-The target state establishes the following architecture domains:
-
-## Business Architecture
-
-Defines business capabilities, value streams, domains, and ownership models required for data-driven operations.
-
-Location:
-
-```text
-business-architecture/
-```
-
-Key artifacts:
-
-- capability map;
-- capability assessment;
-- business domains;
-- business value streams;
-- data ownership model.
+- menor tempo para disponibilização de informação confiável;
+- maior reutilização de produtos de dados e capacidades de IA;
+- decisões executivas e operacionais com melhor suporte analítico;
+- redução de soluções redundantes e integrações ponto a ponto;
+- adoção de IA com segurança, supervisão e responsabilidade definidas;
+- maior transparência sobre qualidade, ownership, custos e riscos.
 
 ---
 
-## Application Architecture
+## Diagrama Executivo
 
-Defines application interactions, integration patterns, APIs, and event-driven communication models.
+A visão executiva aprovada apresenta as camadas de negócio, integração, dados, IA, consumo e governança que compõem o estado-alvo do programa.
 
-Location:
-
-```text
-application-architecture/
-```
-
-Key artifacts:
-
-- application landscape;
-- API strategy;
-- integration patterns;
-- event-driven architecture;
-- application principles.
+Consulte o [Diagrama Executivo do Estado-Alvo](./diagrams/executive-target-state.md).
 
 ---
 
-## Information Architecture
+## Escopo
 
-Defines enterprise information models, data domains, lifecycle management, metadata strategy, and data products.
+### Incluído
 
-Location:
+- arquitetura corporativa de dados e IA;
+- capacidades de analytics e Decision Intelligence;
+- ciclo de vida e governança de dados, metadados e modelos;
+- padrões de aplicações, APIs e eventos necessários ao programa;
+- plataforma tecnológica, segurança e observabilidade;
+- roadmap, métricas e decisões arquiteturais.
 
-```text
-information-architecture/
-```
+### Fora do escopo
 
-Key artifacts:
-
-- enterprise information model;
-- data domain model;
-- data product model;
-- data lifecycle model;
-- metadata strategy.
-
----
-
-## Technology Architecture
-
-Defines the technology foundation required to operate the enterprise data and AI platform.
-
-Location:
-
-```text
-technology-architecture/
-```
-
-Key artifacts:
-
-- technology platform;
-- infrastructure architecture;
-- security architecture;
-- observability architecture;
-- technology standards.
+- implementação detalhada de produtos de negócio específicos;
+- operação de integrações corporativas compartilhadas, tratada pelo Programa Estratégico 03;
+- arquitetura completa de Customer 360, tratada pelo Programa Estratégico 04;
+- plataforma corporativa de observabilidade, tratada pelo Programa Estratégico 05.
 
 ---
 
-## Artificial Intelligence Architecture
+## Princípios Orientadores
 
-Defines the future AI capabilities required to support enterprise intelligence.
-
-Planned architecture evolution:
-
-```text
-ai-architecture/
-```
-
-Expected capabilities:
-
-- AI platform architecture;
-- model lifecycle management;
-- GenAI reference architecture;
-- AI governance integration;
-- responsible AI practices.
+| Princípio | Direcionamento |
+| --- | --- |
+| API First | Capacidades síncronas expostas por contratos versionados e governados |
+| Cloud Native | Elasticidade, resiliência e automação como características da plataforma |
+| Data as a Product | Dados com owner, consumidores, qualidade e ciclo de vida explícitos |
+| Event-Driven Architecture | Eventos de negócio para integração desacoplada e escalável |
+| Metadata First | Descoberta, contexto, linhagem e confiança incorporados ao ciclo de vida |
+| Observability by Design | Telemetria e indicadores definidos desde a concepção |
+| Security & Privacy by Design | Controles incorporados à arquitetura e ao ciclo de entrega |
+| Vendor Agnostic AI | Dependência de fornecedores limitada por contratos e abstrações controladas |
 
 ---
 
-# Architectural Principles
+## Evolução Arquitetural
 
-The program is guided by the following architectural principles:
+O programa evolui obrigatoriamente na seguinte sequência:
 
-| Principle | Description |
-|---|---|
-| Data as a Product | Data assets must have ownership, quality, lifecycle, and consumers |
-| AI by Design | AI capabilities must be considered as part of solution architecture |
-| API First | Enterprise capabilities should be exposed through well-defined APIs |
-| Event Driven Architecture | Business events enable scalable and decoupled integrations |
-| Metadata First | Metadata enables discovery, governance, and trust |
-| Security & Privacy by Design | Security and privacy are embedded from the beginning |
-| Cloud Native | Platforms should support scalability, resilience, and automation |
-| Observability by Design | Platforms must provide operational visibility |
+1. Foundation;
+2. Business Architecture;
+3. Information Architecture;
+4. Application Architecture;
+5. Technology Architecture;
+6. Governance;
+7. Roadmap;
+8. Architecture Decision Records.
 
-Detailed decisions are documented in:
-
-```text
-adrs/
-```
+Cada bloco exige revisão arquitetural antes de ser considerado concluído.
 
 ---
 
-# Enterprise Capabilities
+## Estrutura Documental e Navegação
 
-The program establishes capabilities across the following areas:
+| Bloco | Pergunta respondida | Localização |
+| --- | --- | --- |
+| Foundation | Por que o programa existe e qual futuro pretende habilitar? | [`docs/`](./docs/) e [`diagrams/`](./diagrams/) |
+| Business Architecture | Quais capacidades, domínios e fluxos de valor devem evoluir? | [`business-architecture/`](./business-architecture/) |
+| Information Architecture | Como informação, domínios e produtos de dados serão organizados? | [`information-architecture/`](./information-architecture/) |
+| Application Architecture | Como aplicações, APIs e eventos colaborarão? | [`application-architecture/`](./application-architecture/) |
+| Technology Architecture | Quais capacidades tecnológicas sustentarão a plataforma? | [`technology-architecture/`](./technology-architecture/) |
+| Governance | Como decisões, riscos, conformidade e métricas serão controlados? | [`governance/`](./governance/) |
+| Roadmap | Como a transformação será implementada incrementalmente? | [`roadmap/`](./roadmap/) |
+| ADRs | Quais decisões estruturantes foram aprovadas e por quê? | [`adrs/`](./adrs/) |
 
-## Data Capabilities
-
-- Data governance;
-- Data products;
-- Data quality management;
-- Metadata management;
-- Data lifecycle management;
-- Enterprise information management.
-
----
-
-## AI Capabilities
-
-- AI platform foundation;
-- Machine learning lifecycle;
-- Generative AI capabilities;
-- Model governance;
-- Responsible AI practices.
+Os artefatos devem ser lidos na sequência dos blocos. Documentos ainda não submetidos à Architecture Review são rascunhos preexistentes e não integram o baseline aprovado.
 
 ---
 
-## Decision Intelligence Capabilities
+## Roadmap da Documentação
 
-- Analytics;
-- Predictive intelligence;
-- Intelligent automation;
-- Business recommendations;
-- AI-powered experiences.
-
----
-
-# Governance Model
-
-The program defines governance capabilities required to ensure sustainable evolution.
-
-Location:
-
-```text
-governance/
-```
-
-Key governance areas:
-
-- architecture governance;
-- data governance;
-- AI governance;
-- decision governance;
-- architecture compliance;
-- architecture metrics.
+| Ordem | Bloco | Estado no baseline |
+| ---: | --- | --- |
+| 1 | Foundation | Aprovado |
+| 2 | Business Architecture | Aprovado |
+| 3 | Information Architecture | Aprovado |
+| 4 | Application Architecture | Aprovado |
+| 5 | Technology Architecture | Aprovado |
+| 6 | Governance | Aprovado |
+| 7 | Roadmap | Aprovado |
+| 8 | ADRs | Aprovado |
 
 ---
 
-# Architecture Decisions
+## Relação com Outros Artefatos
 
-The program contains the following Architecture Decision Records:
-
-Location:
-
-```text
-adrs/
-```
-
-Implemented decisions:
-
-| ADR | Decision |
-|---|---|
-| ADR-001 | API First |
-| ADR-002 | Event Driven Architecture |
-| ADR-003 | Data as a Product |
-| ADR-004 | Vendor Agnostic AI Strategy |
-| ADR-005 | Metadata First |
-| ADR-006 | Security by Design |
-| ADR-007 | Cloud Native Platform |
+- [Architecture Vision](./docs/architecture-vision.md)
+- [Business Context](./docs/business-context.md)
+- [Company Profile](./docs/company-profile.md)
+- [Diagrama Executivo do Estado-Alvo](./diagrams/executive-target-state.md)
+- [Princípios de Arquitetura Corporativa](../../docs/architecture-principles.md)
+- [Modelo de Governança Corporativa](../../governance/governance-model.md)
 
 ---
 
-# Roadmap
+## Decisões Arquiteturais
 
-The evolution roadmap defines the incremental implementation path.
+### DA-FND-01 — Evolução orientada por capacidades
 
-Location:
+O programa será dirigido por capacidades e outcomes de negócio, não por produtos tecnológicos isolados.
 
-```text
-roadmap/
-```
+### DA-FND-02 — Aprovação por blocos
 
-Evolution approach:
+Somente artefatos aprovados em Architecture Review integram o baseline do programa.
 
-```text
-Phase 01
-Foundation
+### DA-FND-03 — Dados e IA como capacidades corporativas integradas
 
-        ↓
-
-Phase 02
-Enterprise Data Platform
-
-        ↓
-
-Phase 03
-Artificial Intelligence Platform
-
-        ↓
-
-Phase 04
-Decision Intelligence
-
-        ↓
-
-Phase 05
-Enterprise Scale
-```
-
-Key roadmap artifacts:
-
-- implementation roadmap;
-- implementation phases;
-- capability evolution roadmap;
-- transformation backlog;
-- success metrics.
-
----
-
-# Program Documentation Map
-
-```text
-02-enterprise-data-ai-platform/
-
-├── README.md
-
-├── docs/
-│   ├── architecture-vision.md
-│   ├── business-context.md
-│   └── company-profile.md
-
-├── business-architecture/
-
-├── application-architecture/
-
-├── information-architecture/
-
-├── technology-architecture/
-
-├── governance/
-
-├── roadmap/
-
-├── adrs/
-
-└── diagrams/
-```
-
----
-
-# Expected Business Outcomes
-
-The program enables:
-
-- trusted enterprise data;
-- faster analytical decision-making;
-- scalable AI adoption;
-- improved operational intelligence;
-- stronger governance and compliance;
-- reusable enterprise capabilities;
-- continuous digital transformation.
-
----
-
-# Program Status
-
-| Area | Status |
-|---|---|
-| Strategic Vision | Completed |
-| Business Architecture | Completed |
-| Application Architecture | Completed |
-| Information Architecture | Completed |
-| Technology Architecture | Completed |
-| Governance Model | Completed |
-| Architecture Decisions | Completed |
-| Roadmap Definition | Completed |
-| AI Architecture | In Evolution |
-
----
-
-# Related Standards
-
-This program follows the Enterprise Architecture Practice standards:
-
-```text
-standards/
-├── architecture-documentation-quality-checklist.md
-├── architecture-document-catalog.md
-├── architecture-review-process.md
-└── program-blueprint/
-```
-
-The program structure is aligned with the Enterprise Architecture Program Blueprint and validated through the architecture documentation quality workflow.
+Dados, analytics e IA evoluirão como partes de uma plataforma corporativa comum, com governança transversal e responsabilidades explícitas.

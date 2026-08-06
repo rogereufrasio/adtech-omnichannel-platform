@@ -4,17 +4,25 @@
 
 ---
 
+## Context
+
+Este documento faz parte do domínio de Governance da Enterprise Data & AI Platform. Seu objetivo é estabelecer o modelo de governança necessário para garantir que decisões arquiteturais, ativos de dados, aplicações, inteligência artificial e tecnologias corporativas evoluam de forma consistente, segura e alinhada à estratégia de negócio.
+
+O conjunto de documentos de Governance define políticas, responsabilidades, processos de decisão, métricas e mecanismos de conformidade que sustentam a evolução contínua da arquitetura corporativa.
+
+---
+
 # Informações do Documento
 
 | Item | Valor |
 |------|-------|
 | Documento | Decision Governance |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Governance |
-| Tipo | Governance Framework |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Governance |
+| Tipo | Framework de Governança |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -160,13 +168,22 @@ Caso uma decisão seja alterada, um novo ADR deverá ser criado referenciando o 
 
 ---
 
+# Benefícios Esperados
+
+- preservação do contexto e da justificativa das decisões;
+- redução de decisões conflitantes ou repetidas;
+- transparência sobre responsáveis, alternativas e consequências.
+
+---
+
 # Relação com Outros Artefatos
 
-- Architecture Governance
-- Architecture Principles
-- Technology Standards
-- Architecture Vision
-- Roadmap
+- [Architecture Governance](./architecture-governance.md)
+- [Architecture Metrics](./architecture-metrics.md)
+- [Reference Architecture Compliance](./reference-architecture-compliance.md)
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Technology Standards](../technology-architecture/technology-standards.md)
+- [ADRs](../adrs/README.md)
 
 ---
 
@@ -193,9 +210,3 @@ Decisões estratégicas deverão ser avaliadas pelo Architecture Review Board.
 ## DA-04 — Evidência Técnica
 
 Toda decisão deverá possuir justificativa baseada em critérios técnicos e de negócio.
-
----
-
-# Conclusão
-
-A Governança de Decisões garante que a evolução da Enterprise Data & Artificial Intelligence Platform ocorra de forma transparente, rastreável e alinhada às diretrizes da Enterprise Architecture Practice, preservando o conhecimento arquitetural e apoiando a tomada de decisões futuras.

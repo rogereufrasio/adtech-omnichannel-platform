@@ -19,12 +19,12 @@ As definições aqui apresentadas devem ser utilizadas como referência para dec
 | Item | Valor |
 |------|-------|
 | Documento | Application Interaction Model |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Application Architecture |
-| Tipo | Architecture Definition |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -67,7 +67,7 @@ Cada aplicação possui responsabilidades claramente definidas e interage por me
 ```mermaid
 flowchart LR
 
-subgraph Business["Business Applications"]
+subgraph Business["Aplicações de Negócio"]
 
 ERP["ERP"]
 
@@ -75,43 +75,43 @@ CRM["CRM"]
 
 ECOM["E-commerce"]
 
-APP["Mobile App"]
+APP["Aplicação Mobile"]
 
 end
 
-subgraph Integration["Integration Layer"]
+subgraph Integration["Camada de Integração"]
 
 API["API Gateway"]
 
-BROKER["Event Broker"]
+BROKER["Broker de Eventos"]
 
 end
 
-subgraph Platform["Enterprise Data Platform"]
+subgraph Platform["Plataforma Corporativa de Dados"]
 
-INGEST["Data Ingestion"]
+INGEST["Ingestão de Dados"]
 
-PROCESS["Data Processing"]
+PROCESS["Processamento de Dados"]
 
-PRODUCTS["Data Products"]
+PRODUCTS["Produtos de Dados"]
 
 end
 
-subgraph AI["Enterprise AI Platform"]
+subgraph AI["Plataforma Corporativa de IA"]
 
 FEATURE["Feature Store"]
 
-MODELS["Model Services"]
+MODELS["Serviços de Modelos"]
 
-AGENTS["AI Agents"]
+AGENTS["Agentes de IA"]
 
 end
 
-subgraph Consumption["Business Consumption"]
+subgraph Consumption["Consumo de Negócio"]
 
 BI["Business Intelligence"]
 
-DIGITAL["Digital Products"]
+DIGITAL["Produtos Digitais"]
 
 DECISION["Decision Intelligence"]
 
@@ -302,11 +302,12 @@ Exemplos:
 
 Este documento complementa:
 
-- Application Landscape
-- Integration Patterns
-- API Strategy
-- Event-Driven Architecture
-- Technology Architecture
+- [API Strategy](./api-strategy.md)
+- [Application Architecture Principles](./application-architecture-principles.md)
+- [Application Landscape](./application-landscape.md)
+- [Event-Driven Architecture](./event-driven-architecture.md)
+- [Integration Patterns](./integration-patterns.md)
+- [Data Product Model](../information-architecture/data-product-model.md)
 
 ---
 
@@ -357,9 +358,3 @@ Capacidades de Inteligência Artificial serão disponibilizadas como serviços r
 **Motivação**
 
 Evitar duplicidade de soluções e acelerar inovação.
-
----
-
-# Conclusão
-
-O modelo de interação entre aplicações estabelece uma arquitetura consistente para comunicação entre sistemas corporativos, plataforma de dados e serviços de Inteligência Artificial. Ao combinar APIs, eventos e Produtos de Dados, a solução promove escalabilidade, interoperabilidade e evolução sustentável da Enterprise Data & Artificial Intelligence Platform.

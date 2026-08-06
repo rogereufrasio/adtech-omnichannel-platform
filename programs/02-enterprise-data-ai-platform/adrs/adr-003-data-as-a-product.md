@@ -297,6 +297,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [Data Product Model](../information-architecture/data-product-model.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Governance Framework](../governance/data-governance-framework.md)

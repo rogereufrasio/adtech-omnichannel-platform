@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Transformation Backlog |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Roadmap |
-| Tipo | Portfolio Backlog |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Roadmap |
+| Tipo | Backlog de Transformação |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte do Roadmap de Transformação da Enterprise Data & AI Platform. Seu objetivo é organizar a evolução arquitetural da plataforma em iniciativas, capacidades, entregas e marcos de implementação, permitindo uma adoção incremental e alinhada às prioridades estratégicas da organização.
+
+O Roadmap conecta a arquitetura de referência à execução, fornecendo uma visão estruturada da transformação corporativa baseada em valor de negócio, redução de riscos e evolução contínua das capacidades digitais.
 
 ---
 
@@ -63,12 +71,22 @@ O backlog deverá ser revisado periodicamente pela Enterprise Architecture Pract
 
 ---
 
+# Benefícios Esperados
+
+- priorização transparente por valor, risco e dependência;
+- rastreabilidade entre iniciativas e outcomes;
+- controle contínuo do escopo da transformação.
+
+---
+
 # Relação com Outros Artefatos
 
-- Implementation Roadmap
-- Architecture Governance
-- Architecture Metrics
-- Executive Target State
+- [Architecture Metrics](../governance/architecture-metrics.md)
+- [Architecture Governance](../governance/architecture-governance.md)
+- [Architecture Evolution Plan](./architecture-evolution-plan.md)
+- [Capability Evolution Roadmap](./capability-evolution-roadmap.md)
+- [Implementation Roadmap](./implementation-roadmap.md)
+- [Success Metrics](./success-metrics.md)
 
 ---
 
@@ -89,9 +107,3 @@ Novas iniciativas deverão respeitar as dependências arquiteturais existentes.
 ## DA-03 — Revisão Contínua
 
 O backlog deverá ser atualizado conforme a evolução da arquitetura corporativa.
-
----
-
-# Conclusão
-
-O Transformation Backlog organiza a execução da estratégia arquitetural em iniciativas priorizadas, permitindo acompanhamento estruturado da transformação da plataforma.

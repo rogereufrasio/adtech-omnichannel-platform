@@ -1,96 +1,48 @@
-# Enterprise Architecture Portfolio - Copilot Instructions
+# Instruções do Copilot para a Enterprise Architecture Practice
 
-## Context
+## Contexto
 
-This repository contains an Enterprise Architecture portfolio based on TOGAF principles.
+Este repositório documenta Programas Estratégicos de transformação corporativa com princípios inspirados no TOGAF.
 
-The repository documents enterprise transformation programs using:
-- Business Architecture
-- Application Architecture
-- Data Architecture
-- Technology Architecture
-- Governance
-- Roadmaps
-- Architecture Decision Records (ADR)
+## Estrutura Obrigatória
 
----
+Cada programa deve seguir o blueprint disponível em `standards/program-blueprint/`, incluindo Foundation, Business Architecture, Information Architecture, Application Architecture, Technology Architecture, Governance, Roadmap e ADRs.
 
-# General Rules
+## Princípios Arquiteturais
 
-## Documentation Structure
+- API First;
+- Event-Driven Architecture;
+- Data as a Product;
+- Metadata First;
+- Security by Design;
+- Cloud Native;
+- Vendor Agnostic;
+- Observability by Design.
 
-Every program must follow the standard structure:
+## Regras de Documentação
 
-- docs/
-- architecture/
-- business-architecture/
-- application-architecture/
-- information-architecture/
-- technology-architecture/
-- governance/
-- roadmap/
-- adrs/
+- iniciar pelo contexto de negócio;
+- definir propósito, escopo e boundaries;
+- explicar decisões arquiteturais;
+- relacionar artefatos dependentes;
+- preservar alinhamento com o estado-alvo;
+- registrar decisões estruturantes em ADRs;
+- manter conteúdo em português, exceto termos técnicos consolidados.
 
----
+## Diagramas
 
-# Architecture Principles
+Seguir `.github/instructions/mermaid.instructions.md`.
 
-Always consider:
+## Validação
 
-- API First
-- Event Driven Architecture
-- Data as a Product
-- Metadata First
-- Security by Design
-- Cloud Native
-- Vendor Agnostic
-- Observability by Design
+Antes de concluir alterações, executar:
 
----
-
-# Document Creation Rules
-
-When creating architectural documents:
-
-- Start with business context.
-- Define purpose and scope.
-- Explain architectural decisions.
-- Reference related documents.
-- Keep alignment with target state.
-- Use ADRs for significant decisions.
-
----
-
-# Diagrams
-
-When creating Mermaid diagrams:
-
-Follow:
-.github/instructions/mermaid.instructions.md
-
----
-
-# Quality Validation
-
-Before proposing completion:
-
-Execute:
-
+```powershell
 python tools/architecture/run-documentation-check.py
+```
 
-Ensure:
-- links valid
-- documentation quality checked
-- report generated
+Todos os links e critérios documentais devem ser aprovados.
 
----
+## Nomenclatura
 
-# Naming Convention
-
-Use lowercase filenames with hyphen separation.
-
-Examples:
-
-architecture-vision.md
-implementation-roadmap.md
-security-architecture.md
+Arquivos e diretórios utilizam letras minúsculas, nomes descritivos e separação por hífen. ADRs preservam numeração sequencial.

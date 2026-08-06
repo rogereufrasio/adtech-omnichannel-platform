@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Technology Standards |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Technology Architecture |
-| Tipo | Technology Standard |
+| Tipo | Padrões Tecnológicos |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Technology Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os componentes tecnológicos, padrões de infraestrutura, serviços compartilhados e capacidades técnicas que sustentam a plataforma corporativa de dados e inteligência artificial.
+
+A Technology Architecture estabelece as diretrizes para garantir escalabilidade, disponibilidade, segurança, observabilidade, automação e padronização tecnológica, permitindo que as demais camadas da arquitetura evoluam de forma consistente e sustentável.
 
 ---
 
@@ -250,12 +258,13 @@ Não deverão ser adotadas soluções que:
 
 Este documento complementa:
 
-- Technology Platform
-- Infrastructure Architecture
-- Security Architecture
-- Application Architecture Principles
-- Integration Patterns
-- API Strategy
+- [Infrastructure Architecture](./infrastructure-architecture.md)
+- [Observability Architecture](./observability-architecture.md)
+- [Security Architecture](./security-architecture.md)
+- [Technology Platform](./technology-platform.md)
+- [API Strategy](../application-architecture/api-strategy.md)
+- [Application Architecture Principles](../application-architecture/application-architecture-principles.md)
+- [Integration Patterns](../application-architecture/integration-patterns.md)
 
 ---
 
@@ -306,9 +315,3 @@ Todos os componentes tecnológicos deverão disponibilizar métricas, logs e tra
 **Motivação**
 
 Garantir operação eficiente e diagnóstico rápido.
-
----
-
-# Conclusão
-
-Os padrões tecnológicos definidos neste documento estabelecem uma base consistente para evolução da Enterprise Data & Artificial Intelligence Platform, garantindo interoperabilidade, governança, escalabilidade e independência tecnológica, alinhadas às diretrizes da Enterprise Architecture Practice.

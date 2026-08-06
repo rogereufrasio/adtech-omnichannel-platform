@@ -65,3 +65,8 @@ Requisitos de segurança devem ser considerados desde a concepção da solução
 ## AP-010 — Independência de Fornecedor
 
 Sempre que possível, as soluções devem minimizar dependências excessivas de fornecedores específicos e facilitar futuras substituições.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

@@ -128,3 +128,7 @@ Baixa
 - Auditoria contínua;
 - Privacy by Design;
 - Revisões periódicas de compliance.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

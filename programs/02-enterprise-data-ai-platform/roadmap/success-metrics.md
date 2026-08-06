@@ -1,6 +1,29 @@
 # Success Metrics
 
-# Architecture KPIs
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Documento | Success Metrics |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Roadmap |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Aprovado |
+
+## Executive Summary
+
+As métricas de sucesso traduzem os outcomes do programa em indicadores verificáveis de arquitetura, dados, IA, plataforma, segurança e negócio.
+
+## Contexto
+
+Este documento faz parte do Roadmap de Transformação da Enterprise Data & AI Platform. Seu objetivo é organizar a evolução arquitetural da plataforma em iniciativas, capacidades, entregas e marcos de implementação, permitindo uma adoção incremental e alinhada às prioridades estratégicas da organização.
+
+O Roadmap conecta a arquitetura de referência à execução, fornecendo uma visão estruturada da transformação corporativa baseada em valor de negócio, redução de riscos e evolução contínua das capacidades digitais.
+
+---
+
+# KPIs de Arquitetura
 
 | Indicador | Meta |
 |-----------|------|
@@ -12,7 +35,7 @@
 
 ---
 
-# Data KPIs
+# KPIs de Dados
 
 | Indicador | Meta |
 |-----------|------|
@@ -24,7 +47,7 @@
 
 ---
 
-# AI KPIs
+# KPIs de IA
 
 | Indicador | Meta |
 |-----------|------|
@@ -36,7 +59,7 @@
 
 ---
 
-# Platform KPIs
+# KPIs de Plataforma
 
 | Indicador | Meta |
 |-----------|------|
@@ -48,7 +71,7 @@
 
 ---
 
-# Security KPIs
+# KPIs de Segurança
 
 | Indicador | Meta |
 |-----------|------|
@@ -60,7 +83,7 @@
 
 ---
 
-# Business KPIs
+# KPIs de Negócio
 
 | Indicador | Meta |
 |-----------|------|
@@ -86,3 +109,36 @@
 | Plataforma | Tradicional | Cloud Native |
 | Automação | Baixa | Elevada |
 | Arquitetura | Projetos isolados | Evolução contínua |
+
+---
+
+## References
+
+- Architecture Vision
+- Business Context
+- Enterprise Architecture Roadmap
+- Capability Evolution Roadmap
+- Architecture Metrics
+- Enterprise Data & AI Platform Reference Architecture
+
+---
+
+# Benefícios Esperados
+
+- acompanhamento objetivo dos outcomes do programa;
+- identificação antecipada de desvios de adoção e valor;
+- suporte à priorização executiva baseada em evidências.
+
+# Relação com Outros Artefatos
+
+- [Architecture Metrics](../governance/architecture-metrics.md)
+- [Architecture Evolution Plan](./architecture-evolution-plan.md)
+- [Capability Evolution Roadmap](./capability-evolution-roadmap.md)
+- [Implementation Roadmap](./implementation-roadmap.md)
+- [Transformation Backlog](./transformation-backlog.md)
+
+# Decisões Arquiteturais
+
+## DA-01 — Evidência obrigatória
+
+O avanço do roadmap será avaliado por indicadores mensuráveis e evidências rastreáveis.

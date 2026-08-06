@@ -1,22 +1,16 @@
-# Enterprise Architecture Program Document Matrix
+# Matriz de Documentação dos Programas de Arquitetura Corporativa
 
 ## Objetivo
 
-Este documento define o catálogo oficial de documentos que compõem um Enterprise Architecture Program.
+Esta matriz define o conjunto de documentos que compõem um **Enterprise Architecture Program**, estabelecendo sua obrigatoriedade, objetivo, momento de criação e responsabilidade de manutenção.
 
-Para cada documento são definidos:
+Ela serve como referência para:
 
-- obrigatoriedade;
-- objetivo;
-- fase em que deve ser produzido;
-- responsável por sua manutenção.
-
-Essa matriz serve como referência para:
-
+- padronização da documentação;
 - criação de novos programas;
 - Architecture Reviews;
-- validação documental;
-- evolução do blueprint.
+- automação dos validadores;
+- governança documental.
 
 ---
 
@@ -24,102 +18,162 @@ Essa matriz serve como referência para:
 
 | Campo | Descrição |
 |--------|-----------|
-| Obrigatório | Indica se o documento faz parte da estrutura mínima do programa. |
-| Fase | Momento recomendado para criação do documento. |
+| Obrigatório | Indica se o documento deve existir em todos os programas. |
+| Fase | Momento recomendado para criação. |
 | Responsável | Papel responsável pela manutenção do documento. |
 
 ---
 
-# Documentos da raiz
+# Documentos Raiz
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| README.md | Sim | Apresentar o programa e organizar sua documentação. | Iniciação | Enterprise Architect |
-| architecture-target-state.md | Sim | Descrever a arquitetura alvo do programa. | Arquitetura | Enterprise Architect |
-| executive-target-state.md | Sim | Comunicar a arquitetura alvo para executivos e stakeholders. | Arquitetura | Enterprise Architect |
-| maturity-assessment.md | Sim | Avaliar a maturidade e identificar oportunidades de evolução. | Assessment | Enterprise Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| README.md | Sim | Visão geral do programa. | Inicial | Enterprise Architect |
+| architecture-target-state.md | Sim | Estado futuro da arquitetura. | Inicial | Enterprise Architect |
+| executive-target-state.md | Sim | Resumo executivo da arquitetura-alvo. | Inicial | Enterprise Architect |
+| maturity-assessment.md | Sim | Avaliação da maturidade arquitetural. | Planejamento | Enterprise Architect |
 
 ---
 
-# Architecture Decision Records
+# Diretório docs
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| README.md | Sim | Explicar a organização dos ADRs. | Iniciação | Enterprise Architect |
-| ADR | Sim | Registrar decisões arquiteturais relevantes. | Contínua | Enterprise Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| company-profile.md | Sim | Contexto organizacional. | Inicial | Enterprise Architect |
+| business-context.md | Sim | Contexto de negócio. | Inicial | Business Architect |
+| architecture-vision.md | Sim | Visão arquitetural do programa. | Inicial | Enterprise Architect |
 
 ---
 
-# Business Architecture
+# Diretório business-architecture
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| business-domains.md | Sim | Definir os domínios de negócio. | Descoberta | Business Architect |
-| business-value-streams.md | Sim | Descrever os fluxos de valor do negócio. | Descoberta | Business Architect |
-| capability-map.md | Sim | Mapear capacidades de negócio. | Descoberta | Business Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| capability-map.md | Sim | Mapa de capacidades de negócio. | Descoberta | Business Architect |
+| capability-assessment.md | Sim | Avaliação das capacidades atuais. | Descoberta | Business Architect |
+| business-domains.md | Sim | Definição dos domínios de negócio. | Descoberta | Business Architect |
+| business-value-streams.md | Sim | Cadeias de valor do negócio. | Descoberta | Business Architect |
+| data-ownership-model.md | Opcional | Modelo de ownership dos dados. | Descoberta | Data Architect |
 
 ---
 
-# Application Architecture
+# Diretório application-architecture
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| application-landscape.md | Sim | Descrever o portfólio de aplicações. | Arquitetura | Solution Architect |
-| api-strategy.md | Sim | Definir padrões e estratégia de APIs. | Arquitetura | Integration Architect |
-| event-driven-architecture.md | Opcional | Definir arquitetura orientada a eventos quando aplicável. | Arquitetura | Integration Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| application-landscape.md | Sim | Inventário das aplicações. | Análise | Solution Architect |
+| application-interaction-model.md | Sim | Interações entre aplicações. | Análise | Solution Architect |
+| application-architecture-principles.md | Sim | Princípios da arquitetura de aplicações. | Inicial | Enterprise Architect |
+| api-strategy.md | Sim | Estratégia corporativa de APIs. | Planejamento | Integration Architect |
+| integration-patterns.md | Sim | Padrões de integração. | Planejamento | Integration Architect |
+| event-driven-architecture.md | Opcional | Estratégia Event-Driven. | Planejamento | Integration Architect |
 
 ---
 
-# Information Architecture
+# Diretório information-architecture
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| enterprise-information-model.md | Sim | Definir o modelo corporativo de informação. | Arquitetura | Data Architect |
-| data-domain-model.md | Sim | Organizar os domínios de dados. | Arquitetura | Data Architect |
-| data-product-model.md | Opcional | Definir produtos de dados quando adotados. | Arquitetura | Data Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| enterprise-information-model.md | Sim | Modelo corporativo de informações. | Planejamento | Data Architect |
+| data-domain-model.md | Sim | Modelo de domínios de dados. | Planejamento | Data Architect |
+| data-product-model.md | Opcional | Modelo de Data Products. | Planejamento | Data Architect |
+| data-lifecycle-model.md | Sim | Ciclo de vida dos dados. | Planejamento | Data Architect |
+| metadata-strategy.md | Sim | Estratégia de metadados. | Planejamento | Data Architect |
 
 ---
 
-# Technology Architecture
+# Diretório technology-architecture
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| technology-platform.md | Sim | Descrever a plataforma tecnológica. | Arquitetura | Enterprise Architect |
-| security-architecture.md | Sim | Definir os princípios e componentes de segurança. | Arquitetura | Security Architect |
-| observability-architecture.md | Opcional | Definir estratégia de observabilidade. | Arquitetura | Platform Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| technology-platform.md | Sim | Plataforma tecnológica. | Planejamento | Technology Architect |
+| technology-standards.md | Sim | Padrões tecnológicos. | Planejamento | Technology Architect |
+| infrastructure-architecture.md | Sim | Arquitetura de infraestrutura. | Planejamento | Infrastructure Architect |
+| security-architecture.md | Sim | Arquitetura de segurança. | Planejamento | Security Architect |
+| observability-architecture.md | Opcional | Estratégia de observabilidade. | Planejamento | Platform Architect |
 
 ---
 
-# Governance
+# Diretório governance
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| architecture-governance.md | Sim | Definir o modelo de governança da arquitetura. | Governança | Enterprise Architect |
-| data-governance-framework.md | Opcional | Definir governança de dados. | Governança | Data Architect |
-| ai-governance-framework.md | Opcional | Definir governança para soluções de IA. | Governança | AI Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| architecture-governance.md | Sim | Modelo de governança arquitetural. | Inicial | Enterprise Architect |
+| architecture-metrics.md | Sim | Indicadores arquiteturais. | Evolução | Enterprise Architect |
+| reference-architecture-compliance.md | Sim | Critérios de conformidade. | Evolução | Enterprise Architect |
+| decision-governance.md | Sim | Governança das decisões arquiteturais. | Inicial | Enterprise Architect |
+| data-governance-framework.md | Opcional | Governança de dados. | Planejamento | Data Architect |
+| ai-governance-framework.md | Opcional | Governança de IA. | Planejamento | AI Architect |
 
 ---
 
-# Roadmap
+# Diretório roadmap
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| implementation-roadmap.md | Sim | Planejar a implementação da arquitetura. | Planejamento | Enterprise Architect |
-| architecture-evolution-plan.md | Sim | Definir a evolução arquitetural do programa. | Planejamento | Enterprise Architect |
-| transformation-backlog.md | Sim | Organizar iniciativas e entregas de transformação. | Planejamento | Enterprise Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| implementation-roadmap.md | Sim | Roadmap de implementação. | Planejamento | Enterprise Architect |
+| implementation-phases.md | Sim | Fases da transformação. | Planejamento | Enterprise Architect |
+| architecture-evolution-plan.md | Sim | Evolução arquitetural. | Planejamento | Enterprise Architect |
+| capability-evolution-roadmap.md | Sim | Evolução das capacidades. | Planejamento | Business Architect |
+| success-metrics.md | Sim | Indicadores de sucesso. | Planejamento | Enterprise Architect |
+| transformation-backlog.md | Opcional | Backlog da transformação. | Evolução | Enterprise Architect |
 
 ---
 
-# Diagramas
+# Diretório adrs
 
 | Documento | Obrigatório | Objetivo | Fase | Responsável |
-|------------|-------------|----------|-------|-------------|
-| executive-target-state.md | Sim | Armazenar diagramas executivos da arquitetura. | Arquitetura | Enterprise Architect |
+|-----------|:-----------:|----------|-------|-------------|
+| README.md | Sim | Organização dos ADRs. | Inicial | Enterprise Architect |
+| ADR-XXX.md | Sim | Registro de decisões arquiteturais. | Contínuo | Architecture Review Board |
 
 ---
 
-# Atualização da matriz
+# Diretório diagrams
 
-Sempre que um novo tipo de documento for incorporado ao blueprint, esta matriz deverá ser atualizada antes da criação de novos programas.
+| Documento | Obrigatório | Objetivo | Fase | Responsável |
+|-----------|:-----------:|----------|-------|-------------|
+| executive-target-state.md | Sim | Diagrama executivo da arquitetura-alvo. | Inicial | Enterprise Architect |
 
-O script `tools/architecture/create-program.py` deverá permanecer alinhado com esta matriz, garantindo que a estrutura inicial gerada reflita o padrão oficial definido pelo blueprint.
+---
+
+# Extensões por Domínio
+
+Cada programa pode incluir diretórios especializados conforme seu domínio arquitetural.
+
+Exemplos:
+
+| Diretório | Exemplo de Programa |
+|-----------|---------------------|
+| ai-architecture | Enterprise Data & AI Platform |
+| integration-architecture | Enterprise Integration Platform |
+| customer-architecture | Enterprise Customer Platform |
+| observability-architecture | Enterprise Observability Platform |
+| security-architecture | Enterprise Security Platform |
+
+Esses diretórios devem seguir os mesmos padrões de documentação, qualidade e governança definidos neste blueprint.
+
+---
+
+# Critérios de Qualidade
+
+Todo documento deve possuir, no mínimo:
+
+- título;
+- objetivo;
+- contexto;
+- conteúdo estruturado;
+- referências;
+- linguagem técnica consistente;
+- versionamento via Git.
+
+---
+
+# Referências
+
+- `program-structure.md`
+- `adr-template.md`
+- `checklist.md`
+- `../architecture-document-catalog.md`
+- `../architecture-documentation-quality-checklist.md`
+- `../architecture-review-process.md`

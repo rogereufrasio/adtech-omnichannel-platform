@@ -5,12 +5,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Data Domain Model |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Information Architecture |
 | Tipo | Arquitetura de Domínios de Dados |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Information Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os princípios, modelos e padrões necessários para garantir consistência, interoperabilidade, governança e escalabilidade dos ativos de informação da plataforma corporativa.
+
+A Information Architecture estabelece a estrutura necessária para que dados sejam tratados como produtos estratégicos, suportando analytics, inteligência artificial, integração corporativa e tomada de decisão baseada em dados.
 
 ---
 
@@ -49,29 +57,24 @@ Este modelo constitui a base para a construção dos Produtos de Dados corporati
 ```mermaid
 flowchart TB
 
-Customer["Customer Domain"]
+Customer["Cliente"]
+Commercial["Comercial"]
+Operations["Operações"]
+Finance["Financeiro"]
+Data["Dados Corporativos"]
+AI["Ativos de IA"]
+Decision["Informação para Decisão"]
 
-Sales["Sales Domain"]
-
-Marketing["Marketing Domain"]
-
-Finance["Finance Domain"]
-
-Operations["Operations Domain"]
-
-Digital["Digital Channels Domain"]
-
-Partner["Partner Domain"]
-
-IoT["IoT Domain"]
-
-Customer --> Sales
-Customer --> Marketing
-Sales --> Finance
-Sales --> Operations
-Digital --> Customer
-Partner --> Sales
-IoT --> Operations
+Customer --> Commercial
+Commercial --> Finance
+Commercial --> Operations
+Customer --> Data
+Commercial --> Data
+Operations --> Data
+Finance --> Data
+Data --> AI
+Data --> Decision
+AI --> Decision
 ```
 
 ---
@@ -80,14 +83,13 @@ IoT --> Operations
 
 | Domínio | Objetivo | Owner |
 |---------|----------|-------|
-| Customer | Gerenciar informações de clientes e relacionamento. | Customer Management |
-| Sales | Consolidar pedidos, vendas e receita. | Comercial |
-| Marketing | Gerenciar campanhas, segmentações e jornadas. | Marketing |
-| Finance | Controlar pagamentos, faturamento e indicadores financeiros. | Financeiro |
-| Operations | Gerenciar operações e cadeia de suprimentos. | Operações |
-| Digital Channels | Consolidar interações dos canais digitais. | Digital |
-| Partner | Gerenciar parceiros e integrações externas. | Partnership Management |
-| IoT | Consolidar eventos provenientes de dispositivos conectados. | Engenharia |
+| Cliente | Gerenciar perfil, relacionamento, consentimento, segmentação e interações. | Liderança do domínio de Clientes |
+| Comercial | Consolidar produtos, ofertas, campanhas, pedidos, vendas e pricing. | Liderança Comercial |
+| Operações | Gerenciar estoque, logística, fornecedores e indicadores operacionais. | Liderança Operacional |
+| Financeiro | Controlar pagamentos, faturamento, custos, receitas e indicadores financeiros. | Liderança Financeira |
+| Dados Corporativos | Gerenciar catálogo, metadados, qualidade e produtos de dados compartilhados. | Chief Data Office / Data Office |
+| Ativos de IA | Gerenciar modelos, features, prompts e avaliações de IA. | Centro de Excelência em IA |
+| Informação para Decisão | Gerenciar métricas corporativas e ativos semânticos para analytics. | Liderança de Analytics |
 
 ---
 
@@ -96,17 +98,15 @@ IoT --> Operations
 ```mermaid
 flowchart LR
 
-Customer --> Customer360["Customer 360"]
-
-Sales --> SalesAnalytics["Sales Analytics"]
-
-Marketing --> MarketingInsights["Marketing Intelligence"]
-
-Finance --> FinancialAnalytics["Financial Analytics"]
-
-Operations --> SupplyAnalytics["Supply Chain Analytics"]
-
-Digital --> Customer360
+Customer["Cliente"] --> Customer360["Customer 360"]
+Commercial["Comercial"] --> SalesAnalytics["Sales Analytics"]
+Commercial --> MarketingInsights["Marketing Intelligence"]
+Finance["Financeiro"] --> FinancialAnalytics["Financial Analytics"]
+Operations["Operações"] --> SupplyAnalytics["Supply Chain Analytics"]
+Data["Dados Corporativos"] --> Customer360
+Data --> SalesAnalytics
+Data --> MarketingInsights
+AI["Ativos de IA"] --> Decision["Informação para Decisão"]
 ```
 
 Os domínios colaboram entre si por meio de Produtos de Dados certificados, evitando integrações diretas entre aplicações e promovendo reutilização das informações.
@@ -159,6 +159,17 @@ Um novo domínio deverá ser criado quando:
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Domains](../business-architecture/business-domains.md)
+- [Data Ownership Model](../business-architecture/data-ownership-model.md)
+- [Data Product Model](./data-product-model.md)
+- [Enterprise Information Model](./enterprise-information-model.md)
+- [Metadata Strategy](./metadata-strategy.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Domínios Orientados ao Negócio
@@ -194,11 +205,3 @@ Os domínios compartilharão informações exclusivamente por meio de Produtos d
 **Motivação**
 
 Reduzir acoplamento, promover reutilização e aumentar a confiabilidade das integrações.
-
----
-
-# Conclusão
-
-O Data Domain Model estabelece a organização lógica dos ativos de informação da Enterprise Data & Artificial Intelligence Platform.
-
-Ao alinhar os domínios de dados às capacidades de negócio, a organização fortalece sua governança, reduz a complexidade das integrações e cria uma base sólida para o desenvolvimento de Produtos de Dados, Analytics e Inteligência Artificial em escala.

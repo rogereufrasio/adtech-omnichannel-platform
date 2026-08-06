@@ -280,6 +280,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [API Strategy](../application-architecture/api-strategy.md)
+- [Application Interaction Model](../application-architecture/application-interaction-model.md)
+- [Technology Standards](../technology-architecture/technology-standards.md)

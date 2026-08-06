@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Observability Architecture |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Technology Architecture |
-| Tipo | Technology Architecture |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte da Technology Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os componentes tecnológicos, padrões de infraestrutura, serviços compartilhados e capacidades técnicas que sustentam a plataforma corporativa de dados e inteligência artificial.
+
+A Technology Architecture estabelece as diretrizes para garantir escalabilidade, disponibilidade, segurança, observabilidade, automação e padronização tecnológica, permitindo que as demais camadas da arquitetura evoluam de forma consistente e sustentável.
 
 ---
 
@@ -304,16 +312,22 @@ Indicadores mínimos:
 
 ---
 
+# Limites e Dependências
+
+Este documento define telemetria, indicadores e requisitos de observabilidade específicos da plataforma de dados e IA. A coleta, correlação, retenção e visualização corporativa da telemetria serão providas pelo **Programa Estratégico 05 — Enterprise Observability Platform**.
+
+---
+
 # Relação com Outros Artefatos
 
 Este documento complementa:
 
-- Technology Platform
-- Infrastructure Architecture
-- Security Architecture
-- Technology Standards
-- Event-Driven Architecture
-- Application Landscape
+- [Infrastructure Architecture](./infrastructure-architecture.md)
+- [Security Architecture](./security-architecture.md)
+- [Technology Platform](./technology-platform.md)
+- [Technology Standards](./technology-standards.md)
+- [Application Landscape](../application-architecture/application-landscape.md)
+- [Event-Driven Architecture](../application-architecture/event-driven-architecture.md)
 
 ---
 
@@ -364,9 +378,3 @@ Eventos críticos deverão gerar alertas automáticos.
 **Motivação**
 
 Reduzir tempo de detecção e resposta a incidentes.
-
----
-
-# Conclusão
-
-A Observability Architecture estabelece as capacidades necessárias para garantir monitoramento, rastreabilidade e operação contínua da Enterprise Data & Artificial Intelligence Platform. A adoção de telemetria padronizada, dashboards corporativos, rastreamento distribuído e alertas automatizados assegura elevada confiabilidade operacional e fornece suporte à evolução contínua da plataforma.

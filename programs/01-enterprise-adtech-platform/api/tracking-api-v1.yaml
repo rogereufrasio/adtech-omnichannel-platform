@@ -1,18 +1,26 @@
-```yaml
 openapi: 3.0.3
 
 info:
   title: ShopSphere Tracking API
   description: API responsável pela coleta de eventos comportamentais e transacionais da plataforma AdTech.
   version: 1.0.0
+  license:
+    name: Uso interno da OmniRetail
+    url: https://shopsphere.example/legal/api-license
 
 servers:
   - url: https://api.shopsphere.com/tracking/v1
 
 tags:
   - name: Events
+    description: Operações de ingestão de eventos individuais e em lote.
   - name: Health
+    description: Operações de verificação da saúde do serviço.
   - name: Schemas
+    description: Operações de consulta dos contratos de eventos.
+
+security:
+  - bearerAuth: []
 
 paths:
 
@@ -48,6 +56,7 @@ paths:
       tags:
         - Events
       summary: Receber lote de eventos
+      operationId: publishEventBatch
 
       parameters:
         - $ref: '#/components/parameters/CorrelationId'
@@ -63,12 +72,16 @@ paths:
         '202':
           description: Lote aceito para processamento
 
+        '400':
+          description: Lote inválido
+
   /schemas/{eventName}:
     get:
       tags:
         - Schemas
 
       summary: Consultar schema de evento
+      operationId: getEventSchema
 
       parameters:
         - name: eventName
@@ -90,12 +103,26 @@ paths:
         - Health
 
       summary: Health Check
+      operationId: getServiceHealth
 
       responses:
         '200':
           description: Serviço operacional
 
+        '401':
+          description: Não autorizado
+
+        '503':
+          description: Serviço indisponível
+
 components:
+
+  securitySchemes:
+
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
 
   parameters:
 
@@ -171,4 +198,3 @@ components:
 
           items:
             $ref: '#/components/schemas/Event'
-```

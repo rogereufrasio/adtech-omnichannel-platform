@@ -79,3 +79,8 @@ Possíveis resultados:
 * Approved
 * Approved with Conditions
 * Rejected
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

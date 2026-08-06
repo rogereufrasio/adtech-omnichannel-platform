@@ -1,5 +1,16 @@
 # Architecture Decision Records (ADRs)
 
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Documento | Catálogo de Architecture Decision Records |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | ADRs |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Aprovado |
+
 ## Visão geral
 
 Esta pasta contém os **Architecture Decision Records (ADRs)** da **Enterprise Data & AI Platform**.
@@ -59,13 +70,13 @@ Todos os ADRs seguem uma estrutura padronizada:
 
 | ADR | Decisão arquitetural | Objetivo | Status |
 |---|---|---|---|
-| ADR-001 | API First | Estabelecer APIs como mecanismo principal de exposição e consumo de capacidades | Aceito |
-| ADR-002 | Event Driven Architecture | Definir eventos como padrão para integrações desacopladas e distribuídas | Aceito |
-| ADR-003 | Data as a Product | Tratar dados como produtos corporativos com ownership e governança | Aceito |
-| ADR-004 | Vendor Agnostic AI | Garantir flexibilidade estratégica na adoção de Inteligência Artificial | Aceito |
-| ADR-005 | Metadata First | Estabelecer metadados como fundamento para descoberta, contexto e governança | Aceito |
-| ADR-006 | Security by Design | Incorporar segurança e privacidade desde a concepção arquitetural | Aceito |
-| ADR-007 | Cloud Native Platform | Definir fundamentos cloud native para escalabilidade, automação e resiliência | Aceito |
+| [ADR-001](./adr-001-api-first.md) | API First | Estabelecer APIs como mecanismo principal de exposição e consumo de capacidades | Aceito |
+| [ADR-002](./adr-002-event-driven-architecture.md) | Event Driven Architecture | Definir eventos como padrão para integrações desacopladas e distribuídas | Aceito |
+| [ADR-003](./adr-003-data-as-a-product.md) | Data as a Product | Tratar dados como produtos corporativos com ownership e governança | Aceito |
+| [ADR-004](./adr-004-vendor-agnostic-ai.md) | Vendor Agnostic AI | Garantir flexibilidade estratégica na adoção de Inteligência Artificial | Aceito |
+| [ADR-005](./adr-005-metadata-first.md) | Metadata First | Estabelecer metadados como fundamento para descoberta, contexto e governança | Aceito |
+| [ADR-006](./adr-006-security-by-design.md) | Security by Design | Incorporar segurança e privacidade desde a concepção arquitetural | Aceito |
+| [ADR-007](./adr-007-cloud-native-platform.md) | Cloud Native Platform | Definir fundamentos cloud native para escalabilidade, automação e resiliência | Aceito |
 
 ---
 
@@ -163,11 +174,6 @@ A finalidade dos ADRs não é impedir mudanças, mas garantir que mudanças futu
 
 ---
 
-## Próximos passos
+## Status do Bloco
 
-Com os ADRs definidos, a próxima etapa da documentação arquitetural da Enterprise Data & AI Platform é consolidar:
-
-- arquitetura Target State;
-- roadmap de evolução;
-- capabilities e responsabilidades;
-- visão de implementação progressiva.
+Os sete ADRs foram revisados e aceitos. O bloco integra o baseline aprovado do Programa Estratégico 02.

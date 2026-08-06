@@ -9,7 +9,15 @@
 | Categoria | Avaliação de Capacidade Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.1 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Esta avaliação de maturidade analisa as capacidades atuais da organização nas dimensões de negócio, dados, tecnologia, governança e Inteligência Artificial. Ela identifica pontos fortes, lacunas, prioridades e níveis-alvo necessários à implementação da Enterprise Data & AI Platform.
+
+A avaliação apoia o planejamento estratégico, a priorização de investimentos e as decisões de evolução arquitetural durante a transformação.
 
 ---
 
@@ -258,3 +266,4 @@ Implementation Phases
         ↓
 
 Transformation Backlog
+```

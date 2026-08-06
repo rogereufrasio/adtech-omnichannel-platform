@@ -149,3 +149,8 @@ Essas capacidades garantem aderência à LGPD e suportam a escalabilidade susten
 * Melhoria da qualidade e rastreabilidade dos dados;
 * Maior eficiência operacional;
 * Base tecnológica preparada para Customer 360, Analytics Avançado e Inteligência Artificial.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

@@ -10,7 +10,7 @@
 | Tipo | Modelo de Capacidades de Negócio |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Em evolução |
+| Status | Aprovado |
 
 ---
 
@@ -288,6 +288,15 @@ Este documento servirá como base para:
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Domains](./business-domains.md)
+- [Business Value Streams](./business-value-streams.md)
+- [Capability Assessment](./capability-assessment.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Capacidades Independentes da Estrutura Organizacional
@@ -323,15 +332,3 @@ Os próximos domínios arquiteturais deverão utilizar este modelo como referên
 **Motivação**
 
 Garantir rastreabilidade entre estratégia, negócio e implementação.
-
----
-
-# Próximos Passos
-
-Os próximos artefatos da Business Architecture serão:
-
-- Business Value Streams;
-- Business Domains;
-- Data Ownership Model.
-
-Ao final da Business Architecture, o programa possuirá uma visão completa das capacidades organizacionais que sustentarão toda a evolução da plataforma corporativa de dados e Inteligência Artificial.

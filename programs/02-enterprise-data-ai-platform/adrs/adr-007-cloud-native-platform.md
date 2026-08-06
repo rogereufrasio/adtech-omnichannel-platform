@@ -322,6 +322,8 @@ Objetivos:
 
 ---
 
-## Status
+## Relação com Outros Artefatos
 
-Aceito
+- [Infrastructure Architecture](../technology-architecture/infrastructure-architecture.md)
+- [Technology Platform](../technology-architecture/technology-platform.md)
+- [Technology Standards](../technology-architecture/technology-standards.md)

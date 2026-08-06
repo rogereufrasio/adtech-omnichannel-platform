@@ -72,3 +72,7 @@ Audience Activation
 - Escalabilidade para novos canais;
 - Base tecnológica preparada para IA e Analytics Avançado;
 - Evolução contínua da estratégia de Customer 360.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

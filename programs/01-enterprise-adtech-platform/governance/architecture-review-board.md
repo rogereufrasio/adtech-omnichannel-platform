@@ -76,3 +76,8 @@ Os custos operacionais são compatíveis com os benefícios esperados?
 ## Registro de Decisões
 
 Todas as decisões relevantes devem ser registradas por meio de Architecture Decision Records (ADR).
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

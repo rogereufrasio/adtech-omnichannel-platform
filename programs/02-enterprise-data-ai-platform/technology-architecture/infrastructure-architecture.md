@@ -4,17 +4,25 @@
 
 ---
 
+## Contexto
+
+Este documento faz parte da Technology Architecture da Enterprise Data & AI Platform. Seu objetivo é definir os componentes tecnológicos, padrões de infraestrutura, serviços compartilhados e capacidades técnicas que sustentam a plataforma corporativa de dados e inteligência artificial.
+
+A Technology Architecture estabelece as diretrizes para garantir escalabilidade, disponibilidade, segurança, observabilidade, automação e padronização tecnológica, permitindo que as demais camadas da arquitetura evoluam de forma consistente e sustentável.
+
+---
+
 # Informações do Documento
 
 | Item | Valor |
 |------|-------|
 | Documento | Infrastructure Architecture |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
 | Domínio Arquitetural | Technology Architecture |
 | Tipo | Infrastructure Architecture |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -292,12 +300,12 @@ A infraestrutura deverá suportar:
 
 Este documento complementa:
 
-- Technology Platform
-- Technology Standards
-- Security Architecture
-- Observability Architecture
-- Application Landscape
-- Integration Patterns
+- [Observability Architecture](./observability-architecture.md)
+- [Security Architecture](./security-architecture.md)
+- [Technology Platform](./technology-platform.md)
+- [Technology Standards](./technology-standards.md)
+- [Application Landscape](../application-architecture/application-landscape.md)
+- [Integration Patterns](../application-architecture/integration-patterns.md)
 
 ---
 
@@ -348,9 +356,3 @@ A infraestrutura deverá permanecer desacoplada de tecnologias proprietárias es
 **Motivação**
 
 Garantir flexibilidade arquitetural e aderência ao ADR-004.
-
----
-
-# Conclusão
-
-A Infrastructure Architecture estabelece a fundação tecnológica necessária para suportar toda a Enterprise Data & Artificial Intelligence Platform, oferecendo uma infraestrutura resiliente, escalável, segura e automatizada, preparada para sustentar iniciativas corporativas de dados, Analytics e Inteligência Artificial.

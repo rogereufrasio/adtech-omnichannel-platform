@@ -2,6 +2,12 @@
 
 > Define o roadmap de implementação da Enterprise Data & Artificial Intelligence Platform, organizando a evolução da arquitetura em fases incrementais para maximizar valor de negócio e reduzir riscos de implantação.
 
+## Contexto
+
+Este documento faz parte do Roadmap de Transformação da Enterprise Data & AI Platform. Seu objetivo é organizar a evolução arquitetural da plataforma em iniciativas, capacidades, entregas e marcos de implementação, permitindo uma adoção incremental e alinhada às prioridades estratégicas da organização.
+
+O Roadmap conecta a arquitetura de referência à execução, fornecendo uma visão estruturada da transformação corporativa baseada em valor de negócio, redução de riscos e evolução contínua das capacidades digitais.
+
 ---
 
 # Informações do Documento
@@ -9,12 +15,12 @@
 | Item | Valor |
 |------|-------|
 | Documento | Implementation Roadmap |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Roadmap |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Roadmap |
 | Tipo | Roadmap |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -156,12 +162,21 @@ Objetivos:
 
 ---
 
+# Benefícios Esperados
+
+- entrega incremental de valor e redução de risco;
+- dependências e critérios de fase explícitos;
+- governança contínua da execução.
+
+---
+
 # Relação com Outros Artefatos
 
-- Executive Target State
-- Technology Platform
-- Architecture Governance
-- Architecture Vision
+- [Architecture Evolution Plan](./architecture-evolution-plan.md)
+- [Capability Evolution Roadmap](./capability-evolution-roadmap.md)
+- [Implementation Phases](./implementation-phases.md)
+- [Success Metrics](./success-metrics.md)
+- [Transformation Backlog](./transformation-backlog.md)
 
 ---
 
@@ -182,9 +197,3 @@ Todas as fases deverão ser acompanhadas pela Enterprise Architecture Practice.
 ## DA-03 — Valor Contínuo
 
 Cada fase deverá entregar valor mensurável ao negócio.
-
----
-
-# Conclusão
-
-O roadmap estabelece uma evolução incremental da Enterprise Data & Artificial Intelligence Platform, reduzindo riscos de implantação e garantindo alinhamento contínuo entre estratégia, arquitetura e execução.

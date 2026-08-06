@@ -10,7 +10,17 @@
 | Tipo | Modelo de Domínios de Negócio |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento integra a Arquitetura de Negócios do Programa 02 – Enterprise Data & AI Platform.
+
+Seu objetivo é definir os domínios de negócio suportados pela plataforma, estabelecendo os limites de responsabilidade, o alinhamento com as capacidades corporativas e a relação entre os processos de negócio e os ativos de dados estratégicos.
+
+As definições aqui apresentadas servem como referência para decisões de arquitetura, priorização de iniciativas e evolução da arquitetura corporativa do programa.
 
 ---
 
@@ -268,6 +278,15 @@ Os domínios definidos servirão como insumo para:
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Capability Map](./capability-map.md)
+- [Business Value Streams](./business-value-streams.md)
+- [Data Ownership Model](./data-ownership-model.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Arquitetura Orientada por Domínios
@@ -303,11 +322,3 @@ Os Data Domains deverão ser derivados dos Business Domains definidos neste docu
 **Motivação**
 
 Assegurar rastreabilidade entre negócio, informação e tecnologia ao longo de todo o programa.
-
----
-
-# Conclusão
-
-A definição dos Business Domains consolida a visão organizacional da **Enterprise Data & Artificial Intelligence Platform**, estabelecendo os limites funcionais que orientarão toda a evolução arquitetural.
-
-Ao organizar a arquitetura em torno de domínios de negócio, a organização fortalece o alinhamento entre estratégia, capacidades e informação, criando uma fundação sólida para os próximos domínios arquiteturais e para a evolução contínua da plataforma corporativa de dados e Inteligência Artificial.

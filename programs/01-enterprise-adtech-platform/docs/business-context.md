@@ -63,3 +63,7 @@ Os principais resultados esperados são:
 - Evolução dos modelos de atribuição e mensuração de campanhas;
 - Maior governança, rastreabilidade e qualidade dos dados;
 - Adoção dos princípios de Privacy by Design e conformidade com a LGPD.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

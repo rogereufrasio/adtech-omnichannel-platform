@@ -75,7 +75,7 @@ Capacidades necessárias para garantir estabilidade, monitoramento e evolução 
 
 ## Evolução Estratégica
 
-Embora este case esteja focado na modernização da plataforma AdTech, diversas capacidades aqui descritas servem como base para iniciativas futuras da organização, incluindo:
+Embora este Programa Estratégico esteja focado na modernização da plataforma AdTech, diversas capacidades aqui descritas servem como base para iniciativas futuras da organização, incluindo:
 
 - Plataforma Corporativa de Dados;
 - Customer 360 e Identity Resolution;
@@ -84,3 +84,8 @@ Embora este case esteja focado na modernização da plataforma AdTech, diversas 
 - Governança de Dados e IA.
 
 Essa abordagem permite que os investimentos realizados na plataforma AdTech contribuam diretamente para a evolução tecnológica de longo prazo da empresa.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

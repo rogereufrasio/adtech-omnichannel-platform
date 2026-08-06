@@ -79,3 +79,7 @@ Desvantagens:
 ## Justificativa
 
 Considerando os objetivos estratégicos da ShopSphere relacionados a Customer 360, ativação omnichannel e personalização em tempo quase real, a Arquitetura Orientada a Eventos oferece o melhor equilíbrio entre escalabilidade, flexibilidade e capacidade de evolução da plataforma.
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

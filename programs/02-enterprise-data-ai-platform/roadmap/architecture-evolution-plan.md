@@ -1,5 +1,28 @@
 # Architecture Evolution Plan
 
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Documento | Architecture Evolution Plan |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Roadmap |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Aprovado |
+
+## Executive Summary
+
+Este plano organiza a evolução do estado-alvo em horizontes incrementais, com revisões periódicas que mantêm capacidades, riscos, decisões e investimentos alinhados.
+
+## Contexto
+
+Este documento faz parte do Roadmap de Transformação da Enterprise Data & AI Platform. Seu objetivo é organizar a evolução arquitetural da plataforma em iniciativas, capacidades, entregas e marcos de implementação, permitindo uma adoção incremental e alinhada às prioridades estratégicas da organização.
+
+O Roadmap conecta a arquitetura de referência à execução, fornecendo uma visão estruturada da transformação corporativa baseada em valor de negócio, redução de riscos e evolução contínua das capacidades digitais.
+
+---
+
 ## Princípios de evolução
 
 - Evolução incremental.
@@ -13,7 +36,7 @@
 
 ---
 
-# Horizonte 1 — Establish
+# Horizonte 1 — Estabelecer
 
 ## Objetivos
 
@@ -29,7 +52,7 @@
 
 ---
 
-# Horizonte 2 — Consolidate
+# Horizonte 2 — Consolidar
 
 ## Objetivos
 
@@ -45,7 +68,7 @@
 
 ---
 
-# Horizonte 3 — Optimize
+# Horizonte 3 — Otimizar
 
 ## Objetivos
 
@@ -61,7 +84,7 @@
 
 ---
 
-# Horizonte 4 — Intelligence
+# Horizonte 4 — Inteligência
 
 ## Objetivos
 
@@ -77,7 +100,7 @@
 
 ---
 
-# Horizonte 5 — Autonomous Enterprise
+# Horizonte 5 — Empresa Autônoma
 
 ## Objetivos
 
@@ -125,3 +148,37 @@
 - Target Architecture
 - Estratégia tecnológica
 - Modernização da plataforma
+
+---
+
+## References
+
+- Architecture Vision
+- Executive Target State
+- Enterprise Architecture Roadmap
+- Capability Map
+- Business Value Streams
+- Architecture Governance
+- TOGAF® Standard (10th Edition)
+
+---
+
+# Benefícios Esperados
+
+- evolução controlada por horizontes e critérios de revisão;
+- alinhamento contínuo entre arquitetura e execução;
+- visibilidade sobre dependências, riscos e decisões.
+
+# Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Capability Evolution Roadmap](./capability-evolution-roadmap.md)
+- [Implementation Phases](./implementation-phases.md)
+- [Implementation Roadmap](./implementation-roadmap.md)
+- [Architecture Governance](../governance/architecture-governance.md)
+
+# Decisões Arquiteturais
+
+## DA-01 — Evolução por horizontes
+
+A arquitetura evoluirá por horizontes incrementais submetidos a revisões trimestrais, semestrais e anuais.

@@ -8,7 +8,7 @@
 
 Este documento integra a Arquitetura de Aplicações do Programa 02 – Enterprise Data & AI Platform.
 
-Seu objetivo é estabelecer as diretrizes arquiteturais referentes a Apadrões de integração, assegurando alinhamento com os princípios corporativos da plataforma, os Architecture Decision Records (ADRs) aprovados e a arquitetura alvo do programa.
+Seu objetivo é estabelecer as diretrizes arquiteturais referentes a padrões de integração, assegurando alinhamento com os princípios corporativos da plataforma, os Architecture Decision Records (ADRs) aprovados e a arquitetura alvo do programa.
 
 As definições aqui apresentadas devem ser utilizadas como referência para decisões de arquitetura, evolução da plataforma e revisão técnica das soluções implementadas.
 
@@ -19,12 +19,12 @@ As definições aqui apresentadas devem ser utilizadas como referência para dec
 | Item | Valor |
 |------|-------|
 | Documento | Integration Patterns |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Application Architecture |
-| Tipo | Architecture Definition |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Application Architecture |
+| Tipo | Definição Arquitetural |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -75,15 +75,15 @@ As integrações priorizam comunicação desacoplada, APIs padronizadas e arquit
 flowchart LR
 
 APP["Aplicações"] --> API["API Gateway"]
-API --> SERVICES["Domain Services"]
+API --> SERVICES["Serviços de Domínio"]
 
-SERVICES --> EVENTS["Event Broker"]
+SERVICES --> EVENTS["Broker de Eventos"]
 
-EVENTS --> DATA["Data Platform"]
+EVENTS --> DATA["Plataforma de Dados"]
 
-DATA --> PRODUCTS["Data Products"]
+DATA --> PRODUCTS["Produtos de Dados"]
 
-PRODUCTS --> AI["AI Platform"]
+PRODUCTS --> AI["Plataforma de IA"]
 
 AI --> CONSUMERS["Consumidores"]
 ```
@@ -110,19 +110,30 @@ AI --> CONSUMERS["Consumidores"]
 
 ---
 
+# Limites e Dependências
+
+Os padrões deste documento especificam como as aplicações do Programa 02 integram dados e serviços de IA. API Management, mensageria e distribuição corporativa de eventos são capacidades compartilhadas providas e governadas pelo **Programa Estratégico 03 — Enterprise Integration Platform**.
+
+---
+
 # Relação com Outros Artefatos
 
-- Application Landscape
-- API Strategy
-- Event-Driven Architecture
-- Enterprise Information Model
-- Technology Architecture
+- [API Strategy](./api-strategy.md)
+- [Application Architecture Principles](./application-architecture-principles.md)
+- [Application Interaction Model](./application-interaction-model.md)
+- [Application Landscape](./application-landscape.md)
+- [Event-Driven Architecture](./event-driven-architecture.md)
+- [Enterprise Information Model](../information-architecture/enterprise-information-model.md)
 
 ---
 
 # Decisões Arquiteturais
 
 ## DA-01 — APIs para comunicação síncrona
+
+**Decisão**
+
+Interações síncronas entre domínios deverão utilizar APIs com contratos governados.
 
 **Motivação**
 
@@ -132,6 +143,10 @@ Padronizar integrações transacionais.
 
 ## DA-02 — Eventos para comunicação assíncrona
 
+**Decisão**
+
+Interações assíncronas e propagação de fatos de negócio deverão utilizar eventos corporativos.
+
 **Motivação**
 
 Reduzir acoplamento e aumentar escalabilidade.
@@ -140,12 +155,10 @@ Reduzir acoplamento e aumentar escalabilidade.
 
 ## DA-03 — Contratos versionados
 
+**Decisão**
+
+APIs, eventos e schemas compartilhados deverão possuir contratos versionados e política de compatibilidade.
+
 **Motivação**
 
 Garantir compatibilidade entre consumidores e provedores.
-
----
-
-# Conclusão
-
-Os padrões definidos neste documento estabelecem uma arquitetura de integração consistente, resiliente e preparada para suportar a evolução contínua da Enterprise Data & Artificial Intelligence Platform.

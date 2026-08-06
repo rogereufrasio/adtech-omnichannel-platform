@@ -1,12 +1,35 @@
 # Implementation Phases
 
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Documento | Implementation Phases |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Roadmap |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Aprovado |
+
+## Executive Summary
+
+As fases de implementação estabelecem entregas, capacidades habilitadas e critérios de saída para reduzir risco e impedir avanço sem resultados verificáveis.
+
+## Contexto
+
+Este documento faz parte do Roadmap de Transformação da Enterprise Data & AI Platform. Seu objetivo é organizar a evolução arquitetural da plataforma em iniciativas, capacidades, entregas e marcos de implementação, permitindo uma adoção incremental e alinhada às prioridades estratégicas da organização.
+
+O Roadmap conecta a arquitetura de referência à execução, fornecendo uma visão estruturada da transformação corporativa baseada em valor de negócio, redução de riscos e evolução contínua das capacidades digitais.
+
+---
+
 ## Objetivo
 
 Definir uma sequência de implementação incremental que reduza riscos, entregue valor continuamente e permita evolução arquitetural sem grandes interrupções operacionais.
 
 ---
 
-# Phase 1 — Foundation
+# Fase 1 — Foundation
 
 ## Objetivos
 
@@ -68,7 +91,7 @@ Definir uma sequência de implementação incremental que reduza riscos, entregu
 
 ---
 
-# Phase 2 — Enterprise Data Platform
+# Fase 2 — Plataforma Corporativa de Dados
 
 ## Objetivos
 
@@ -122,7 +145,7 @@ Consolidar os dados corporativos.
 
 ---
 
-# Phase 3 — AI Enablement
+# Fase 3 — Habilitação de IA
 
 ## Objetivos
 
@@ -170,7 +193,7 @@ Preparar a organização para IA corporativa.
 
 ---
 
-# Phase 4 — Enterprise AI Scale
+# Fase 4 — IA em Escala Corporativa
 
 ## Objetivos
 
@@ -211,7 +234,7 @@ Expandir IA para toda a organização.
 
 ---
 
-# Phase 5 — Continuous Evolution
+# Fase 5 — Evolução Contínua
 
 ## Objetivos
 
@@ -236,3 +259,37 @@ Garantir melhoria contínua.
 - Arquitetura sustentável
 - Roadmap atualizado continuamente
 - Governança madura
+
+---
+
+## References
+
+- Architecture Vision
+- Executive Target State
+- Enterprise Architecture Roadmap
+- Capability Map
+- Business Value Streams
+- Architecture Governance
+- TOGAF® Standard (10th Edition)
+
+---
+
+# Benefícios Esperados
+
+- critérios objetivos de entrada e saída por fase;
+- redução de dependências e riscos de implantação;
+- entrega progressiva de capacidades e valor.
+
+# Relação com Outros Artefatos
+
+- [Architecture Evolution Plan](./architecture-evolution-plan.md)
+- [Capability Evolution Roadmap](./capability-evolution-roadmap.md)
+- [Implementation Roadmap](./implementation-roadmap.md)
+- [Success Metrics](./success-metrics.md)
+- [Transformation Backlog](./transformation-backlog.md)
+
+# Decisões Arquiteturais
+
+## DA-01 — Gates de implementação
+
+Nenhuma fase será encerrada sem atendimento dos critérios de saída definidos neste documento.

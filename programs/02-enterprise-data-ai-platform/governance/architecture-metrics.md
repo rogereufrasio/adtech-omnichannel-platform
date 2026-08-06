@@ -4,17 +4,25 @@
 
 ---
 
+## Context
+
+Este documento faz parte do domínio de Governance da Enterprise Data & AI Platform. Seu objetivo é estabelecer o modelo de governança necessário para garantir que decisões arquiteturais, ativos de dados, aplicações, inteligência artificial e tecnologias corporativas evoluam de forma consistente, segura e alinhada à estratégia de negócio.
+
+O conjunto de documentos de Governance define políticas, responsabilidades, processos de decisão, métricas e mecanismos de conformidade que sustentam a evolução contínua da arquitetura corporativa.
+
+---
+
 # Informações do Documento
 
 | Item | Valor |
 |------|-------|
 | Documento | Architecture Metrics |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Governance |
-| Tipo | Governance Standard |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Governance |
+| Tipo | Padrão de Governança |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -128,13 +136,21 @@ Os indicadores deverão ser consolidados em painéis executivos contendo:
 
 ---
 
+# Benefícios Esperados
+
+- visibilidade executiva sobre adoção, conformidade e valor;
+- decisões de investimento apoiadas por evidências;
+- identificação antecipada de desvios e lacunas de capacidade.
+
+---
+
 # Relação com Outros Artefatos
 
-- Architecture Governance
-- Reference Architecture Compliance
-- Observability Architecture
-- Data Governance Framework
-- AI Governance Framework
+- [AI Governance Framework](./ai-governance-framework.md)
+- [Architecture Governance](./architecture-governance.md)
+- [Data Governance Framework](./data-governance-framework.md)
+- [Reference Architecture Compliance](./reference-architecture-compliance.md)
+- [Observability Architecture](../technology-architecture/observability-architecture.md)
 
 ---
 
@@ -155,9 +171,3 @@ Os indicadores deverão ser consolidados em uma visão executiva única.
 ## DA-03 — Evolução Contínua
 
 As métricas deverão ser revisadas periodicamente pela Enterprise Architecture Practice.
-
----
-
-# Conclusão
-
-O conjunto de indicadores arquiteturais permite acompanhar continuamente a evolução da Enterprise Data & Artificial Intelligence Platform, fornecendo evidências objetivas para decisões de arquitetura, governança e investimento tecnológico.

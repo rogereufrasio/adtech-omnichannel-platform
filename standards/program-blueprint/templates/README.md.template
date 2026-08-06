@@ -1,0 +1,36 @@
+# Programa Estratégico {{PROGRAM_NUMBER}} — {{PROGRAM_TITLE}}
+
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Programa Estratégico | {{PROGRAM_TITLE}} |
+| Responsável | Enterprise Architecture Practice |
+| Versão | 1.0 |
+| Status | Em elaboração |
+
+## Executive Summary
+
+Descreva o propósito, o contexto estratégico e os resultados esperados deste Programa Estratégico.
+
+## Objetivos
+
+- definir a visão arquitetural;
+- documentar o estado-alvo;
+- orientar a implementação;
+- sustentar a governança arquitetural.
+
+## Evolução Arquitetural
+
+1. Foundation;
+2. Business Architecture;
+3. Information Architecture;
+4. Application Architecture;
+5. Technology Architecture;
+6. Governance;
+7. Roadmap;
+8. Architecture Decision Records.
+
+## Relação com Outros Artefatos
+
+Inclua links para a visão, o estado-alvo, a governança e os programas relacionados.

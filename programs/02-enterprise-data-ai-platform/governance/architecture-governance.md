@@ -4,17 +4,25 @@
 
 ---
 
+## Context
+
+Este documento faz parte do domínio de Governance da Enterprise Data & AI Platform. Seu objetivo é estabelecer o modelo de governança necessário para garantir que decisões arquiteturais, ativos de dados, aplicações, inteligência artificial e tecnologias corporativas evoluam de forma consistente, segura e alinhada à estratégia de negócio.
+
+O conjunto de documentos de Governance define políticas, responsabilidades, processos de decisão, métricas e mecanismos de conformidade que sustentam a evolução contínua da arquitetura corporativa.
+
+---
+
 # Informações do Documento
 
 | Item | Valor |
 |------|-------|
 | Documento | Architecture Governance |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Governance |
-| Tipo | Governance Framework |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Governance |
+| Tipo | Framework de Governança |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
 
 ---
 
@@ -167,13 +175,22 @@ Toda iniciativa deverá passar por Architecture Review quando:
 
 ---
 
+# Benefícios Esperados
+
+- decisões arquiteturais consistentes e rastreáveis;
+- tratamento formal de desvios e riscos;
+- maior aderência das iniciativas ao estado-alvo.
+
+---
+
 # Relação com Outros Artefatos
 
-- Architecture Vision
-- Architecture Principles
-- ADRs
-- Technology Standards
-- Application Architecture Principles
+- [Architecture Metrics](./architecture-metrics.md)
+- [Decision Governance](./decision-governance.md)
+- [Reference Architecture Compliance](./reference-architecture-compliance.md)
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Application Architecture Principles](../application-architecture/application-architecture-principles.md)
+- [Technology Standards](../technology-architecture/technology-standards.md)
 
 ---
 
@@ -200,9 +217,3 @@ Exceções arquiteturais deverão possuir justificativa formal, prazo e plano de
 ## DA-04 — Evolução Contínua
 
 Os padrões arquiteturais deverão ser revisados periodicamente pela Enterprise Architecture Practice.
-
----
-
-# Conclusão
-
-A Governança de Arquitetura assegura que a Enterprise Data & Artificial Intelligence Platform evolua de forma consistente, sustentável e alinhada às estratégias corporativas, reduzindo riscos tecnológicos e aumentando a capacidade de reutilização e inovação.

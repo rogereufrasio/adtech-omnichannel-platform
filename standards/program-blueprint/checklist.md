@@ -1,48 +1,28 @@
-# Enterprise Architecture Program Checklist
+# Checklist de Qualidade do Enterprise Architecture Program
 
 ## Objetivo
 
-Este checklist define os critérios mínimos de qualidade para um Enterprise Architecture Program.
+Este checklist define os critérios mínimos de qualidade que devem ser atendidos antes que um Enterprise Architecture Program seja considerado concluído ou apto para revisão arquitetural.
 
-Seu objetivo é garantir que todos os programas deste repositório sejam publicados com uma estrutura consistente, documentação completa e aderência aos padrões estabelecidos pelo blueprint.
-
-Este checklist complementa as validações automatizadas disponíveis em:
-
-```text
-tools/architecture/
-```
+Seu objetivo é garantir consistência, completude e padronização entre todos os programas do repositório.
 
 ---
 
-# Como utilizar
+# Estrutura do Programa
 
-O checklist deve ser executado:
+## Estrutura de Diretórios
 
-- durante a criação de um novo programa;
-- antes de uma Architecture Review;
-- antes da publicação de uma nova versão;
-- sempre que houver mudanças estruturais significativas.
-
-Cada item deve ser marcado como:
-
-- **[ ]** Não atendido
-- **[x]** Atendido
-- **N/A** Não aplicável
+- [ ] Estrutura segue `program-structure.md`
+- [ ] Todos os diretórios obrigatórios existem
+- [ ] Não existem diretórios duplicados
+- [ ] Não existem documentos órfãos
+- [ ] Convenções de nomenclatura foram respeitadas
 
 ---
 
-# Estrutura do programa
+# Documentação
 
-## Diretório principal
-
-- [ ] O programa segue o padrão `NN-program-name`.
-- [ ] O número do programa é único.
-- [ ] O nome utiliza letras minúsculas e hífens.
-- [ ] A estrutura segue o blueprint oficial.
-
----
-
-## Documentos da raiz
+## Documentos Obrigatórios
 
 - [ ] README.md
 - [ ] architecture-target-state.md
@@ -51,125 +31,133 @@ Cada item deve ser marcado como:
 
 ---
 
-## Diretórios obrigatórios
+## Conteúdo
 
-- [ ] adrs/
-- [ ] business-architecture/
-- [ ] application-architecture/
-- [ ] information-architecture/
-- [ ] technology-architecture/
-- [ ] governance/
-- [ ] roadmap/
-- [ ] diagrams/
+Cada documento possui:
 
----
-
-# Business Architecture
-
-- [ ] Business Domains documentado.
-- [ ] Business Value Streams documentado.
-- [ ] Capability Map documentado.
-
----
-
-# Application Architecture
-
-- [ ] Application Landscape documentado.
-- [ ] API Strategy documentada.
-- [ ] Estratégia de integração documentada.
-- [ ] Arquitetura orientada a eventos documentada quando aplicável.
-
----
-
-# Information Architecture
-
-- [ ] Enterprise Information Model documentado.
-- [ ] Data Domain Model documentado.
-- [ ] Data Product Model documentado quando aplicável.
-
----
-
-# Technology Architecture
-
-- [ ] Technology Platform documentada.
-- [ ] Security Architecture documentada.
-- [ ] Observability Architecture documentada quando aplicável.
-
----
-
-# Governance
-
-- [ ] Architecture Governance documentada.
-- [ ] Data Governance documentada quando aplicável.
-- [ ] AI Governance documentada quando aplicável.
-
----
-
-# Roadmap
-
-- [ ] Implementation Roadmap documentado.
-- [ ] Architecture Evolution Plan documentado.
-- [ ] Transformation Backlog documentado.
-
----
-
-# Architecture Decision Records
-
-- [ ] Diretório `adrs/` criado.
-- [ ] README.md presente.
-- [ ] ADRs seguem o template oficial.
-- [ ] ADRs possuem numeração sequencial.
-- [ ] Todos os ADRs possuem status definido.
-- [ ] Todos os ADRs possuem contexto, decisão e consequências.
+- [ ] título
+- [ ] objetivo
+- [ ] contexto
+- [ ] conteúdo estruturado
+- [ ] referências
+- [ ] linguagem técnica consistente
 
 ---
 
 # Diagramas
 
-- [ ] Diagramas armazenados no diretório correto.
-- [ ] Diagramas atualizados.
-- [ ] Diagramas consistentes com a documentação.
-- [ ] Diagramas utilizam Mermaid quando possível.
+Todos os diagramas:
+
+- [ ] utilizam Mermaid
+- [ ] possuem sintaxe válida
+- [ ] foram validados
+- [ ] representam corretamente a arquitetura
+- [ ] seguem o padrão visual do repositório
 
 ---
 
-# Qualidade documental
+# ADRs
 
-- [ ] Todos os documentos possuem título.
-- [ ] Todos os documentos possuem objetivo.
-- [ ] Não existem documentos duplicados.
-- [ ] Não existem links quebrados.
-- [ ] Terminologia consistente em todo o programa.
-- [ ] Convenções de nomenclatura respeitadas.
+- [ ] decisões relevantes documentadas
+- [ ] template oficial utilizado
+- [ ] status definido
+- [ ] alternativas registradas
+- [ ] consequências documentadas
 
 ---
 
-# Consistência arquitetural
+# Arquitetura
 
-- [ ] Arquitetura alvo consistente com os princípios corporativos.
-- [ ] Componentes arquiteturais coerentes entre si.
-- [ ] Não existem conflitos entre documentos.
-- [ ] ADRs refletem as principais decisões arquiteturais.
+## Business Architecture
+
+- [ ] capacidades documentadas
+- [ ] domínios definidos
+- [ ] fluxos de valor documentados
+
+---
+
+## Application Architecture
+
+- [ ] landscape documentado
+- [ ] integrações identificadas
+- [ ] APIs documentadas
+- [ ] padrões definidos
+
+---
+
+## Information Architecture
+
+- [ ] modelo informacional documentado
+- [ ] domínios de dados definidos
+- [ ] estratégia de metadados documentada
+
+---
+
+## Technology Architecture
+
+- [ ] plataforma tecnológica definida
+- [ ] padrões tecnológicos documentados
+- [ ] arquitetura de infraestrutura descrita
+- [ ] arquitetura de segurança documentada
+
+---
+
+# Governança
+
+- [ ] princípios arquiteturais definidos
+- [ ] governança documentada
+- [ ] métricas definidas
+- [ ] critérios de conformidade definidos
+
+---
+
+# Roadmap
+
+- [ ] roadmap definido
+- [ ] fases documentadas
+- [ ] backlog identificado
+- [ ] métricas de sucesso definidas
+
+---
+
+# Qualidade
+
+- [ ] links internos válidos
+- [ ] arquivos Markdown válidos
+- [ ] referências atualizadas
+- [ ] ausência de conteúdo duplicado
+- [ ] nomenclatura consistente
 
 ---
 
 # Automação
 
-- [ ] O programa pode ser validado pelos scripts de documentação.
-- [ ] Não há erros de estrutura.
-- [ ] Não há arquivos obrigatórios ausentes.
+- [ ] `inventory.py`
+- [ ] `validate_links.py`
+- [ ] `document_quality_check.py`
+- [ ] `document_report.py`
+- [ ] GitHub Actions executando sem erros
 
 ---
 
-# Critérios para conclusão
+# Revisão Arquitetural
 
-Um Enterprise Architecture Program é considerado aderente ao blueprint quando:
+- [ ] revisão técnica concluída
+- [ ] inconsistências corrigidas
+- [ ] recomendações incorporadas
+- [ ] documentação aprovada
+
+---
+
+# Critério de Conclusão
+
+Um programa é considerado concluído quando:
 
 - todos os documentos obrigatórios estiverem presentes;
-- a estrutura seguir o padrão oficial;
-- os documentos atenderem aos critérios mínimos de qualidade;
-- as decisões arquiteturais estiverem registradas em ADRs quando aplicável;
-- o programa puder ser validado pelos mecanismos automatizados disponíveis no repositório.
+- todos os critérios deste checklist forem atendidos;
+- os validadores automatizados forem aprovados;
+- a revisão arquitetural for concluída;
+- o programa estiver consistente com o Enterprise Architecture Program Blueprint.
 
 ---
 
@@ -179,5 +167,4 @@ Um Enterprise Architecture Program é considerado aderente ao blueprint quando:
 - `program-structure.md`
 - `document-matrix.md`
 - `adr-template.md`
-- `standards/architecture-documentation-quality-checklist.md`
-- `standards/architecture-review-process.md`
+- `../architecture-documentation-quality-checklist.md`

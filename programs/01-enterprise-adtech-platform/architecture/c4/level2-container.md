@@ -115,3 +115,7 @@ Responsáveis por garantir qualidade, conformidade e observabilidade da platafor
 - OneTrust
 - Data Catalog
 - Datadog
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../../README.md)

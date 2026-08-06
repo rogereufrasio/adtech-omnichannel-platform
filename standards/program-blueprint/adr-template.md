@@ -1,278 +1,156 @@
-# Architecture Decision Record (ADR) Template
-
-## Objetivo
-
-Este documento define o modelo padrão para registro de **Architecture Decision Records (ADR)** utilizados pelos Enterprise Architecture Programs deste repositório.
-
-Um ADR registra uma decisão arquitetural significativa, seu contexto, as alternativas avaliadas e as consequências decorrentes da decisão.
-
-Todos os ADRs devem seguir este modelo para garantir consistência, rastreabilidade e facilidade de consulta.
-
----
-
-# Convenções
-
-## Nome do arquivo
-
-Os arquivos devem seguir o padrão:
-
-```text
-adr-XXX-short-title.md
-```
-
-Onde:
-
-- **XXX** representa um identificador sequencial de três dígitos;
-- **short-title** é uma descrição curta utilizando letras minúsculas separadas por hífen.
-
-Exemplos:
-
-```text
-adr-001-api-first.md
-adr-002-event-driven-architecture.md
-adr-003-data-as-a-product.md
-```
-
----
-
-# Template
-
-```markdown
 # ADR-XXX — Título da Decisão
 
-## Status
-
-Proposto
-
-> Valores permitidos:
->
-> - Proposto
-> - Em Análise
-> - Aprovado
-> - Rejeitado
-> - Substituído
-> - Obsoleto
+- **Status:** Proposed | Accepted | Superseded | Deprecated
+- **Data:** YYYY-MM-DD
+- **Autor:** Enterprise Architecture Team
+- **Decisores:** Architecture Review Board
+- **Programa:** Enterprise Architecture Program
 
 ---
 
-## Data
+# Contexto
 
-AAAA-MM-DD
+Descreva o contexto arquitetural que motivou esta decisão.
 
----
+Explique:
 
-## Autores
-
-- Nome
-- Nome
-
----
-
-## Contexto
-
-Descreva o problema, necessidade ou oportunidade que motivou esta decisão.
-
-Inclua:
-
-- contexto de negócio;
-- contexto técnico;
-- restrições;
-- premissas;
-- riscos conhecidos.
+- problema identificado;
+- requisitos funcionais;
+- requisitos não funcionais;
+- restrições técnicas;
+- restrições de negócio;
+- drivers arquiteturais.
 
 ---
 
-## Problema
+# Problema
 
-Descreva claramente qual problema precisa ser resolvido.
-
----
-
-## Decisão
-
-Explique a decisão tomada.
-
-A decisão deve ser objetiva, verificável e suficientemente detalhada para permitir sua compreensão futura.
+Descreva claramente a decisão que precisa ser tomada.
 
 ---
 
-## Alternativas Avaliadas
+# Objetivos
 
-### Alternativa 1
+Esta decisão busca atingir os seguintes objetivos:
 
-Descrição.
-
-**Prós**
-
--
-
-**Contras**
-
--
+- objetivo 1;
+- objetivo 2;
+- objetivo 3.
 
 ---
 
-### Alternativa 2
+# Alternativas Avaliadas
 
-Descrição.
+## Alternativa A
 
-**Prós**
+### Descrição
 
--
+...
 
-**Contras**
+### Vantagens
 
--
+- ...
 
----
+### Desvantagens
 
-## Justificativa
-
-Explique por que a alternativa escolhida foi considerada a mais adequada.
-
-Considere aspectos como:
-
-- alinhamento estratégico;
-- simplicidade;
-- custo;
-- escalabilidade;
-- segurança;
-- governança;
-- interoperabilidade;
-- manutenção.
+- ...
 
 ---
 
-## Consequências
+## Alternativa B
 
-Descreva os impactos da decisão.
+### Descrição
 
-### Positivos
+...
 
--
+### Vantagens
 
-### Negativos
+- ...
 
--
+### Desvantagens
+
+- ...
+
+---
+
+## Alternativa C
+
+### Descrição
+
+...
+
+### Vantagens
+
+- ...
+
+### Desvantagens
+
+- ...
 
 ---
 
-## Dependências
+# Decisão
 
-Liste decisões, tecnologias ou documentos relacionados.
+Descreva a decisão adotada.
 
-Exemplo:
+Explique:
 
-- ADR-001
-- Architecture Target State
-- Technology Platform
+- tecnologia escolhida;
+- padrões arquiteturais envolvidos;
+- justificativa técnica;
+- justificativa de negócio.
 
 ---
+
+# Consequências
+
+## Benefícios
+
+- ...
+
+## Riscos
+
+- ...
+
+## Trade-offs
+
+- ...
 
 ## Impactos
 
-Indique quais áreas da arquitetura são afetadas.
-
-Exemplo:
-
-- Business Architecture
-- Application Architecture
-- Information Architecture
-- Technology Architecture
-- Governance
-
----
-
-## Referências
-
-Liste documentos utilizados como apoio para a decisão.
-
----
-
-## Histórico
-
-| Data | Alteração | Autor |
-|------|-----------|-------|
-| AAAA-MM-DD | Criação do ADR | Nome |
-```
-
----
-
-# Boas práticas
-
-Um ADR deve:
-
-- registrar apenas uma decisão principal;
-- ser escrito de forma objetiva;
-- permanecer imutável após aprovação, exceto pelo histórico;
-- utilizar linguagem técnica e clara;
-- evitar duplicação de conteúdo presente em outros documentos.
-
----
-
-# Quando criar um ADR
-
-Um ADR deve ser criado sempre que houver decisões relevantes relacionadas a:
-
-- princípios arquiteturais;
-- integração;
-- APIs;
-- eventos;
-- dados;
-- plataformas;
+- aplicações;
+- integrações;
+- infraestrutura;
+- operações;
 - segurança;
-- observabilidade;
-- governança;
-- tecnologias estratégicas;
-- padrões corporativos.
+- custos.
 
 ---
 
-# Relacionamento com outros documentos
+# Critérios de Revisão
 
-Os ADRs complementam a documentação arquitetural do programa.
+Esta decisão deverá ser revisada quando ocorrer:
 
-Sempre que aplicável, um ADR deve referenciar documentos como:
-
-- Architecture Target State;
-- Executive Target State;
-- Technology Platform;
-- API Strategy;
-- Event-Driven Architecture;
-- Enterprise Information Model.
-
-Da mesma forma, esses documentos podem referenciar ADRs para justificar decisões arquiteturais específicas.
+- mudança tecnológica significativa;
+- alteração dos requisitos de negócio;
+- mudança da estratégia corporativa;
+- substituição da plataforma;
+- identificação de limitações relevantes.
 
 ---
 
-# Ciclo de vida
+# Documentos Relacionados
 
-O ciclo de vida recomendado para um ADR é:
-
-```text
-Proposto
-      │
-      ▼
-Em Análise
-      │
-      ▼
-Aprovado
-      │
-      ├──────────────► Obsoleto
-      │
-      └──────────────► Substituído
-```
-
-Caso uma decisão seja descartada antes da aprovação, o status deve ser alterado para **Rejeitado**.
+- Architecture Vision
+- Architecture Target State
+- Reference Architecture
+- Technology Standards
+- Architecture Principles
 
 ---
 
-# Governança
+# Referências
 
-Os ADRs devem ser armazenados exclusivamente no diretório:
-
-```text
-adrs/
-```
-
-Todos os ADRs devem possuir numeração sequencial e permanecer versionados juntamente com o restante da documentação do programa.
+- TOGAF Standard
+- Architecture Decision Records (ADR)
+- Enterprise Architecture Principles

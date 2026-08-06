@@ -1,62 +1,209 @@
-# Architecture Review Process
+# Processo de Architecture Review
 
-## Informações do Documento
+## Objetivo
 
-| Item | Valor |
-| --- | --- |
-| Documento | Architecture Review Process |
-| Categoria | Governança de Arquitetura |
-| Responsável | Enterprise Architecture Practice |
-| Versão | 1.0 |
-| Status | Em evolução |
+Este documento define o processo oficial de revisão de Arquitetura Corporativa utilizado neste repositório.
+
+Seu objetivo é garantir que todos os programas sejam avaliados de forma consistente quanto à qualidade, aderência aos padrões arquiteturais, completude da documentação e alinhamento com os princípios da Arquitetura Corporativa.
 
 ---
 
-# Objetivo
+# Objetivos da Revisão
 
-O **Architecture Review Process** define o processo utilizado pela Enterprise Architecture Practice para avaliar, validar e evoluir artefatos arquiteturais.
+A Architecture Review tem como objetivos:
 
-O objetivo é garantir que decisões arquiteturais:
-
-- estejam alinhadas à estratégia organizacional;
-- sigam princípios arquiteturais corporativos;
-- reduzam riscos;
-- promovam reutilização;
-- mantenham consistência entre domínios.
-
----
-
-# Escopo
-
-Este processo se aplica a:
-
-- Programas estratégicos;
-- Arquiteturas de referência;
-- Arquiteturas corporativas;
-- Arquiteturas de solução;
-- Architecture Decision Records;
-- Padrões tecnológicos;
-- Roadmaps arquiteturais.
+- verificar a qualidade da documentação;
+- validar a consistência arquitetural;
+- identificar riscos técnicos;
+- garantir aderência aos padrões corporativos;
+- validar decisões arquiteturais;
+- assegurar a rastreabilidade das decisões;
+- aprovar a evolução da arquitetura.
 
 ---
 
-# Princípios do Processo
+# Quando Executar
 
-## Arquitetura Antes da Implementação
+Uma Architecture Review deve ocorrer:
 
-Decisões estruturantes devem ser avaliadas antes da implementação técnica.
+- na criação de um novo programa;
+- antes de um Pull Request para a branch principal;
+- após mudanças arquiteturais relevantes;
+- após inclusão de novos ADRs;
+- antes da publicação de uma nova versão da documentação.
+
+---
+
+# Papéis e Responsabilidades
+
+| Papel | Responsabilidade |
+|--------|------------------|
+| Enterprise Architect | Conduzir a revisão arquitetural |
+| Solution Architect | Validar aspectos de aplicação e integração |
+| Business Architect | Validar alinhamento com o negócio |
+| Data Architect | Validar arquitetura da informação |
+| Security Architect | Validar requisitos de segurança |
+| Architecture Review Board | Aprovar decisões arquiteturais relevantes |
+
+---
+
+# Fluxo de Revisão
 
 ```text
-Necessidade de Negócio
+Autor da Documentação
+        │
+        ▼
+Validação Automatizada
+        │
+        ▼
+Correção de Inconsistências
+        │
+        ▼
+Architecture Review
+        │
+        ▼
+Ajustes Solicitados
+        │
+        ▼
+Aprovação
+        │
+        ▼
+Merge na Branch Principal
+```
 
-        ↓
+---
 
-Avaliação Arquitetural
+# Etapas
 
-        ↓
+## 1. Validação Automatizada
 
-Decisão
+Executar:
 
-        ↓
+```bash
+python tools/architecture/run-documentation-check.py
+```
 
-Implementação
+Verificar:
+
+- inventário documental;
+- qualidade da documentação;
+- links quebrados;
+- relatório consolidado.
+
+---
+
+## 2. Revisão Técnica
+
+Avaliar:
+
+- arquitetura proposta;
+- consistência entre documentos;
+- aderência aos princípios arquiteturais;
+- qualidade dos diagramas;
+- clareza das decisões.
+
+---
+
+## 3. Revisão de Governança
+
+Verificar:
+
+- documentação obrigatória;
+- ADRs atualizados;
+- conformidade com o blueprint;
+- aderência aos padrões corporativos.
+
+---
+
+## 4. Aprovação
+
+O programa pode ser aprovado quando:
+
+- não existirem inconsistências críticas;
+- os documentos obrigatórios estiverem presentes;
+- os validadores automatizados forem aprovados;
+- os revisores concordarem com a solução proposta.
+
+---
+
+# Critérios de Avaliação
+
+## Documentação
+
+- estrutura padronizada;
+- títulos presentes;
+- contexto documentado;
+- referências incluídas;
+- linguagem técnica consistente.
+
+---
+
+## Arquitetura
+
+- princípios respeitados;
+- decisões justificadas;
+- trade-offs documentados;
+- riscos identificados;
+- arquitetura consistente.
+
+---
+
+## Diagramas
+
+- sintaxe válida;
+- clareza visual;
+- consistência com a documentação;
+- aderência ao padrão Mermaid.
+
+---
+
+## ADRs
+
+- decisões registradas;
+- contexto documentado;
+- alternativas avaliadas;
+- consequências descritas.
+
+---
+
+# Resultado da Revisão
+
+Cada revisão deve resultar em um dos seguintes status:
+
+| Status | Descrição |
+|--------|-----------|
+| Aprovado | O programa atende aos critérios definidos. |
+| Aprovado com Ressalvas | Existem melhorias não críticas a serem realizadas. |
+| Reprovado | Existem inconsistências que impedem a aprovação. |
+
+---
+
+# Evidências
+
+A revisão deve registrar, quando aplicável:
+
+- relatório de validação automatizada;
+- observações dos revisores;
+- decisões registradas em ADR;
+- plano de ação para ajustes.
+
+---
+
+# Automação
+
+As seguintes validações devem fazer parte do processo de revisão:
+
+- execução do `run-documentation-check.py`;
+- execução do workflow do GitHub Actions;
+- validação dos diagramas Mermaid;
+- validação dos links internos.
+
+---
+
+# Referências
+
+- `program-blueprint/README.md`
+- `program-blueprint/checklist.md`
+- `program-blueprint/document-matrix.md`
+- `architecture-documentation-quality-checklist.md`
+- `architecture-document-catalog.md`

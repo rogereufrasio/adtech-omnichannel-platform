@@ -20,3 +20,6 @@ python tools\architecture\validate_links.py
 python tools\architecture\document_report.py
 
 python tools\architecture\document-quality-check.py
+```
+
+O gate somente é considerado concluído quando todos os validadores terminam sem erros.

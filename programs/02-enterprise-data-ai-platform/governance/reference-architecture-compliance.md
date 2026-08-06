@@ -9,12 +9,20 @@
 | Item | Valor |
 |------|-------|
 | Documento | Reference Architecture Compliance |
-| Programa | Enterprise Data & Artificial Intelligence Platform |
-| Domínio | Governance |
-| Tipo | Compliance Framework |
+| Programa Estratégico | Enterprise Data & Artificial Intelligence Platform |
+| Domínio Arquitetural | Governance |
+| Tipo | Framework de Conformidade |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Approved |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento faz parte do domínio de Governance da Enterprise Data & AI Platform. Seu objetivo é estabelecer o modelo de governança necessário para garantir que decisões arquiteturais, ativos de dados, aplicações, inteligência artificial e tecnologias corporativas evoluam de forma consistente, segura e alinhada à estratégia de negócio.
+
+O conjunto de documentos de Governance define políticas, responsabilidades, processos de decisão, métricas e mecanismos de conformidade que sustentam a evolução contínua da arquitetura corporativa.
 
 ---
 
@@ -163,13 +171,22 @@ Todo desvio deverá possuir:
 
 ---
 
+# Benefícios Esperados
+
+- redução de desvios e riscos arquiteturais;
+- critérios uniformes para Architecture Reviews;
+- evidências de conformidade e planos de regularização rastreáveis.
+
+---
+
 # Relação com Outros Artefatos
 
-- Architecture Governance
-- Decision Governance
-- Technology Standards
-- Architecture Principles
-- ADRs
+- [Architecture Governance](./architecture-governance.md)
+- [Architecture Metrics](./architecture-metrics.md)
+- [Decision Governance](./decision-governance.md)
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Technology Standards](../technology-architecture/technology-standards.md)
+- [ADRs](../adrs/README.md)
 
 ---
 
@@ -190,9 +207,3 @@ Todo desvio deverá possuir registro formal.
 ## DA-03 — Revisão Periódica
 
 Projetos estratégicos deverão ser reavaliados ao longo do ciclo de vida.
-
----
-
-# Conclusão
-
-A avaliação de conformidade arquitetural assegura a evolução consistente da Enterprise Data & Artificial Intelligence Platform, reduzindo riscos tecnológicos e fortalecendo a governança corporativa.

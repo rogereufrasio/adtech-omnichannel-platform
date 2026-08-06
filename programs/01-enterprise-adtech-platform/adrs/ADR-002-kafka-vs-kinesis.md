@@ -48,3 +48,8 @@ Apache Kafka apresentou vantagens relacionadas a:
 ## Consequência
 
 Kafka passa a ser o barramento padrão para eventos corporativos da plataforma AdTech.
+
+
+## Relação com Outros Artefatos
+
+- [Landing Page do Programa Estratégico 01](../README.md)

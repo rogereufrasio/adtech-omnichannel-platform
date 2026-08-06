@@ -1,0 +1,29 @@
+# Estado-Alvo da Arquitetura
+
+## Informações do Documento
+
+| Item | Valor |
+| --- | --- |
+| Programa Estratégico | {{PROGRAM_TITLE}} |
+| Versão | 1.0 |
+| Status | Em elaboração |
+
+## Contexto
+
+Descreva o contexto arquitetural e os direcionadores de negócio.
+
+## Arquitetura-Alvo
+
+Descreva o estado futuro desejado e seus boundaries.
+
+## Princípios Arquiteturais
+
+Liste os princípios que orientam a arquitetura.
+
+## Decisões Arquiteturais
+
+Registre as principais decisões e referências aos ADRs.
+
+## Relação com Outros Artefatos
+
+Inclua links para a Architecture Vision, o diagrama executivo e o roadmap.

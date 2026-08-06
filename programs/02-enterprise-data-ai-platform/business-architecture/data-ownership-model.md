@@ -10,7 +10,17 @@
 | Tipo | Modelo de Responsabilidade sobre Dados |
 | Responsável | Enterprise Architecture Practice |
 | Versão | 1.0 |
-| Status | Em evolução |
+| Status | Aprovado |
+
+---
+
+## Contexto
+
+Este documento integra a Arquitetura de Negócios do Programa 02 – Enterprise Data & AI Platform.
+
+Seu objetivo é estabelecer o modelo de responsabilidade sobre os domínios de dados corporativos, definindo papéis, responsabilidades e mecanismos de governança necessários para assegurar qualidade, rastreabilidade e confiabilidade das informações.
+
+Este modelo apoia a implementação dos princípios Data as a Product e Metadata First definidos pelos Architecture Decision Records do programa.
 
 ---
 
@@ -180,6 +190,15 @@ Essa separação entre ownership de negócio e custódia tecnológica favorece a
 
 ---
 
+## Relação com Outros Artefatos
+
+- [Architecture Vision](../docs/architecture-vision.md)
+- [Business Domains](./business-domains.md)
+- [Business Capability Map](./capability-map.md)
+- [Capability Assessment](./capability-assessment.md)
+
+---
+
 # Decisões Arquiteturais
 
 ## DA-01 — Ownership Definido pelo Negócio
@@ -215,13 +234,3 @@ A gestão dos dados será baseada em colaboração entre Data Owners, Data Stewa
 **Motivação**
 
 Promover governança distribuída sem comprometer autonomia dos domínios.
-
----
-
-# Conclusão
-
-O **Data Ownership Model** conclui a Business Architecture da **Enterprise Data & Artificial Intelligence Platform**, estabelecendo uma estrutura clara de responsabilidades sobre os ativos de informação.
-
-Ao definir papéis, responsabilidades e princípios de ownership, a organização cria uma base sólida para a evolução da Arquitetura da Informação, da Governança de Dados e da Inteligência Artificial Corporativa.
-
-Mais do que distribuir responsabilidades, este modelo reforça a visão de que os dados são ativos estratégicos cuja gestão deve permanecer alinhada aos objetivos de negócio e sustentada por uma arquitetura corporativa consistente.
